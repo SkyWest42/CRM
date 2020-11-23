@@ -470,7 +470,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--sidebar-color2);
+  background-color: var(--menu-item-color5);
 }
 
 .menu-icon-container {
