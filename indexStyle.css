@@ -5,9 +5,21 @@
   --sidebar-color2: #8BBF2C;
   --start-btn-color3: #5D9134;
   --scrollbar-color4: #3A641C;
-  --menu-item-color5: #294714;
+  --menu-item-color5: #2c7204;
   --hover-color6: #172b0a;
   --marker-color: #ffefb8;
+  /* --header-color1: #fd6b86;
+  --sidebar-color2: #ff8484;
+  --start-btn-color3: #f54c6c;
+  --scrollbar-color4: #a52c50;
+  --menu-item-color5: #830e27;
+  --hover-color6: #580020; */
+  /* --header-color1: #f8749d;
+  --sidebar-color2: #f5b2c3;
+  --start-btn-color3: #ef4a82;
+  --scrollbar-color4: #cf2762;
+  --menu-item-color5: #b01145;
+  --hover-color6: #630518; */
   /* --header-color1: #F05095;
   --sidebar-color2: #FC63A6;
   --start-btn-color3: #D24585;
@@ -305,7 +317,7 @@ body {
 .info-content {
   direction: rtl;
   font-family: Arimo;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 32px;
 }
 
@@ -344,6 +356,12 @@ body {
   --marker-color: #fcff2f;
   animation: marker 4s;
 }
+
+/* .instruction .to-copy {
+  border: none;
+  background-color: transparent;
+  color: var(--menu-item-color5);
+} */
 
 .overlay {
   z-index: 3;
@@ -546,7 +564,7 @@ body {
 }
 
 .change-to-pink {
-  background-image: linear-gradient(to right, #FC63A6 0%, #FC63A6 33.33%, #F05095 33.33%, #F05095 66.66%, #D24585 66.66%, #D24585 100%);
+  background-image: linear-gradient(to right, #ff8484 0%, #ff8484 33.33%, #fd6b86 33.33%, #fd6b86 66.66%, #f54c6c 66.66%, #f54c6c 100%);
 }
 
 .change-to-green {
@@ -558,25 +576,16 @@ body {
   cursor: pointer;
 }
 
-.menu-item-title {
-  width: 10vw;
-}
-
 .menu-item h1 {
   font-size: 3.2vh;
-  margin: 0;
+  display: inline;
+  vertical-align: middle;
 }
 
 .menu-item h2 {
-  font-size: 1.6vh;
-  margin: 0;
-}
-
-.menu-item h3 {
-  font-size: 1.4vh;
-  margin: 0;
-  font-weight: normal;
-  color: white;
+  font-size: 2vh;
+  display: inline;
+  vertical-align: middle;
 }
 
 .box {
@@ -762,6 +771,7 @@ tr:nth-child(even) {
   box-sizing: border-box;
   direction: ltr;
   position: absolute;
+  border: 3px red solid;
 }
 
 #screen-img {

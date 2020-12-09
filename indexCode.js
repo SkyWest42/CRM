@@ -4,7 +4,7 @@ var currPage;
 var currSection;
 
 //array of chapter titles
-var arrChapterName = ["א'- רקע על המערכת", "ב'- כניסה למערכת", "ג'- ניווט בסיסי בSAP", "ד'- טרנזקציות"];
+var arrChapterName = ["א'- פתיח", "ב'- סיור בפניה", "ג'- פתיחת פניה", "ד'- הקצאת פניה", "ה'- סגירת פניה", "ו'- SLA"];
 
 //matrix containing all content
 //an array for each chapter
@@ -15,13 +15,7 @@ var matContent = [
     [
         [
             {
-                "section": "<p> לפני שנדבר על מערכת ה-SAP, נבין ראשית מהי מערכת מידע.</p> <p><b>מערכת מידע</b> היא תוכנה המאפשרת לנהל מידע באופן ממוחשב בעזרת השימוש במאגרי מידע שונים. המערכת מאפשרת לנו <b> לאחסן, לעבד, לנתח, לנהל ולשלוף</b> נתונים באופן מלא תוך ביצוע פעולות על המידע לפי הצורך שלנו.</p> <p class='align-left'> <b>ERP- Enterprise Resource Planning</b> </p> <p> מערכות ERP הן סוג של מערכות מידע הכוללות את כל היישומים הדרושים לתכנון, ניהול ובקרה של כלל פעילויות ומשאבי הארגון. </p> <hr> <p class='align-left'> <b>SAP- Systems, Applications and Products</b> <p/> <p> ה-SAP הוא חבילת ה-ERP המובילה בישראל ובעולם. המערכת כוללת מעל 10 מיליון משתמשים המתפרשים על כ-120 מדינות. חלק מלקוחות הSAP בישראל, ביניהן צבא ההגנה לישראל: </p><img class='full-img' src='media/brands.png'/>",
-                "instruction": ""
-            }
-        ],
-        [
-            {
-                "section": "<p>רוב תוכנות הERP מחולקות ל\"מודולים\". מודול הוא תת–מערכת בתוכנה המיישם פונקציונליות מסוימת, למשל: ניהול מלאי, ניהול קשרי לקוחות, משא\"ן, מערכות תומכות החלטה ועוד.</p > <p>אצלנו במיטב משתמשים בשלושה מודלים עיקריים שקיימים בSAP: </p> <p class='align-left'><b>⋆ ECC – <u>E</u>RP <u>C</u>entral <u>C</u>omponent <br> ⋆ BW – <u>B</u>usiness <u>W</u>arehouse<br> ⋆ CRM – <u>C</u>ostumer <u>R</u>elation <u>M</u>anagement</b></p> <p><b>ה-ECC הוא הרכיב המרכזי של הSAP, והמערכת אליה נתייחס כשנדון בשימוש בSAP.</b></p>  <p>BW היא מערכת להפקת דוחות גדולים. כל לילה נתונים עוברים מה-ECC ל-BW, זאת אומרת שהנתונים נשארים מעודכנים לסוף היום הקודם.</p> <p>לאחרונה מערכת הCRM עברה מלהיות מערכת צבאית בעלת קשר ישיר לERP כולו, למערכת אזרחית עם ממשק שמעביר את הנתונים באופן מרוכז מספר פעמים ביום.</p>",
+                "section": "<p>מערכת הCRM הינה מערכת לניהול קשרי לקוחות (Customer Relationship Management).</p><p>המערכת מאפשרת ליחידת מיטב לנהל פניות של מלש\"בים במגוון נושאים, לתעד אותן ולעקוב אחר הטיפול בהן.</p><p>רוב הפניות מתקבלות במרכז המידע והשירות שמורכב מהמוקד הטלפוני של מיטב והמוקד הדיגיטלי. הפניות מטופלות ונסגרות במוקד או מועברות משם להמשך הטיפול במדורים המקצועיים ביחידה.</p><p>בנוסף, ישנן פניות אשר מגיעות דרך אתר \"מתגייסים ברשת\" &ndash; חלקן מגיעות למוקד וחלקן מופנות ישירות למדור המקצועי.</p><img class='full-img' src='media/flowchart.png'/>",
                 "instruction": ""
             }
         ]
@@ -30,23 +24,24 @@ var matContent = [
     [
         [
             {
-                "section": "<p>כדי להיכנס למערכת, נחפש את התוכנה sap logon, דרכה אפשר להתחבר למערכת. במידה והתוכנה לא מותקנת יש לפנות למתקן מחשב. </p>",
-                "instruction": "פתח את התוכנה במסך התרגול",
+                "section": "<p>אז התחברנו למחשב הלוקאלי! כעת עלינו לפתוח את מערכת הCRM. תחילה נכנס לדפדפן. </p>",
+                "instruction": "פתח את דפדפן כרום במסך התרגול",
                 "interactionType": "click",
-                "width": "12%",
-                "height": "16%",
-                "right": "9%",
-                "top": "8%",
+                "width": "8%",
+                "height": "10%",
+                "right": "11.5%",
+                "top": "19.5%",
                 "isChangeScreen": "true"
             },
             {
-                "section": "<p>כפי שאמרנו בחלק הקודם, המערכת מורכבת משלושה מודלים עיקריים, אותם ניתן לראות בחלון הכניסה (לאחר לחיצה כפולה על החלון).</p><p>עלינו למצוא בתיקיות בצד ימין חיבור לERP &nbsp;בסביבת הProd.</p><p>החיבור עשוי להימצא ישירות בתיקיה בשם \"<strong>חיבורים</strong>\", או תחת תיקיה בשם \"<strong>ECC</strong>\" (המייצגת את המודול בו אנחנו רוצים להשתמש) ושם תחת תיקייה בשם \"Prod\" (שמייצגת את הסביבה הרלוונטית).</p > <p>ישנם שני סוגים של סביבות, הסביבה החיה וסביבות הבדיקות - סביבת הProd (קיצור של Production- ייצור) היא הסביבה החיה בה משתמשים אנשי יחידת מיטב.</p>",
-                "instruction": "פתח את התיקייה הנכונה במסך התרגול",
-                "interactionType": "click",
-                "width": "10%",
-                "height": "3.3%",
-                "right": "7%",
-                "top": "19.97%",
+                "section": "<p>כעת, עלינו להתחבר לכתובת https://crm.medone.idf.il.</p>",
+                "instruction": "הזן את הכתובת <input id='to-copy' class='to-copy' readonly value=\"https://crm.medone.idf.il\"/> במסך התרגול",
+                "interactionType": "type",
+                "correctInput": "https://crm.medone.idf.il",
+                "width": "50%",
+                "height": "3%",
+                "right": "39%",
+                "top": "3.55%",
                 "isChangeScreen": "true"
             },
             {
@@ -390,8 +385,8 @@ var matContent = [
 //which contains an array for each page
 //which contains the correct image number
 var matOpeningScreen = [
-    [0, 0],
-    [0],
+    [1],
+    [1],
     [5, 9],
     [15, 15, 24]
 ];
@@ -1118,12 +1113,12 @@ function biggerText(event) {
 */
 function changeColor(event) {
     if ($("#color-scheme").hasClass("change-to-pink")) {
-        document.documentElement.style.setProperty('--header-color1', '#F05095');
-        document.documentElement.style.setProperty('--sidebar-color2', '#FC63A6');
-        document.documentElement.style.setProperty('--start-btn-color3', '#D24585');
-        document.documentElement.style.setProperty('--scrollbar-color4', '#642046');
-        document.documentElement.style.setProperty('--menu-item-color5', '#531A3A');
-        document.documentElement.style.setProperty('--hover-color6', '#3a0f27');
+        document.documentElement.style.setProperty('--header-color1', '#fd6b86');
+        document.documentElement.style.setProperty('--sidebar-color2', '#ff8484');
+        document.documentElement.style.setProperty('--start-btn-color3', '#f54c6c');
+        document.documentElement.style.setProperty('--scrollbar-color4', '#a52c50');
+        document.documentElement.style.setProperty('--menu-item-color5', '#830e27');
+        document.documentElement.style.setProperty('--hover-color6', '#580020');
 
         // $(".sap-icon").attr("src", "media/sapPink.png");
         $("body").css("background-image", "url(media/backgroundPink.png)");
