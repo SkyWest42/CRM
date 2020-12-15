@@ -1,8 +1,9 @@
 :root {
+  --font-size: 18px;
   --moon-rotate-val: 45deg;
   --snake-line-width: 6px;
   --header-color1: #83B330;
-  --sidebar-color2: #8BBF2C;
+  --sidebar-color2: #8bbf2b;
   --start-btn-color3: #5D9134;
   --scrollbar-color4: #3A641C;
   --menu-item-color5: #2c7204;
@@ -317,8 +318,10 @@ body {
 .info-content {
   direction: rtl;
   font-family: Arimo;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: var(--font-size);
+  line-height: calc(var(--font-size) * 2);
+  /* font-size: 18px;
+  line-height: 36px; */
 }
 
 .info-content hr {
@@ -332,13 +335,35 @@ body {
   height: auto;
 }
 
-.info-content .text-img {
-  height: 24px;
+.info-content .status-img {
+  max-width: 100%;
+  height: auto;
 }
 
-.info-content .button-image {
+.info-content .text-img {
+  /* height: 24px; */
+  height: calc(var(--font-size) * 1.5);
   vertical-align: middle;
 }
+
+.info-content .detail-img {
+  /* display: block; */
+  vertical-align: text-bottom;
+  float: left;
+  height: calc(var(--font-size) * 5.6);
+}
+
+.info-content .section-name {
+  color: white;
+  font-weight: normal;
+  background-color: var(--start-btn-color3);
+  border: var(--header-color1) 5px solid;
+  border-radius: 15px;
+}
+
+/* .info-content .button-image {
+  vertical-align: middle;
+} */
 
 .info-content .align-left {
   direction: ltr;
@@ -357,11 +382,24 @@ body {
   animation: marker 4s;
 }
 
-/* .instruction .to-copy {
-  border: none;
+.instruction .to-copy {
   background-color: transparent;
   color: var(--menu-item-color5);
-} */
+  border: none;
+  display: inline;
+  resize: none;
+  overflow: hidden;
+  font-family: inherit;
+  font-size: inherit;
+  padding: none;
+  width: fill-available;
+  width: -webkit-fill-available;
+}
+
+.instruction .to-copy:hover {
+  cursor: pointer;
+  background-color: lightblue;
+}
 
 .overlay {
   z-index: 3;
@@ -670,10 +708,10 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: 
-  .background *, .sidebar .subj {
+  /* For mobile phones:  */
+  .background * {
     display: none;
-  }*/
+  }
   .box b {
     display: none;
   }
@@ -683,6 +721,8 @@ body {
 }
 
 table {
+  line-height: calc(var(--font-size) * 1.6);
+  text-align: center;
   border-collapse: collapse;
   width: 100%;
 }
@@ -694,11 +734,15 @@ td, th {
 
 th {
   color: white;
-  background-color: black;
+  background-color: var(--menu-item-color5);
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #e2f5d7;
+}
+
+.save-btn-table img {
+  width: 5vw;
 }
 
 .download-btn {

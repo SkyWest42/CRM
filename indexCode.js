@@ -15,7 +15,7 @@ var matContent = [
     [
         [
             {
-                "section": "<p>מערכת הCRM הינה מערכת לניהול קשרי לקוחות (Customer Relationship Management).</p><p>המערכת מאפשרת ליחידת מיטב לנהל פניות של מלש\"בים במגוון נושאים, לתעד אותן ולעקוב אחר הטיפול בהן.</p><p>רוב הפניות מתקבלות במרכז המידע והשירות שמורכב מהמוקד הטלפוני של מיטב והמוקד הדיגיטלי. הפניות מטופלות ונסגרות במוקד או מועברות משם להמשך הטיפול במדורים המקצועיים ביחידה.</p><p>בנוסף, ישנן פניות אשר מגיעות דרך אתר \"מתגייסים ברשת\" &ndash; חלקן מגיעות למוקד וחלקן מופנות ישירות למדור המקצועי.</p><img class='full-img' src='media/flowchart.png'/>",
+                "section": "<p>מערכת הCRM הינה <strong>מערכת לניהול קשרי לקוחות</strong>.</p><p><strong>CRM- Customer Relationship Management</strong></p><p>המערכת מאפשרת ליחידת מיטב <strong>לנהל פניות של מלש\"בים </strong>במגוון נושאים, <strong>לתעד</strong> אותן ו<strong>לעקוב</strong> אחר הטיפול בהן. &nbsp;</p><hr /><p>רוב הפניות מתקבלות ב<strong>מרכז המידע והשירות </strong>שמורכב מהמוקד הטלפוני של מיטב והמוקד הדיגיטלי. הפניות מטופלות ונסגרות במוקד או מועברות משם להמשך הטיפול במדורים המקצועיים ביחידה.</p><p>בנוסף, ישנן פניות אשר מגיעות דרך אתר \"מתגייסים ברשת\" חלקן מגיעות למוקד וחלקן מופנות ישירות למדור המקצועי.</p ><img class='full-img' src='media/flowchart.png'/>",
                 "instruction": ""
             }
         ]
@@ -31,364 +31,798 @@ var matContent = [
                 "height": "10%",
                 "right": "11.5%",
                 "top": "19.5%",
-                "isChangeScreen": "true"
+                "isChangeScreen": "true",
             },
             {
                 "section": "<p>כעת, עלינו להתחבר לכתובת https://crm.medone.idf.il.</p>",
-                "instruction": "הזן את הכתובת <input id='to-copy' class='to-copy' readonly value=\"https://crm.medone.idf.il\"/> במסך התרגול",
+                "instruction": "הזן את הכתובת <textarea title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy' readonly>https://crm.medone.idf.il</textarea> במסך התרגול",
                 "interactionType": "type",
                 "correctInput": "https://crm.medone.idf.il",
                 "width": "50%",
                 "height": "3%",
                 "right": "39%",
                 "top": "3.55%",
-                "isChangeScreen": "true"
+                "isChangeScreen": "true",
+                "isBreak": "false"
             },
             {
-                "section": "",
-                "instruction": "פתח את התיקייה הנכונה במסך התרגול",
+                "section": "<p>במסך הראשי של המערכת נראה את כל הפניות הפתוחות של הצוות שלנו.</p><p>בלחיצה על שם התצוגה שבה אנו נמצאים כרגע (במקרה הזה \"הפניות הפתוחות של הצוות\"), ניתן לראות את כל התצוגות שהמשתמש שלנו חשוף אליהן.</p>",
+                "instruction": "לחץ על שם התצוגה הנוכחי במסך התרגול",
                 "interactionType": "click",
                 "width": "10%",
                 "height": "3.3%",
                 "right": "8.8%",
                 "top": "32.76%",
-                "isChangeScreen": "true"
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
-                "section": "<p>במידה ונקבל כמה אפשרויות לחיבורים לERP בסביבת הייצור, נבחר באחד שנקרא \"Single Sign On\", המייצג התחברות ללא שם משתמש וסיסמה. לצד שם החיבור צריך להופיע אייקון של מפתח <img src='media/key.png' class='text-img' />.</p>",
-                "instruction": "התחבר לSAP במסך התרגול",
+                "section": "<p>נוכל לגשת לכל תצוגה בעזרת לחיצה על השם שלה ברשימה שנפתחה.</p>",
+                "instruction": "לחץ על שם התצוגה \"כל הפניות הפתוחות במיטב\" על מנת לגשת אליה",
                 "interactionType": "click",
                 "width": "23%",
                 "height": "3.3%",
                 "right": "44%",
                 "top": "14.8%",
-                "isChangeScreen": "true"
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
-                "section": "<p>לאחר הכניסה הראשונה המערכת תשאל אם ברצוננו לשנות סיסמה, יש ללחוץ על הלחצן של הפח.</p>",
-                "instruction": "לחץ על הפח במסך התרגול",
+                "section": "<p>עכשיו שאנחנו יודעים לצפות בפניות במגוון תצוגות, הגיע הזמן שנצלול לתוך פניה ונלמד איזה מידע היא מכילה.</p>",
+                "instruction": "לחץ על הפניה המסומנת במסך התרגול על מנת לסקור אותה",
                 "interactionType": "click",
                 "width": "2.8%",
                 "height": "3.8%",
                 "right": "79%",
                 "top": "44.3%",
-                "isChangeScreen": "true"
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "",
+                "instruction": ""
+            }
+        ],
+        [
+            {
+                "section": "<p>בחלק העליון של המסך, מצד שמאל, ניתן לראות תמצות של פרטי הפניה (מי המלש\"ב ומי הגורם שמטפל בפניה כרגע).</p> <p><b>הפניה עצמה מחולקת למקטעים שונים</b>, אשר ניתן לסגור או לפתוח בלחיצה על השם שלהם.</p>",
+                "instruction": "לחץ על שם המקטע \"פרטי הפונה\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "המקטע <b class='section-name'>פרטי הפונה</b>  נפתח וכעת ניתן לראות את שם הפונה, סוג הפונה וערוץ הפניה.",
+                "instruction": "לחץ על שם המקטע \"פרטי הפניה\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p><b class='section-name'>פרטי הפניה</b>- כאן נמצא פרטים על הפנייה עצמה, תחת תת-כותרות שונות:</p><p><strong>סיווג הפניה</strong><img class='text-img detail-img' src='media/puzzle3.png'/> כל הפניות במיטב מסווגות לפי \"שלשות\". ה\"שלשות\" הן נושאי הפניות, וכל אחת מהן מכילה: תחום, תת תחום, שאלה ותת שאלה (בדרך כלל התת שאלה שווה לשאלה).</p><p><strong>תשובת חוקה</strong><img class='text-img detail-img' src='media/lawlined.png'/> עוזרת לנציג לטפל בפניה בצורה יעילה יותר. מדובר בהנחיה של המדור המקצועי שמכווינה את הנציג לטפל בפניה לפי המלצת המדור. תשובת חוקה שתופיע תהיה מותאמת לנושא הפניה (\"השלשה\").</p>",
+                "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למטה",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p>ב<strong>SLA</strong><strong> ישים </strong><img class='text-img detail-img' src='media/hourglass.png'/>(SLA- Service-level agreement) ניתן לראות אם מיטב עומדת בקריטריונים שהיא הציבה לעצמה עבור זמן הטיפול בפניה.</p><p><strong>תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/contract.png'/> הוא המקום בו אנחנו אמורים לתעד מה עשינו עם הפניה לפני שהיא מועברת למקום אחר או נסגרת.</p><p><strong>היסטוריית תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/clock.png'/>הוא המקום אליו עובר המלל שהיה ב\"תיאור הטיפול בפניה\" לאחר סגירת הפניה או הקצאתה לגורם אחר.</p>",
+                "instruction": "לחץ על שם המקטע \"פניות אחרונות\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            }
+            ,
+            {
+                "section": "<p><b class='section-name'>פניות אחרונות</b> מאפשר לגשת לכל הפניות של המועמד מתוך הפניה שאנו מטפלים בה כרגע.</p>",
+                "instruction": "לחץ על שם המקטע \"פניות מSAP \"CRM על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
             }
             ,
             {
                 "section": "",
-                "instruction": ""
+                "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למטה",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p><strong class='section-name'>פניות מSAP CRM</strong> מראה את כל הפניות שתועדו במערכת CRM הישנה (לפני 23.04.18)</p>",
+                "instruction": "לחץ על שם המקטע \"קבצים מצורפים\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p><strong class='section-name'>קבצים מצורפים</strong> מראה את כל הקבצים שצורפו לפניה. ניתן לפתוח קובץ בדפדפן בעזרת לחיצה על שם הקובץ.</p>",
+                "instruction": "לחץ על שם המקטע \"התכתבות\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p><strong class='section-name'>התכתבות</strong> מציג את כל המלל שמגיע בפניות (הן מצד המלש\"ב והן מצד נציג מיטב). ערוצי הפניה שבהם מגיעה התכתבות : מייל, פייסבוק, SMS.</p>",
+                "instruction": "לחץ על שם המקטע \"פעילויות SMS\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p><strong class='section-name'>פעילויות SMS</strong> הSMS אשר נשלחה בסגירת הפניה, ומה סטטוס ההודעה- כלומר האם הגיעה ללקוח בהצלחה, או שנתקלה במכשול כלשהו.</p>",
+                "instruction": "לחץ על שם המקטע \"היסטוריית מטפלים\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p><strong class='section-name'>היסטוריית מטפלים</strong> מאפשר לנו לראות מה קרה עם הפניה מרגע שנפתחה- מי יצר את הפניה, לאן הקצו אותה ומי הקצה אותה, מי סגר את הפניה. בנוסף, ניתן לראות כמה זמן הייתה הפניה בטיפול אצל כל גורם.</p>",
+                "instruction": "לחץ על שם המקטע \"היסטוריית שינויים\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p><strong class='section-name'>היסטוריית שינויים</strong> רישום השינויים שבוצעו בנושא הפניה או הסטטוס שלה. כך, ניתן לראות מה השלשה הראשונית שבחר נציג השירות במוקד מיטב, ואף מה השלשה שבה סיווגו את הפניה מחדש במדור המקצועי (במקרה שבוצע שינוי בשלשה)</p>",
+                "instruction": "לחץ על שם המקטע \"קשרים בין פניות\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p><strong class='section-name'>קשרים בין פניות</strong> מאפשר לראות פניות שמוזגו לפניה הנוכחית או האם הפניה הנוכחית מוזגה לפניית אב אחרת (במקרה שבוצע מיזוג פניות).</p>",
+                "instruction": "לחץ על שם המקטע \"פרטי הפניה באתר\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p><strong class='section-name'>פרטי הפניה באתר</strong> מכיל את נושא הפניה שיוצג למלש\"ב באתר \"מתגייסים\" (במקרה שהפניה מוגדרת לשיקוף).</p>",
+                "instruction": "לחץ על שם המקטע \"ניהול\" על מנת לפתוח אותו",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            }
+            ,
+            {
+                "section": "<p><strong class='section-name'>ניהול</strong> מציג את הפרטים הטכניים של הפניה (מתי נוצרה, מתי בוצעו בה השינויים האחרונים, מי מטפל בפניה כרגע ופרטים שמזהים את הפניה ואת הפונה- מספר טלפון, כתובת מייל או שם משתמש פייסבוק).</p>",
+                "instruction": "",
+                "interactionType": "click",
+                "width": "2.8%",
+                "height": "3.8%",
+                "right": "79%",
+                "top": "44.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
             }
         ]
     ],
     [
         [
             {
-                "section": "<p>בעת כניסה לSAP נגיע למסך הראשי, בראשו סרגל כלים.</p><p>כפתורים שימושיים בסרגל הם:</p><p><img class='button-image text-img' src='media/greenBtn.png'/> – חזרה למסך הקודם F3</p><p><img class='button-image text-img' src='media/redBtn.png'/> – חזרה למסך הבית</p><p><img class='button-image text-img' src='media/blueBtn.png'/> – חלון חדש</p><p>הכפתורים יהיו אפורים ולא מאופשרים כאשר אינם רלוונטיים.</p><hr><p>בשורת החיפוש ניתן לחפש טרנזקציות (פעולות ומסכים שונים) בעזרת הקוד הטכני שלהן (לדוגמה: zapro, zofficer, pb20, pb30). לחיצה על החץ שבימין סרגל החיפוש תציג לנו את היסטוריית הטרנזקציות בהן השתמשנו.</p>",
-                "instruction": "לחץ והקלד (ערך אקראי) לתוך שורת החיפוש במסך התרגול",
+                "section": "<p>חזרנו לתצוגה הראשית של המשתמש שלנו, וכעת נלמד איך לפתוח פניה חדשה. נתחיל בלחיצה על כפתור \"פניה חדשה\" שממוקם בחלק העליון של המסך.</p>",
+                "instruction": "לחץ על \"כפתור פניה חדשה\"",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>מסך הפניה החדשה נפתח.</p><p>תחילה יש למלא את פרטי המועמד שאליו תהיה מקושרת הפניה.</p><p>את המועמד ניתן לחפש לפי שם או לפי תעודת זהות.</p><p style='text-align: center;'><span style='color: #00AA00;'><strong>תעודת זהות </strong></span><strong>&gt; <span style='color: #B22222;'>שם פרטי ושם משפחה</span></strong></p><p style='text-align: center;'><em>החיפוש ע\"פ ת.ז יותר וודאי</em></p><p>כדי לקשר את הפניה למועמד הרלוונטי נבצע חיפוש בשדה \"מועמד\", ולאחר מכן נלחץ על Enter או זכוכית המגדלת &ndash; תיפתח רשימה של מועמדים אפשריים שממנה ניתן לבחור את המועמד הרלוונטי.</p>",
+                "instruction": "הקלד את תעודת הזהות \"234567899\" והקש Enter",
+                "interactionType": "type",
+                "correctInput": "234567899",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "",
+                "instruction": "בחר את המלש\"בית ישראלה ישראלי.",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>שם המועמד נשמר בשדה.</p><p>כעת עלינו לבחור את ערוץ הפניה.</p>",
+                "instruction": "לחץ על שדה \"ערוץ הפניה\"",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>לחיצה על השדה \"ערוץ הפניה\" תפתח רשימת ערוצים אפשריים. מהרשימה ניתן לבחור את הערוץ הרלוונטי בלחיצת כפתור.</p><p>רוב הפניות נפתחות אוטומטית כאשר מתקבל מייל או טלפון. לכן כאשר פותח נציג השירות פניה ידנית, מדובר בדרך כלל בערוץ \"פניה פיזית\", עבור מלש\"ב שהתייצב וטופל בלשכה, או ערוצי פניה \"פסטיבל מתגייסים\" ו\"יום פתוח\", הקשורים לאירועים וכנסים שנתיים.</p>",
+                "instruction": "בחר את ערוץ הפניה \"פניה פיזית\"",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>עם בחירת ערוץ הפניה \"פניה פיזית\" יסומן הצ'ק בוקס \"האם אומתו פרטים\" אוטומטית. (בערוצי פניה אחרים נידרש לאמת את זהות המלש\"ב ידנית)</p><p>עכשיו ניתן להתחיל למלא את פרטי הפניה עצמה.</p>",
+                "instruction": "",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "",
+                "instruction": ""
+            }
+        ],
+        [
+            {
+                "section": "<p>כפי שניתן לראות, פניה חדשה נפתחת ללא נושא (שלשה) מסוים.</p><p>זוכרים ממה מורכבת שלשה? בואו נתחיל!</p><p><img class='text-img detail-img' src='media/puzzle1.png'/> לבחירת ה<strong>תחום</strong> הרלוונטי, נלחץ על השדה תחום. לאחר מכן נלחץ Enter או על זכוכית המגדלת ונבחר תחום מתוך הרשימה שתוצג.</p>",
+                "instruction": "לחץ על השדה \"תחום\" והקש Enter",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "",
+                "instruction": "בחר את התחום \"גיוס\"",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "<p style='overflow: auto;'><img class='text-img detail-img' src='media/puzzle2.png'/>נבחר את <strong>תת התחום</strong> באופן  דומה.</p>",
+                "instruction": "לחץ על השדה \"תת תחום\" והקש Enter",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "בחר את תת התחום \"בירורים\"",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "<p style='overflow: auto;'><img class='text-img detail-img' src='media/puzzle3.png'/>ולסיום את ה<strong>שאלה</strong>.</p>",
+                "instruction": "לחץ על השדה \"שאלה\" והקש Enter",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "בחר את השאלה \"היכן מתקיים הגיוס?\"",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "<p>כל הכבוד! לאחר שבחרנו את התחום, התת תחום והשאלה (והתת שאלה במידה ויש) קיבלנו <strong>שלשה</strong>!</p>",
+                "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למטה",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "<p>כעת עלינו לתעד כיצד טיפלנו בפניה – לשם כך קיים שדה \"תיאור הטיפול בפניה\".</p>",
+                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <textarea title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy' readonly>המלש\"ב התייצב בלשכה וביקש לברר היכן הוא מתגייס. בדקתי את פרטיו ועניתי על שאלתו.</textarea>",
                 "interactionType": "type",
                 "correctInput": "any",
                 "width": "10%",
                 "height": "2.2%",
                 "right": "6%",
                 "top": "4.05%",
-                "isChangeScreen": "false"
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
-                "section": "<p>לשימוש נוח בSAP, תוכלו להוסיף טרנזקציות למסך המועדפים שלכם, שנמצא תחת הסרגל.</p><p>כדי לעשות זאת, יש ללחוץ על כפתור \"מועדפים\", לבחור באופציה של \"הוספת טרנזקציה\" ולאחר מכן להזין את השם הטכני של הטרנזקציה.</p>",
-                "instruction": "הוסף טרנזקציה למועדפים במסך התרגול",
+                "section": "<p>אם ברצוננו להוסיף קבצים לפניה ניתן לגשת למקטע \"קבצים מצורפים\".</p>",
+                "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למקטע \"קבצים מצורפים\"",
                 "interactionType": "click",
-                "width": "5%",
-                "height": "2.2%",
-                "right": "11.1%",
-                "top": "1.2%",
-                "isChangeScreen": "true"
-            },
-            {
-                "section": "",
-                "instruction": "הוסף טרנזקציה למועדפים במסך התרגול",
-                "interactionType": "click",
-                "width": "12%",
-                "height": "2.3%",
-                "right": "11.5%",
-                "top": "14.5%",
-                "isChangeScreen": "true"
-            },
-            {
-                "section": "",
-                "instruction": "לחץ והקלד את קוד הטרנזקציה \"pb30\" במסך התרגול",
-                "interactionType": "type",
-                "correctInput": "pb30",
-                "width": "11%",
-                "height": "2.2%",
-                "right": "15.5%",
-                "top": "26.4%",
-                "isChangeScreen": "true"
-            },
-            {
-                "section": "",
-                "instruction": "הוסף טרנזקציה למועדפים במסך התרגול",
-                "interactionType": "click",
-                "width": "2%",
-                "height": "2%",
-                "right": "28.8%",
-                "top": "32%",
-                "isChangeScreen": "true"
-            },
-            {
-                "section": "",
-                "instruction": ""
-            }
-        ],
-        [
-            {
-                "section": "<p>במידה ויש פער בהגדרות, ניתן לערוך אותן במסך האפשרויות. כדי להגיע אליו יש ללחוץ על כפתור המסך הצבעוני ואז לבחור ב\"אפשרויות\".</p>",
-                "instruction": "פתח את תפריט האפשרויות במסך התרגול",
-                "interactionType": "click",
-                "width": "2%",
-                "height": "2.4%",
-                "right": "46%",
-                "top": "4%",
-                "isChangeScreen": "true"
-            },
-            {
-                "section": "",
-                "instruction": "פתח את תפריט האפשרויות במסך התרגול",
-                "interactionType": "click",
-                "width": "12%",
-                "height": "2.3%",
-                "right": "48%",
-                "top": "6.8%",
-                "isChangeScreen": "true"
-            },
-            {
-                "section": "",
-                "instruction": "סגור את תפריט האפשרויות במסך התרגול",
-                "interactionType": "click",
-                "width": "7%",
-                "height": "2.6%",
-                "right": "26%",
-                "top": "73.7%",
-                "isChangeScreen": "true"
-            },
-            {
-                "section": "<p>במידה ואנחנו נמצאים במסך מסוים ונרצה לעבור למסך אחר, נצטרך להוסיף תחילית מסוימת לשם הטרנזקציה כאשר נזין אותו במסך החיפוש.</p><p><b>⋆</b> התחילית <b>n/</b> תיצור חלון חדש ותדרוס את החלון הקיים.</p><p> <b>⋆</b> התחילית <b>o/</b> תפתח חלון חדש בנוסף לחלון הקיים.</p><p>  (שימו לב! <b> ניתן לפתוח עד 4 חלונות במקביל </b> ויש להימנע מהרצת הרבה תהליכים כבדים במספר מסכים שונים).</p>",
-                "instruction": "במסך התרגול, השתמש בתיבת החיפוש על מנת לפתוח חלון חדש של הטרנזקציה pb30 <u>בנוסף</u> לחלון הקיים (השתמש בתחילית המתאימה)",
-                "interactionType": "type",
-                "correctInput": "/opb30",
                 "width": "10%",
                 "height": "2.2%",
                 "right": "6%",
                 "top": "4.05%",
-                "isChangeScreen": "true"
-
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
-                "section": "",
-                "instruction": "במסך התרגול, השתמש בתיבת החיפוש על מנת לפתוח חלון של הטרנזקציה zapro <u>במקום</u> החלון הקיים (השתמש בתחילית המתאימה) ",
-                "interactionType": "type",
-                "correctInput": "/nzapro",
-                "width": "9%",
-                "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
-                "isChangeScreen": "true"
-
-            },
-            {
-                "section": "",
-                "instruction": "סגור את חלון הzapro",
+                "section": "<p>כדי להוסיף קובץ יש ללחוץ על סימן הפלוס שנמצא בחלק השמאלי העליון של המקטע.</p>",
+                "instruction": "לחץ על סימן הפלוס",
                 "interactionType": "click",
-                "correctInput": "",
-                "width": "1.55%",
-                "height": "2.15%",
-                "right": "93.25%",
-                "top": "4.1%",
-                "isChangeScreen": "true"
-
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
             },
             {
-                "section": "<p>רשימת קיצורי מקלדת שימושיים:</p> <table> <tr> <th>מקש</th> <th>פירוט</th> </tr> <tr> <td>F1</td> <td>פירוט טכני</td> </tr> <tr> <td>F2</td> <td>צפייה ברשומה מסומנת</td> </tr> <tr> <td>F3</td> <td>חזור אחורה</td> </tr> <tr> <td>F4</td> <td>אופציות להזנה (Search Help)</td> </tr> <tr> <td>F5</td> <td>יצירה</td> </tr> <tr> <td>F6</td> <td>עריכה</td> </tr> <tr> <td>F7</td> <td>צפייה ברשומה עדכנית</td> </tr> <tr> <td>F8</td> <td>ביצוע</td> </tr> <tr> <td>SHIFT+F8</td> <td>סקירה (צפייה בכלל הרשומות)</td> </tr> </table> <a id='download-btn' class='download-btn info-btn' download='keyboardShortcuts.png' href='/media/keyboardShortcuts.png' title='keyboardShortcuts'> שמור טבלה <img src='media/download.png' /> </a>",
+                "section": "<p>מסך העלאת הקובץ נפתח, להעלאת קובץ נוכל לגרור קובץ לאזור הרלוונטי, או ללחוץ על כפתור \"בחר קובץ\".</p>",
+                "instruction": "לחץ על \"בחר קובץ\"",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "",
+                "instruction": "בחר את הקובץ \"טופס דין אישה כדין גבר\" השמור במחשב הלוקאלי",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>שם הקובץ שהעלנו יופיע במסך העלאת הקובץ.</p><p>כעת נדרש לבחור האם הקובץ שאנחנו רוצים להעלות הוא לשיקוף או לא לשיקוף- כלומר, האם המלש\"ב יראה את הקובץ באתר \"מתגייסים ברשת\".</p>",
+                "instruction": "בחר \"לשיקוף\"",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>לאחר מכן נלחץ על \"שמור וצא\" כדי לשמור ולחזור לפניה, או \"שמור וחדש\" אם ברצוננו להעלות עוד קבצים.</p>",
+                "instruction": "לחץ על \"שמור וצא\"",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>כעת מופיע הקובץ במקטע הקבצים המצורפים.</p><p>כל הכבוד! סיימנו לעדכן את הפרטים בפניה.</p><p>כעת יש לשמור אותה.</p><table class='save-btn-table'><tbody><tr><th>איזה כפתור?</th><th>מה הוא עושה?</th><th>מתי נשתמש?</th></tr><tr><td><img src='media/save.png'/></td><td>שומר את הפניה, ישאיר אותנו במסך הפניה.</td><td>○ כשהפניה ממתינה לטיפול על ידי גורם אחר (לדוגמה קב\"ן או רופא) <br /><br /> ○ כשקיימת בעיה שמונעת מאתנו לטפל בפניה כרגע.</td></tr><tr><td><img src='media/saveandclose.png'/></td><td>שמור וסוגר את הפניה על ידינו, יחזיר אותנו לתצוגה הראשית.</td><td>○ אם סיימנו לטפל בפניה, והיא לא דורשת טיפול על ידי גורם נוסף.</td></tr><tr><td><img src='media/saveandsend.png'/></td><td>שומר את הפניה, יאפשר לנו להקצות אותה לגורם אחר ביחידה.</td><td>○ אם הפניה דורשת טיפול של גורם אחר ביחידה, אליו נרצה להעביר אותה.&nbsp;</td></tr></tbody></table><p><a id='download-btn' class='download-btn info-btn' title='saveButtons' href='/media/saveButtons.png' download='saveButtons.png'> שמור טבלה <img src='media/download.png'/> </a></p>",
                 "instruction": "",
-
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
             }
         ]
     ],
     [
         [
             {
-                "section": " <p> בחלק זה נסביר על שלוש טרנזקציות עיקריות: <br> <b> ⋆ PB20 <br> ⋆ PB30 <br> ⋆ Zapro </b> </p> <hr> <p> כפי שציינו בחלק הקודם, יש כמה דרכים לגשת לטרנזקציות השונות. במידה ונוסיף אותן למועדפים שמותיהן יופיעו כך: <b> <br> ⋆ PB20 - צפייה בנתוני מועמד <br> ⋆ PB30 - אחזקת נתוני מועמד <br> ⋆ Zapro - תדפיס מועמד </b> <hr> <p> ייתכן מצב שבו אנו לא מורשים לגשת לטרנזקציות מסוימות, במקרה הזה נקבל את השגיאה הבאה: <img src='media/noPermission.png' class='full-img' /> במקרה כזה ייתכנו שני מצבים: <br> </p> <p class='middle bullet-point'> • ההרשאות הנדרשות לתפקידנו לא כוללות את הטרנזקציה הספציפית. <br> או <br> • ישנה תקלה במשתמש, במקרה כזה ניתן לפנות לתיבת המייל \"הרשאות מיטב\" ולפרט על התקלה. </p> <p> ההרשאות של כל משתמש מותאמות לתפקיד שלו, ומסופקות לו על ידי מדור מע\"מ. </p> <hr> <p> שגיאה נוספת שתיתכן ספציפית במסך ה-Zapro היא שהמסך עולה אך כלל הקוביות המכילות מידע ריקות. במקרה כזה יש להיכנס לטרנזקציה Zaproc ולוודא שהנתונים נראים כך: <img src='media/data.png' class='full-img' />אחר כך ללחוץ לשמור (Ctrl + S) ולחזור למסך הראשי. אם עדיין נתקלים באותה התקלה יש לפנות למדור מע\"מ. </p>",
-                "instruction": "",
-            }
-        ],
-        [
+                "section": "<p>לעיתים קרובות נקבל פניות שהטיפול בהן הוא באחראיות גוף אחר ביחידה. במקרה כזה, יהיה עלינו להקצות את הפניה לאותו גוף. הקצאה נכונה של פניות חשובה מאוד, ומונעת עיכוב מיותר.</p><p>לשם ניתוב נכון של פניה, עלינו להבין לעומק את מהות הפניה.</p><div></div><hr><p>חזרנו לתצוגה הראשית של המשתמש שלנו, נבחר פניה לטיפול וניכנס לתוכה.</p>",
+                "instruction": "לחץ על הפניה המסומנת במסך התרגול",
+                "interactionType": "click",
+                "width": "2%",
+                "height": "2.4%",
+                "right": "46%",
+                "top": "4%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
             {
-                "section": " <p> במסך הזאפרו (וכך גם במסכי ה-PB) נתקל באופציה לחיפוש מועמד. </p> <p> במידה ונרצה לחפש לפי <b>מספר אישי</b>, נצטרך להזין אותו בשדה.</p> <p> אם נרצה לחפש לפי <b>תעודת זהות</b>, נוסיף את הסימן \"=\" לפני תחילת המספר. </p>",
-                "instruction": "לפניך מסך הטרנזקציה zapro. חפש מועמד על פי המספר האישי \"567890\"",
-                "interactionType": "type",
-                "correctInput": "567890",
-                "width": "11.3%",
-                "height": "2.15%",
-                "right": "20%",
-                "top": "14.5%",
-                "isChangeScreen": "true"
+                "section": "<p>עם פתיחת הפניה ניתן לראות את פרטי הפונה (במקרה הזה הפניה הגיעה מפונה שכבר מזוהה בCRM ולכן נדרש רק לוודא שאכן מדובר במלש\"ב שזוהה אוטומטית ולסמן את הצ'קבוקס \"האם אומתו פרטים\")</p>",
+                "instruction": "סמן את הצ'קבוקס \"האם אומתו פרטים\"",
+                "interactionType": "click",
+                "width": "12%",
+                "height": "2.3%",
+                "right": "48%",
+                "top": "6.8%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>כדי לטפל בפניה ניגש למקטע ההתכתבות ומקטע הקבצים (על מנת להבין את מהות הפניה ומי המלש\"ב ששלח אותה).</p>",
+                "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למקטעים הרלוונטיים",
+                "interactionType": "click",
+                "width": "7%",
+                "height": "2.6%",
+                "right": "26%",
+                "top": "73.7%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p><img class='text-img detail-img' src='media/puzzle3.png'/> לאחר שקראנו את ההתכתבות וצפינו בקבצים, הבנו מה מהות הפניה וכעת ניתן לסווג את אותה בשלשה.</p>",
+                "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול לסיווג הפניה",
+                "interactionType": "click",
+                "width": "10%",
+                "height": "2.2%",
+                "right": "6%",
+                "top": "4.05%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>נבחר את התחום. </p>",
+                "instruction": "לחץ על השדה \"תחום\" והקש Enter",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
             },
             {
                 "section": "",
-                "instruction": "חפש מועמד על פי תעודת הזהות \"1234567\"",
-                "interactionType": "type",
-                "correctInput": "=1234567",
+                "instruction": "בחר את התחום \"לחימה- נשים\"",
+                "interactionType": "click",
+                "correctInput": "",
+                "width": "1.55%",
+                "height": "2.15%",
+                "right": "93.25%",
+                "top": "4.1%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "<p>נבחר את תת התחום.</p>",
+                "instruction": "לחץ על השדה \"תת תחום\" והקש Enter",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "בחר את תת התחום \"דין אישה כדין גבר\"",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "<p>נבחר את השאלה.</p>",
+                "instruction": "לחץ על השדה \"שאלה\" והקש Enter",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "בחר את השאלה \"דין אישה כדין גבר\"",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "<p>נדרש גם להזין את תיאור הטיפול בפניה.</p>",
+                "instruction": "לחץ על הגלגלת על מנת לגלול למקטע \"תיאור הטיפול בפניה\"",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "",
+                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <textarea title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy' readonly>התקבל טופס 16 מהמלש\"בית, העברתי את הפניה למדור נשים האחראי לטיפול בה</textarea>",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "<p>בפניה שלפנינו הטיפול הנדרש הוא העברת הפניה לגורם מטפל אחר במיטב.</p><hr /><p>בשדה \"הקצאה לצוות\" (תחת \"הקצאת הטיפול בפניה\") כבר מוצע לנו צוות מטפל אליו מומלץ להקצות את הפניה (במקרה שהפניה לא אמורה להיות מטופלת על-ידי הצוות שלנו).</p><p>כל פניה ניתן להקצות לרשימה מוגבלת של צוותים, שנקבעת בהתאם לשלשה של הפניה.</p><p>כדי לצפות ברשימת הצוותים אליהם ניתן להקצות את הפניה, נסמן את השדה \"הקצאה לצוות\" ונלחץ על Backspace. לאחר מכן נלחץ על Enter או על זכוכית המגדלת.</p>",
+                "instruction": "לחץ על השדה \"הקצאה לצוות\"",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "",
+                "instruction": "הקש Backspace (מקש מחק ←) במקלדת",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "הקש Enter במקלדת",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "<p>נפתחה רשימה של צוותים להקצאה ממנה ניתן לבחור את הצוות הרלוונטי.</p>",
+                "instruction": "בחר בצוות \"מדור נשים\"",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>כל הכבוד! סיימנו למלא את כל שדות החובה- השלשה של הפניה ותיאור הטיפול בפניה בצד שלנו. כעת נלחץ על כפתור \"שמור והקצה\", על מנת להעביר את הפניה לגורם שבחרנו.</p>",
+                "instruction": "שמור והקצה את הפניה",
+                "interactionType": "click",
+                "width": "9%",
+                "height": "2.2%",
+                "right": "10%",
+                "top": "8%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>עבודה טובה! הפניה הוקצתה לגורם שבחרנו, ונופנה בחזרה לתצוגה בה היינו.</p>",
+                "instruction": ""
+            }
+        ]
+    ],
+    [
+        [
+            {
+                "section": "<p>לאחר שנתנו תשובה סופית לפניה, והיא אינה דורשת טיפול נוסף מאף גורם, <strong>חשוב מאוד שנזכור לסגור את הפניה</strong>. במקרה בו <em>נשמור</em> ולא נדאג <em>לסגור</em> את הפניה, המלש\"ב לא יקבל מענה ולא ידע כי פנייתו טופלה.</p><p>נתחיל מהתצוגה הראשית של המשתמש שלנו.</p><hr><p>נבחר פניה לסגירה וניכנס לתוכה.</p>",
+                "instruction": "בחר את הפנייה המסומנת",
+                "interactionType": "click",
                 "width": "11.3%",
                 "height": "2.15%",
                 "right": "20%",
                 "top": "14.5%",
-                "isChangeScreen": "false"
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
-                "section": " <p> לחיצה על הכפתור שמצד שמאל, או לחילופין לחיצה על F4 במקלדת, תוביל אותנו למסך בו נוכל לבחור סינונים שלפיהם נחפש את המועמד הרצוי. </p>",
-                "instruction": "לחץ על הכפתור שמשמאל לתיבת החיפוש או לחץ על מקש F4 במקלדת",
-                "interactionType": "key",
-                "correctInput": "F4",
+                "section": "<p>נראה כי לפניה כבר יש נושא. מכיוון שהגיעה לצוות שלנו, ולא נוצרה על ידינו, נציג אחר כבר סיווג אותה מוקדם יותר.</p><hr><p>כדי להבין מה קרה עם הפניה לפני שהוקצתה לצוות שלנו נביט בהיסטוריית תיאור הטיפול בפניה.</p>",
+                "instruction": "לחץ על הגלגלת על מנת לגלול מטה ולצפות ב\"בהיסטוריית תיאור הטיפול בפניה\"",
+                "interactionType": "click",
+                "width": "11.3%",
+                "height": "2.15%",
+                "right": "20%",
+                "top": "14.5%",
+                "isChangeScreen": "false",
+                "isBreak": "true"
+            },
+            {
+                "section": "<p>לאחר שהבנו את היסטורית הפניה, נטפל בה ונתעד את הטיפול ב<strong>תיאור הטיפול בפניה</strong>.</p><p>הדברים שנרשום ב<strong>תיאור הטיפול בפניה </strong>יעברו ל<strong>היסטוריית תיאור הטיפול</strong> <strong>בפניה</strong> לאחר סגירת הפניה או הקצאתה למדור אחר.</p><hr /><p>חשוב לשים לב שמלל התיאור מעביר את <strong>המשמעות</strong> של הפעולות שעשינו על הפניה, ואינן רק סיכום טכני שלהן. תיאור פניה צריך להעביר באופן ברור מה היה תהליך הטיפול לאדם שקורא אותו <strong>ללא הקשר קודם</strong>.</p>",
+                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <textarea title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy' readonly>תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה</textarea>",
+                "interactionType": "type",
+                "correctInput": "תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה",
                 "clickAlternate": "true",
                 "width": "1.85%",
                 "height": "2.15%",
                 "right": "31%",
                 "top": "14.5%",
-                "isChangeScreen": "true"
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
-                "section": " <p> בחלון זה נוכל לחפש מועמד לפי הסינונים שאותם נבחר (במידה ונרצה לחפש בעזרת סינונים יותר מגוונים, נוכל לעבור לחלון חיפוש חופשי הנמצא מימין). </p>",
-                "instruction": "מצא את המשתמש שתעודת הזהות שלו היא \"1234567\" (אין צורך בקידומת \"=\") ושם המשפחה שלו הוא \"לוי\"",
-                "interactionType": "type",
-                "correctInput": "1234567",
+                "section": "<p>נסגור את הפניה בלחיצה על כפתור \"שמור וסגור\".</p>",
+                "instruction": "לחץ על כפתור \"שמור וסגור\" על מנת לסגור את הפניה",
+                "interactionType": "click",
                 "width": "13%",
                 "height": "1.9%",
                 "right": "33%",
                 "top": "21.1%",
-                "isChangeScreen": "true"
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
-                "section": "",
-                "instruction": "מצא את המשתמש שתעודת הזהות שלו היא \"1234567\" (אין צורך בקידומת \"=\") ושם המשפחה שלו הוא \"לוי\"",
-                "interactionType": "type",
-                "correctInput": "לוי",
+                "section": "<p>לאחר הלחיצה נפתח מסך ניהול סגירת הפניה.</p><hr /><p>בלחיצה על השדה \"תבנית הודעה\" תיפתח רשימה של תבניות תשובה אוטומטיות (מללי תשובה אוטומטיים שקשורים לנושאי פניה ספציפיים).</p>",
+                "instruction": "לחץ על השדה \"תבנית הודעה\" על מנת לפתוח את רשימת תבניות התשובה האוטומטיות",
+                "interactionType": "click",
                 "width": "13%",
                 "height": "1.9%",
                 "right": "33%",
                 "top": "24%",
-                "isChangeScreen": "true"
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
                 "section": "",
-                "instruction": "מצא את המשתמש שתעודת הזהות שלו היא \"1234567\" (אין צורך בקידומת \"=\") ושם המשפחה שלו הוא \"לוי\"",
+                "instruction": "בחר את תבנית התשובה הראשונה",
                 "interactionType": "click",
                 "width": "2.1%",
                 "height": "2.4%",
                 "right": "15.9%",
                 "top": "31.7%",
-                "isChangeScreen": "true"
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
-                "section": " <p> <b> שימו לב! מחובתנו לשמור על כללי האתיקה. <u>אין לחפש מועמדים או חיילים שלא לצרכי עבודה.</u> פעולותיכם במערכת <u>מנוטרות</u>, וכל פעולה המפירה את כללי האתיקה <u>תטופל בחומרה.</u> </b> </p> <p>הודעה בנושא שימוש אתי בSAP מופיעה עם פתיחת התוכנה כל 7 ימים. </p>",
-                "instruction": "קרא את ההודעה וסגור אותה לאישור",
+                "section": "<p>לאחר בחירת תבנית תשובה מהרשימה יתמלאו שאר השדות במסך באופן אוטומטי.</p><hr /><p>השדה \"האם לשלוח הודעה ללקוח\" (כן/לא) מסמן האם תישלח למועמד<strong> הודעת&nbsp;</strong><strong>SMS</strong><strong>&nbsp;</strong>בסגירת הפניה.</p><p>אם נשנה את השדה ל\"לא\", המלש\"ב לא יקבל הודעת SMS לטלפון.</p><p><strong>אבל</strong></p><p><strong><u>השדה מתייחס להודעות </u></strong><strong><u>SMS</u></strong><strong><u> בלבד, ולא לשיקוף הפניות באתר.</u></strong></p><p><img src='media/upsetGirl.png'/></p><p><strong>אם השלשה של הפניה מוגדרת לשיקוף, הטיפול בפניה יוצג למלש\"ב באתר \"מתגייסים ברשת\", <u>גם אם סומן לא לשלוח הודעה ללקוח.</u></strong></p><hr /><p>במקרה ולמשתמש שלנו יש את ההרשאות הנדרשות לכך, ניתן להזין ידנית את מלל ההודעה שתישלח או לערוך תשובה על בסיס תבנית הודעה קיימת (בשדה \"הודעה ללקוח\").</p>",
+                "instruction": "לחץ על \"שמור\" במסך התרגול",
                 "interactionType": "click",
                 "width": "2.5%",
                 "height": "3.2%",
                 "right": "78.3%",
                 "top": "58.5%",
-                "isChangeScreen": "true"
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
-                "section": "<p> לאחר שנבחר במועמד שעליו אנו נדרשים לעבוד, נלחץ על הכפתור F8 כדי לגשת לתדפיס הנתונים שלו. </p> <p> בתדפיס נוכל לצפות בכלל הנתונים שרלוונטיים במסגרת ההרשאות שלנו, נתונים מסוימים שאין לנו גישה אליהם <b>לא יופיעו.</b> </p>",
-                "instruction": "פתח את תדפיס הנתונים בעזרת מקש F8",
-                "interactionType": "key",
-                "correctInput": "F8",
-                "clickAlternate": "false",
-                "width": "0%",
-                "height": "0%",
-                "right": "0%",
-                "top": "0%",
-                "isChangeScreen": "true"
-            },
+                "section": "<p>לאחר לחיצה על \"שמור\" במסך ניהול סגירת הפניה, הפניה תיסגר ואנחנו נחזור לתצוגה שממנה נכנסנו לפניה.</p>",
+                "instruction": ""
+            }
+        ],
+    ],
+    [
+        [
             {
-                "section": " <p>במסכי הPB נוכל לגשת לנתוני מועמד לפי סוגי מידע ספציפיים ולצפות בנגררותיהן (כלומר גם בנתונים שכבר לא עדכניים). זאת בניגוד למסך הZapro שבו נצפה בכלל סוגי המידע בצורת תדפיס, ורק בנתונים שעדכניים ליום החיפוש. </p>",
-                "instruction": "החלף את מסך הטרנזקציה zapro במסך pb20 (אל תשכח את הקידומת n/)",
-                "interactionType": "type",
-                "correctInput": "/npb20",
-                "width": "9%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
-                "isChangeScreen": "true"
-            },
-            {
-                "section": "",
-                "instruction": "מצא את המשתמש שתעודת הזהות שלו היא \"1234567\" (אל תשכח את הקידומת \"=\")\"",
-                "interactionType": "type",
-                "correctInput": "=1234567",
-                "width": "20%",
-                "height": "2.1%",
-                "right": "10%",
-                "top": "19%",
-                "isChangeScreen": "true"
-            },
-            {
-                "section": "",
+                "section": "<p>ה(Service Level Agreement)-SLA הינו הסכם לרמת שירות בין נותני השירות שבמיטב ללקוחות שלה (אוכלוסיית המלש\"בים בישראל).</p><img src='media/handshake.jpg' class='full-img'/><p>הSLA נועד לעזור ליחידת מיטב לממש את חזונה- יצירת תהליך גיוס אישי, חדשני ומדויק עבור כל מלש\"ב.</p><p>כחלק מהמדדים שמשקפים את איכות השירות שניתן ללקוח (וכחלק מהSLA) נמדד זמן התגובה ללקוח.</p><p>לפי החלטת היחידה, הזמן המקסימלי לטיפול ברוב הפניות שמתקבלות הינו שבוע. כלומר, תוך שבוע מרגע הפניה חייב המלש\"ב לקבל מענה.</p><p>ישנם תחומי פניות שבהם נדרש זמן נוסף לטיפול והSLA שהוגדר להם ארוך יותר (בעיקר פניות בתחום הרפואי/ בריאות הנפש).</p><p>מה שמגדיר את הSLA במערכת הCRM עבור כל פניה זאת השלשה של הפניה (נושא הפניה).</p>",
                 "instruction": ""
             }
         ],
         [
             {
-                "section": "<p> לאחר שבחרנו במועמד, יעלה הסרגל הכללי שלו, ובו נוכל לצפות בנתונים הרלוונטיים ביותר על המועמד. </p> <p>בחלקו האמצעי של מסך הPB תופיע רשימה עם סוגי מידע שונים בהם נוכל לצפות או לבצע עריכה או יצירה. הסימון \"✔\" בצידה השמאלי שלרשימת הגלילה מציין אם קיים מידע עבור אותו נתון. </p><hr> <p>לכל סוג מידע יש מספר שמייצג אותו, וכדי לגשת אליו נצטרך להזין את המספר המייצג אותו. להלן רשימה של סוגי המידע השימושיים ביותר ביחידה: </p> <table> <tr> <th>מספר טבלה</th> <th>שם</th> </tr> <tr> <td>1</td> <td>הקצאה ארגונית</td> </tr> <tr> <td>2</td> <td>נתונים אישיים</td> </tr> <tr> <td>6</td> <td>כתובות</td> </tr> <tr> <td>21</td> <td>בני משפחה</td> </tr> <tr> <td>24</td> <td>כישורים</td> </tr> <tr> <td>28</td> <td>נתונים רפואיים</td> </tr> <tr> <td>41</td> <td>פירוטי תאריך</td> </tr> <tr> <td>105</td> <td>נתוני תקשורת</td> </tr> <tr> <td>4000</td> <td>פעולות</td> </tr> <tr> <td>4001</td> <td>מועמדויות</td> </tr> <tr> <td>4002</td> <td>הקצאת משרות פנויות</td> </tr> <tr> <td>9100</td> <td>אוכלוסיות ייחודיות</td> </tr> <tr> <td>9102</td> <td>נתוני איכות</td> </tr> <tr> <td>9103</td> <td>נתוני מא\"ה</td> </tr> <tr> <td>9105</td> <td>רמ\"מ אישי</td> </tr> <tr> <td>9106</td> <td>שפות זרות</td> </tr> <tr> <td>9114</td> <td>מסגרות למועמד</td> </tr> <tr> <td>9116</td> <td>מקצועות בגרות</td> </tr> <tr> <td>9120</td> <td>ביקורת גבולות</td> </tr> <tr> <td>9122</td> <td>מז\"פ</td> </tr> <tr> <td>9124</td> <td>ראיונות</td> </tr> <tr> <td>9125</td> <td>פעילויות</td> </tr> <tr> <td>9126</td> <td>בקשות</td> </tr> <tr> <td>9140</td> <td>נתוני גיוס</td> </tr> <tr> <td>9142</td> <td>השארות</td> </tr> <tr> <td>9146</td> <td>בקרת תהליכים</td> </tr> <tr> <td>9149</td> <td>המלצות מערבל</td> </tr> <tr> <td>9150</td> <td>נתוני אזרחות</td> </tr> <tr> <td>9160</td> <td>זימונים למועמד</td> </tr> </table><a id='download-btn' class='download-btn info-btn' download='dataTypes.png' href='/media/dataTypes.png' title='dataTypes'> שמור טבלה <img src='media/download.png' /> </a> <hr><p>לאחר בחירת סוג מידע, נוכל ללחוץ על Shift+F8 כדי לבצע סקירה של כלל השינויים שביצענו בסוג המידע, או F7 כדי לצפות בפירוט הרשומה העדכנית ביותר. </p> <p> כמו בכל מקום בSAP, לא נוכל לצפות בסוג מידע שאין לנו הרשאות אליו.</p>",
-                "instruction": "בחר את סוג המידע \"זימונים למועמד\"",
-                "interactionType": "type",
-                "correctInput": "9160",
-                "width": "14%",
-                "height": "2.1%",
-                "right": "11.2%",
-                "top": "57.6%",
-                "isChangeScreen": "false"
-            },
-            {
-                "section": "",
-                "instruction": "בעזרת מקש המקלדת המתאים צפה בפירוט הרשומה העדכנית ביותר של סוג המידע",
-                "interactionType": "key",
-                "correctInput": "F7",
-                "clickAlternate": "false",
-                "width": "0%",
-                "height": "0%",
-                "right": "0%",
-                "top": "0%",
-                "isChangeScreen": "true"
-
-            },
-            {
-                "section": "<p> להרבה מסוגי המידע יהיו תת סוגי מידע, אשר יהוו חלוקה יותר ספציפית של סוג המידע.</p><p> לדוגמא, לסוג מידע 9160 (זימונים) יש שלושה תתי סוגים, 01 – זימון למיון ראשוני, 02 – זימון למיון מתקדם, 03 – זימון לגיוס.</p><p> בסוג מידע עם מספר תת סוגים רלוונטיים, לאחר צפייה בפירוט הרשומה העדכנית ביותר, נוכל לנווט בין מסכים בעזרת לחיצה על כפתורי החיצים:<img src='media/browseR.png' class='text-img'/> <img src='media/browseL.png' class='text-img'/></p>",
-                "instruction": "נווט למסך השמאלי",
-                "interactionType": "click",
-                "width": "2%",
-                "height": "2.4%",
-                "right": "3.5%",
-                "top": "10%",
-                "isChangeScreen": "true"
-            },
-            {
-                "section": "<p> עד כה, לא באו לידי ביטוי ההבדלים בין המסכים PB20 ו-PB30.</p><p> ההבדל העיקרי ביניהם הוא בשימוש שמאפשר כל מסך:</p><p> <b>⋆</b> בPB20 נוכל <b>לצפות</b> במידע על המועמד. <br> <b>⋆</b> בPB30 נוכל <b>לצפות</b> ו<b>לערוך</b> את נתוני המועמד.</p><p> <b> חשוב לנהוג בזהירות יתרה כשנמצאים במסך הPB30, מכיוון שמאוד בקלות אפשר לבצע עדכון בנתוני המועמד שלא לצורך.</b></p>",
-                "instruction": "",
+                "section": "<img src='media/runningClock.png' class='detail-img'/><p>השעון מתחיל לרוץ ברגע שסיווגנו את הפניה בנושא מסוים.</p><p>את הזמן שנשאר לטיפול בפניה ניתן לראות תחת \"SLA ישים\" בשדה \"פתור ב\":</p><p><img class='status-img' src='media/SLA.png'/></p><p>הזמן שנותר לטיפול מוצג בפורמט ימים/שעות/דקות/שניות.</p><p>בנוסף, קיים סטטוס שמראה עד כמה אנחנו עומדים במדדי הזמן לטיפול בפניה.</p><p>פניות שנסגרו בזמן שהוקצב לטיפול יופיעו עם סטטוס \"הצליח\".</p><p><img class='status-img' src='media/successful.png'/></p><p>פניות שנותרו פחות מ-24 שעות לטפל בהן יקבלו סטטוס \"התראה לפני חריגה\", והזמן הנותר לטיפול בהן יופיע בצהוב בשדה \"פתור ב\".</p><p><img class='status-img' src='media/urgent.png'/></p><p>פניות שחרגנו מזמן הטיפול בהן יסומנו בסטטוס \"פג תוקף\"</p><p><img class='status-img' src='media/expired.png'/></p>",
+                "instruction": ""
             }
         ]
     ]
 ];
 
+function copyText(event) {
+    $("#to-copy").select();
+    document.execCommand("copy");
+    alert("Copied the text: " + $("#to-copy").val());
+}
 //matrix containing the number of crm screenshot each of the pages should open with
 //an array for each chapter
 //which contains an array for each page
 //which contains the correct image number
 var matOpeningScreen = [
     [1],
-    [1],
+    [1, 6],
     [5, 9],
-    [15, 15, 24]
+    [15, 15, 24],
+    [1],
+    [2]
 ];
 
 //current screenshot in practice screen
@@ -876,7 +1310,7 @@ function showNextSection() {
     currSection++;
     $("#instructions").remove();
     if (currSection < matContent[currChapter][currPage].length) {
-        if (matContent[currChapter][currPage][currSection]["section"] !== "") {
+        if (matContent[currChapter][currPage][currSection]["isBreak"] === "true" && matContent[currChapter][currPage][currSection]["section"] !== "") {
             hr = "<hr>";
         }
         $("#info-content").append(hr + matContent[currChapter][currPage][currSection]["section"]);
@@ -1048,7 +1482,7 @@ function showFooter() {
         isNextBtnEnd = ((currChapter + 1) === matContent.length && (currPage + 1) === matContent[currChapter].length);
         if (isNextBtnEnd) {
             $("#next-btn").on("click", backToStart);
-            $("#next-btn").prepend("<span id='end-text'>לסיום</span>");
+            $("#next-btn").prepend("<span id='end-text'>לתרגול</span>");
             $("#next-btn").addClass("end-btn");
         } else {
             $("#next-btn").on("click", swipeToNext);
@@ -1061,8 +1495,8 @@ function showFooter() {
 }
 
 /*
-            showFooter
-            ==========
+            smallerText
+            ===========
             description:
             * get current font size
             * if font size is bigger than 12, reduce it by 2
@@ -1071,17 +1505,16 @@ function showFooter() {
             date: 25/10/2020
 */
 function smallerText(event) {
-    var currFontSize = Number($(".info-content").css("font-size").substring(0, 2));
+    var currFontSize = getComputedStyle(document.documentElement).getPropertyValue('--font-size');
+    currFontSize = Number(currFontSize.slice(0, -2));
     if (currFontSize > 12) {
         currFontSize -= 2;
-        $(".info-content").css("font-size", currFontSize + "px");
-        $(".info-content").css("line-height", currFontSize * 2 + "px");
-        $(".info-content .text-img").css("height", currFontSize * 1.5 + "px");
+        document.documentElement.style.setProperty('--font-size', currFontSize + "px");
     }
 }
 
 /*
-            showFooter
+            biggerText
             ==========
             description:
             * get current font size
@@ -1091,12 +1524,11 @@ function smallerText(event) {
             date: 25/10/2020
 */
 function biggerText(event) {
-    var currFontSize = Number($(".info-content").css("font-size").substring(0, 2));
+    var currFontSize = getComputedStyle(document.documentElement).getPropertyValue('--font-size');
+    currFontSize = Number(currFontSize.slice(0, -2));
     if (currFontSize < 36) {
         currFontSize += 2;
-        $(".info-content").css("font-size", currFontSize + "px");
-        $(".info-content").css("line-height", currFontSize * 2 + "px");
-        $(".info-content .text-img").css("height", currFontSize * 1.5 + "px");
+        document.documentElement.style.setProperty('--font-size', currFontSize + "px");
     }
 }
 
