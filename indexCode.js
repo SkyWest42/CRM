@@ -35,7 +35,7 @@ var matContent = [
             },
             {
                 "section": "<p>כעת, עלינו להתחבר לכתובת https://crm.medone.idf.il.</p>",
-                "instruction": "הזן את הכתובת <textarea title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy' readonly>https://crm.medone.idf.il</textarea> במסך התרגול",
+                "instruction": "הזן את הכתובת <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy' readonly>https://crm.medone.idf.il</strong> במסך התרגול",
                 "interactionType": "type",
                 "correctInput": "https://crm.medone.idf.il",
                 "width": "50%",
@@ -49,10 +49,10 @@ var matContent = [
                 "section": "<p>במסך הראשי של המערכת נראה את כל הפניות הפתוחות של הצוות שלנו.</p><p>בלחיצה על שם התצוגה שבה אנו נמצאים כרגע (במקרה הזה \"הפניות הפתוחות של הצוות\"), ניתן לראות את כל התצוגות שהמשתמש שלנו חשוף אליהן.</p>",
                 "instruction": "לחץ על שם התצוגה הנוכחי במסך התרגול",
                 "interactionType": "click",
-                "width": "10%",
+                "width": "29%",
                 "height": "3.3%",
-                "right": "8.8%",
-                "top": "32.76%",
+                "right": "4%",
+                "top": "18%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -60,10 +60,10 @@ var matContent = [
                 "section": "<p>נוכל לגשת לכל תצוגה בעזרת לחיצה על השם שלה ברשימה שנפתחה.</p>",
                 "instruction": "לחץ על שם התצוגה \"כל הפניות הפתוחות במיטב\" על מנת לגשת אליה",
                 "interactionType": "click",
-                "width": "23%",
-                "height": "3.3%",
-                "right": "44%",
-                "top": "14.8%",
+                "width": "21%",
+                "height": "3%",
+                "right": "4%",
+                "top": "34%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -71,10 +71,10 @@ var matContent = [
                 "section": "<p>עכשיו שאנחנו יודעים לצפות בפניות במגוון תצוגות, הגיע הזמן שנצלול לתוך פניה ונלמד איזה מידע היא מכילה.</p>",
                 "instruction": "לחץ על הפניה המסומנת במסך התרגול על מנת לסקור אותה",
                 "interactionType": "click",
-                "width": "2.8%",
-                "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "width": "94%",
+                "height": "3.4%",
+                "right": "2%",
+                "top": "36.4%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -88,10 +88,10 @@ var matContent = [
                 "section": "<p>בחלק העליון של המסך, מצד שמאל, ניתן לראות תמצות של פרטי הפניה (מי המלש\"ב ומי הגורם שמטפל בפניה כרגע).</p> <p><b>הפניה עצמה מחולקת למקטעים שונים</b>, אשר ניתן לסגור או לפתוח בלחיצה על השם שלהם.</p>",
                 "instruction": "לחץ על שם המקטע \"פרטי הפונה\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "12%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "28.2%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -100,10 +100,10 @@ var matContent = [
                 "section": "המקטע <b class='section-name'>פרטי הפונה</b>  נפתח וכעת ניתן לראות את שם הפונה, סוג הפונה וערוץ הפניה.",
                 "instruction": "לחץ על שם המקטע \"פרטי הפניה\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "12%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "42%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -112,10 +112,10 @@ var matContent = [
                 "section": "<p><b class='section-name'>פרטי הפניה</b>- כאן נמצא פרטים על הפנייה עצמה, תחת תת-כותרות שונות:</p><p><strong>סיווג הפניה</strong><img class='text-img detail-img' src='media/puzzle3.png'/> כל הפניות במיטב מסווגות לפי \"שלשות\". ה\"שלשות\" הן נושאי הפניות, וכל אחת מהן מכילה: תחום, תת תחום, שאלה ותת שאלה (בדרך כלל התת שאלה שווה לשאלה).</p><p><strong>תשובת חוקה</strong><img class='text-img detail-img' src='media/lawlined.png'/> עוזרת לנציג לטפל בפניה בצורה יעילה יותר. מדובר בהנחיה של המדור המקצועי שמכווינה את הנציג לטפל בפניה לפי המלצת המדור. תשובת חוקה שתופיע תהיה מותאמת לנושא הפניה (\"השלשה\").</p>",
                 "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למטה",
                 "interactionType": "click",
-                "width": "2.8%",
-                "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "width": "2%",
+                "height": "24%",
+                "right": "98%",
+                "top": "29.5%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -124,10 +124,10 @@ var matContent = [
                 "section": "<p>ב<strong>SLA</strong><strong> ישים </strong><img class='text-img detail-img' src='media/hourglass.png'/>(SLA- Service-level agreement) ניתן לראות אם מיטב עומדת בקריטריונים שהיא הציבה לעצמה עבור זמן הטיפול בפניה.</p><p><strong>תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/contract.png'/> הוא המקום בו אנחנו אמורים לתעד מה עשינו עם הפניה לפני שהיא מועברת למקום אחר או נסגרת.</p><p><strong>היסטוריית תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/clock.png'/>הוא המקום אליו עובר המלל שהיה ב\"תיאור הטיפול בפניה\" לאחר סגירת הפניה או הקצאתה לגורם אחר.</p>",
                 "instruction": "לחץ על שם המקטע \"פניות אחרונות\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "13%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "86%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             }
@@ -136,10 +136,10 @@ var matContent = [
                 "section": "<p><b class='section-name'>פניות אחרונות</b> מאפשר לגשת לכל הפניות של המועמד מתוך הפניה שאנו מטפלים בה כרגע.</p>",
                 "instruction": "לחץ על שם המקטע \"פניות מSAP \"CRM על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "16%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "71%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -148,10 +148,10 @@ var matContent = [
                 "section": "",
                 "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למטה",
                 "interactionType": "click",
-                "width": "2.8%",
-                "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "width": "2%",
+                "height": "15%",
+                "right": "98%",
+                "top": "67%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -160,10 +160,10 @@ var matContent = [
                 "section": "<p><strong class='section-name'>פניות מSAP CRM</strong> מראה את כל הפניות שתועדו במערכת CRM הישנה (לפני 23.04.18)</p>",
                 "instruction": "לחץ על שם המקטע \"קבצים מצורפים\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "16%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "58.8%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -172,10 +172,10 @@ var matContent = [
                 "section": "<p><strong class='section-name'>קבצים מצורפים</strong> מראה את כל הקבצים שצורפו לפניה. ניתן לפתוח קובץ בדפדפן בעזרת לחיצה על שם הקובץ.</p>",
                 "instruction": "לחץ על שם המקטע \"התכתבות\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "16%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "62%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -184,10 +184,10 @@ var matContent = [
                 "section": "<p><strong class='section-name'>התכתבות</strong> מציג את כל המלל שמגיע בפניות (הן מצד המלש\"ב והן מצד נציג מיטב). ערוצי הפניה שבהם מגיעה התכתבות : מייל, פייסבוק, SMS.</p>",
                 "instruction": "לחץ על שם המקטע \"פעילויות SMS\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "16%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "65.6%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -196,10 +196,10 @@ var matContent = [
                 "section": "<p><strong class='section-name'>פעילויות SMS</strong> הSMS אשר נשלחה בסגירת הפניה, ומה סטטוס ההודעה- כלומר האם הגיעה ללקוח בהצלחה, או שנתקלה במכשול כלשהו.</p>",
                 "instruction": "לחץ על שם המקטע \"היסטוריית מטפלים\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "16%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "69.6%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -208,10 +208,10 @@ var matContent = [
                 "section": "<p><strong class='section-name'>היסטוריית מטפלים</strong> מאפשר לנו לראות מה קרה עם הפניה מרגע שנפתחה- מי יצר את הפניה, לאן הקצו אותה ומי הקצה אותה, מי סגר את הפניה. בנוסף, ניתן לראות כמה זמן הייתה הפניה בטיפול אצל כל גורם.</p>",
                 "instruction": "לחץ על שם המקטע \"היסטוריית שינויים\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "16%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "73.4%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -220,10 +220,10 @@ var matContent = [
                 "section": "<p><strong class='section-name'>היסטוריית שינויים</strong> רישום השינויים שבוצעו בנושא הפניה או הסטטוס שלה. כך, ניתן לראות מה השלשה הראשונית שבחר נציג השירות במוקד מיטב, ואף מה השלשה שבה סיווגו את הפניה מחדש במדור המקצועי (במקרה שבוצע שינוי בשלשה)</p>",
                 "instruction": "לחץ על שם המקטע \"קשרים בין פניות\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "16%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "77.2%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -232,10 +232,10 @@ var matContent = [
                 "section": "<p><strong class='section-name'>קשרים בין פניות</strong> מאפשר לראות פניות שמוזגו לפניה הנוכחית או האם הפניה הנוכחית מוזגה לפניית אב אחרת (במקרה שבוצע מיזוג פניות).</p>",
                 "instruction": "לחץ על שם המקטע \"פרטי הפניה באתר\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "16%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "81%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -244,10 +244,10 @@ var matContent = [
                 "section": "<p><strong class='section-name'>פרטי הפניה באתר</strong> מכיל את נושא הפניה שיוצג למלש\"ב באתר \"מתגייסים\" (במקרה שהפניה מוגדרת לשיקוף).</p>",
                 "instruction": "לחץ על שם המקטע \"ניהול\" על מנת לפתוח אותו",
                 "interactionType": "click",
-                "width": "2.8%",
+                "width": "16%",
                 "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
+                "right": "1%",
+                "top": "84.8%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             }
@@ -255,13 +255,6 @@ var matContent = [
             {
                 "section": "<p><strong class='section-name'>ניהול</strong> מציג את הפרטים הטכניים של הפניה (מתי נוצרה, מתי בוצעו בה השינויים האחרונים, מי מטפל בפניה כרגע ופרטים שמזהים את הפניה ואת הפונה- מספר טלפון, כתובת מייל או שם משתמש פייסבוק).</p>",
                 "instruction": "",
-                "interactionType": "click",
-                "width": "2.8%",
-                "height": "3.8%",
-                "right": "79%",
-                "top": "44.3%",
-                "isChangeScreen": "true",
-                "isBreak": "true"
             }
         ]
     ],
@@ -271,10 +264,10 @@ var matContent = [
                 "section": "<p>חזרנו לתצוגה הראשית של המשתמש שלנו, וכעת נלמד איך לפתוח פניה חדשה. נתחיל בלחיצה על כפתור \"פניה חדשה\" שממוקם בחלק העליון של המסך.</p>",
                 "instruction": "לחץ על \"כפתור פניה חדשה\"",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "8%",
+                "height": "3%",
+                "right": "1%",
+                "top": "12%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -497,7 +490,7 @@ var matContent = [
             },
             {
                 "section": "<p>כעת מופיע הקובץ במקטע הקבצים המצורפים.</p><p>כל הכבוד! סיימנו לעדכן את הפרטים בפניה.</p><p>כעת יש לשמור אותה.</p><table class='save-btn-table'><tbody><tr><th>איזה כפתור?</th><th>מה הוא עושה?</th><th>מתי נשתמש?</th></tr><tr><td><img src='media/save.png'/></td><td>שומר את הפניה, ישאיר אותנו במסך הפניה.</td><td>○ כשהפניה ממתינה לטיפול על ידי גורם אחר (לדוגמה קב\"ן או רופא) <br /><br /> ○ כשקיימת בעיה שמונעת מאתנו לטפל בפניה כרגע.</td></tr><tr><td><img src='media/saveandclose.png'/></td><td>שמור וסוגר את הפניה על ידינו, יחזיר אותנו לתצוגה הראשית.</td><td>○ אם סיימנו לטפל בפניה, והיא לא דורשת טיפול על ידי גורם נוסף.</td></tr><tr><td><img src='media/saveandsend.png'/></td><td>שומר את הפניה, יאפשר לנו להקצות אותה לגורם אחר ביחידה.</td><td>○ אם הפניה דורשת טיפול של גורם אחר ביחידה, אליו נרצה להעביר אותה.&nbsp;</td></tr></tbody></table><p><a id='download-btn' class='download-btn info-btn' title='saveButtons' href='/media/saveButtons.png' download='saveButtons.png'> שמור טבלה <img src='media/download.png'/> </a></p>",
-                "instruction": "",
+                "instruction": "הפניה נפתרה! שמור וסגור אותה",
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
@@ -505,21 +498,31 @@ var matContent = [
                 "top": "4.05%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
+            },
+            {
+                "section": "",
+                "instruction": ""
             }
         ]
     ],
     [
         [
             {
-                "section": "<p>לעיתים קרובות נקבל פניות שהטיפול בהן הוא באחראיות גוף אחר ביחידה. במקרה כזה, יהיה עלינו להקצות את הפניה לאותו גוף. הקצאה נכונה של פניות חשובה מאוד, ומונעת עיכוב מיותר.</p><p>לשם ניתוב נכון של פניה, עלינו להבין לעומק את מהות הפניה.</p><div></div><hr><p>חזרנו לתצוגה הראשית של המשתמש שלנו, נבחר פניה לטיפול וניכנס לתוכה.</p>",
-                "instruction": "לחץ על הפניה המסומנת במסך התרגול",
-                "interactionType": "click",
-                "width": "2%",
-                "height": "2.4%",
-                "right": "46%",
-                "top": "4%",
-                "isChangeScreen": "true",
-                "isBreak": "true"
+                "section": "<p>לעיתים קרובות נקבל פניות שהטיפול בהן הוא באחראיות גוף אחר ביחידה. במקרה כזה, יהיה עלינו להקצות את הפניה לאותו גוף. הקצאה נכונה של פניות חשובה מאוד, ומונעת עיכוב מיותר.</p><p>לשם ניתוב נכון של פניה, עלינו להבין לעומק את מהות הפניה.</p><img src='media/questionCard.png' id='question-card' class='card-img full-img' onclick='flipCard()'/>",
+                "instruction": ""
+            }
+        ],
+        [
+            {
+            "section": "<p>חזרנו לתצוגה הראשית של המשתמש שלנו, נבחר פניה לטיפול וניכנס לתוכה.</p>",
+            "instruction": "לחץ על הפניה המסומנת במסך התרגול",
+            "interactionType": "click",
+            "width": "2%",
+            "height": "2.4%",
+            "right": "46%",
+            "top": "4%",
+            "isChangeScreen": "true",
+            "isBreak": "true"
             },
             {
                 "section": "<p>עם פתיחת הפניה ניתן לראות את פרטי הפונה (במקרה הזה הפניה הגיעה מפונה שכבר מזוהה בCRM ולכן נדרש רק לוודא שאכן מדובר במלש\"ב שזוהה אוטומטית ולסמן את הצ'קבוקס \"האם אומתו פרטים\")</p>",
@@ -700,6 +703,7 @@ var matContent = [
             },
             {
                 "section": "<p>עבודה טובה! הפניה הוקצתה לגורם שבחרנו, ונופנה בחזרה לתצוגה בה היינו.</p>",
+                "isBreak": "true",
                 "instruction": ""
             }
         ]
@@ -794,7 +798,7 @@ var matContent = [
     [
         [
             {
-                "section": "<p>ה(Service Level Agreement)-SLA הינו הסכם לרמת שירות בין נותני השירות שבמיטב ללקוחות שלה (אוכלוסיית המלש\"בים בישראל).</p><img src='media/handshake.jpg' class='full-img'/><p>הSLA נועד לעזור ליחידת מיטב לממש את חזונה- יצירת תהליך גיוס אישי, חדשני ומדויק עבור כל מלש\"ב.</p><p>כחלק מהמדדים שמשקפים את איכות השירות שניתן ללקוח (וכחלק מהSLA) נמדד זמן התגובה ללקוח.</p><p>לפי החלטת היחידה, הזמן המקסימלי לטיפול ברוב הפניות שמתקבלות הינו שבוע. כלומר, תוך שבוע מרגע הפניה חייב המלש\"ב לקבל מענה.</p><p>ישנם תחומי פניות שבהם נדרש זמן נוסף לטיפול והSLA שהוגדר להם ארוך יותר (בעיקר פניות בתחום הרפואי/ בריאות הנפש).</p><p>מה שמגדיר את הSLA במערכת הCRM עבור כל פניה זאת השלשה של הפניה (נושא הפניה).</p>",
+                "section": "<p>ה(Service Level Agreement)-SLA הינו הסכם לרמת שירות בין נותני השירות שבמיטב ללקוחות שלה (אוכלוסיית המלש\"בים בישראל).</p><img src='media/handshake.jpg' class='full-img'/><p>הSLA נועד לעזור ליחידת מיטב לממש את חזונה- יצירת תהליך גיוס אישי, חדשני ומדויק עבור כל מלש\"ב.</p><p>כחלק מהמדדים שמשקפים את איכות השירות שניתן ללקוח (וכחלק מהSLA) נמדד זמן התגובה ללקוח.</p><p>לפי החלטת היחידה, <strong>הזמן המקסימלי לטיפול ברוב הפניות שמתקבלות הינו שבוע.</strong> כלומר, תוך שבוע מרגע הפניה חייב המלש\"ב לקבל מענה.</p><p>ישנם תחומי פניות שבהם נדרש זמן נוסף לטיפול והSLA שהוגדר להם ארוך יותר (בעיקר פניות בתחום הרפואי/בריאות הנפש).</p><p>מה שמגדיר את הSLA במערכת הCRM עבור כל פניה זאת השלשה של הפניה (נושא הפניה).</p>",
                 "instruction": ""
             }
         ],
@@ -808,9 +812,34 @@ var matContent = [
 ];
 
 function copyText(event) {
-    $("#to-copy").select();
+    var range = document.createRange();
+    range.selectNode(document.getElementById("to-copy"));
+    window.getSelection().removeAllRanges(); // clear current selection
+    window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
-    alert("Copied the text: " + $("#to-copy").val());
+    window.getSelection().removeAllRanges();// to deselect
+    alert("Copied the text: " + range);
+}
+
+var isFlipped = false;
+function flipCard(event) {
+    if (!isFlipped) {
+        $("#question-card").css("transform", "rotateY(180deg)");
+        setTimeout(function () {
+            $("#question-card").attr("src", "media/answerCard.png");
+            $("#question-card").removeClass("question-card");
+            $("#question-card").addClass("answer-card");
+        }, 300)
+        isFlipped = true;
+    } else {
+        $("#question-card").css("transform", "rotateY(0deg)");
+        setTimeout(function () {
+            $("#question-card").attr("src", "media/questionCard.png");
+            $("#question-card").removeClass("answer-card");
+            $("#question-card").addClass("question-card");
+        }, 300)
+        isFlipped = false;
+    }
 }
 //matrix containing the number of crm screenshot each of the pages should open with
 //an array for each chapter
@@ -819,7 +848,7 @@ function copyText(event) {
 var matOpeningScreen = [
     [1],
     [1, 6],
-    [5, 9],
+    [21, 30],
     [15, 15, 24],
     [1],
     [2]
@@ -1337,7 +1366,7 @@ function showNextSection() {
 function chapterManager() {
     $("#practice-screen-content").html("");
     currScreen = matOpeningScreen[currChapter][currPage];
-    $("#practice-screen-content").append("<img src='media/crmScreenshots/" + currScreen + ".png' id='screen-img' class='fullscreen'/>");
+    $("#practice-screen-content").append("<img src='media/crmScreenshots/s (" + currScreen + ").png' id='screen-img' class='fullscreen'/>");
     $("#practice-screen-content").append("<input id='typeable' class='interactable'></div>");
     $("#practice-screen-content").append("<div id='clickable' class='interactable'></div>");
     interactionManager();
