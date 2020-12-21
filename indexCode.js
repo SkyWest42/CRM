@@ -35,7 +35,7 @@ var matContent = [
             },
             {
                 "section": "<p>כעת, עלינו להתחבר לכתובת https://crm.medone.idf.il.</p>",
-                "instruction": "הזן את הכתובת <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy' readonly>https://crm.medone.idf.il</strong> במסך התרגול",
+                "instruction": "הזן את הכתובת <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>https://crm.medone.idf.il</strong> במסך התרגול",
                 "interactionType": "type",
                 "correctInput": "https://crm.medone.idf.il",
                 "width": "50%",
@@ -276,10 +276,10 @@ var matContent = [
                 "instruction": "הקלד את תעודת הזהות \"234567899\" והקש Enter",
                 "interactionType": "type",
                 "correctInput": "234567899",
-                "width": "10%",
+                "width": "35%",
                 "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "right": "14%",
+                "top": "34.2%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -287,10 +287,10 @@ var matContent = [
                 "section": "",
                 "instruction": "בחר את המלש\"בית ישראלה ישראלי.",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "37%",
+                "height": "4%",
+                "right": "14%",
+                "top": "36.2%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -300,8 +300,8 @@ var matContent = [
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "right": "61.2%",
+                "top": "34%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -311,25 +311,14 @@ var matContent = [
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "right": "61.5%",
+                "top": "35.8%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
             {
                 "section": "<p>עם בחירת ערוץ הפניה \"פניה פיזית\" יסומן הצ'ק בוקס \"האם אומתו פרטים\" אוטומטית. (בערוצי פניה אחרים נידרש לאמת את זהות המלש\"ב ידנית)</p><p>עכשיו ניתן להתחיל למלא את פרטי הפניה עצמה.</p>",
                 "instruction": "",
-                "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
-                "isChangeScreen": "true",
-                "isBreak": "true"
-            },
-            {
-                "section": "",
-                "instruction": ""
             }
         ],
         [
@@ -339,8 +328,8 @@ var matContent = [
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "right": "50.8%",
+                "top": "41%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -348,10 +337,10 @@ var matContent = [
                 "section": "",
                 "instruction": "בחר את התחום \"גיוס\"",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "44.2%",
+                "height": "4%",
+                "right": "52.2%",
+                "top": "61%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -361,8 +350,8 @@ var matContent = [
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "right": "50.8%",
+                "top": "43.4%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -370,10 +359,10 @@ var matContent = [
                 "section": "",
                 "instruction": "בחר את תת התחום \"בירורים\"",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "44.2%",
+                "height": "4%",
+                "right": "52.2%",
+                "top": "49%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -383,8 +372,8 @@ var matContent = [
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "right": "50.8%",
+                "top": "45.8%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -392,10 +381,10 @@ var matContent = [
                 "section": "",
                 "instruction": "בחר את השאלה \"היכן מתקיים הגיוס?\"",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "44.2%",
+                "height": "4%",
+                "right": "52.2%",
+                "top": "53.8%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -403,22 +392,22 @@ var matContent = [
                 "section": "<p>כל הכבוד! לאחר שבחרנו את התחום, התת תחום והשאלה (והתת שאלה במידה ויש) קיבלנו <strong>שלשה</strong>!</p>",
                 "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למטה",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "2%",
+                "height": "14.5%",
+                "right": "98%",
+                "top": "29.5%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
             {
                 "section": "<p>כעת עלינו לתעד כיצד טיפלנו בפניה – לשם כך קיים שדה \"תיאור הטיפול בפניה\".</p>",
-                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <textarea title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy' readonly>המלש\"ב התייצב בלשכה וביקש לברר היכן הוא מתגייס. בדקתי את פרטיו ועניתי על שאלתו.</textarea>",
+                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>המלש\"ב התייצב בלשכה וביקש לברר היכן הוא מתגייס. בדקתי את פרטיו ועניתי על שאלתו.</strong>",
                 "interactionType": "type",
-                "correctInput": "any",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "correctInput": "המלש\"ב התייצב בלשכה וביקש לברר היכן הוא מתגייס. בדקתי את פרטיו ועניתי על שאלתו.",
+                "width": "45%",
+                "height": "10%",
+                "right": "49%",
+                "top": "76%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -426,10 +415,10 @@ var matContent = [
                 "section": "<p>אם ברצוננו להוסיף קבצים לפניה ניתן לגשת למקטע \"קבצים מצורפים\".</p>",
                 "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למקטע \"קבצים מצורפים\"",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "2%",
+                "height": "14.5%",
+                "right": "98%",
+                "top": "36%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -437,10 +426,10 @@ var matContent = [
                 "section": "<p>כדי להוסיף קובץ יש ללחוץ על סימן הפלוס שנמצא בחלק השמאלי העליון של המקטע.</p>",
                 "instruction": "לחץ על סימן הפלוס",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "3%",
+                "height": "3.5%",
+                "right": "92.85%",
+                "top": "37.3%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -448,10 +437,10 @@ var matContent = [
                 "section": "<p>מסך העלאת הקובץ נפתח, להעלאת קובץ נוכל לגרור קובץ לאזור הרלוונטי, או ללחוץ על כפתור \"בחר קובץ\".</p>",
                 "instruction": "לחץ על \"בחר קובץ\"",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "8%",
+                "height": "3.2%",
+                "right": "55.1%",
+                "top": "33.6%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -459,21 +448,43 @@ var matContent = [
                 "section": "",
                 "instruction": "בחר את הקובץ \"טופס דין אישה כדין גבר\" השמור במחשב הלוקאלי",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "6.5%",
+                "height": "10%",
+                "right": "62.3%",
+                "top": "13.2%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "",
+                "instruction": "לחץ \"Open\" על מנת לבחור את הקובץ",
+                "interactionType": "click",
+                "width": "7%",
+                "height": "2.6%",
+                "right": "48.2%",
+                "top": "48.2%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
             {
                 "section": "<p>שם הקובץ שהעלנו יופיע במסך העלאת הקובץ.</p><p>כעת נדרש לבחור האם הקובץ שאנחנו רוצים להעלות הוא לשיקוף או לא לשיקוף- כלומר, האם המלש\"ב יראה את הקובץ באתר \"מתגייסים ברשת\".</p>",
+                "instruction": "בחר את השדה \"האם לשיקוף פניות\"",
+                "interactionType": "click",
+                "width": "7%",
+                "height": "2.6%",
+                "right": "23%",
+                "top": "60.6%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
+            },
+            {
+                "section": "",
                 "instruction": "בחר \"לשיקוף\"",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "7%",
+                "height": "2.6%",
+                "right": "23%",
+                "top": "60%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -481,10 +492,10 @@ var matContent = [
                 "section": "<p>לאחר מכן נלחץ על \"שמור וצא\" כדי לשמור ולחזור לפניה, או \"שמור וחדש\" אם ברצוננו להעלות עוד קבצים.</p>",
                 "instruction": "לחץ על \"שמור וצא\"",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "7.4%",
+                "height": "3%",
+                "right": "24%",
+                "top": "13.8%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -492,10 +503,10 @@ var matContent = [
                 "section": "<p>כעת מופיע הקובץ במקטע הקבצים המצורפים.</p><p>כל הכבוד! סיימנו לעדכן את הפרטים בפניה.</p><p>כעת יש לשמור אותה.</p><table class='save-btn-table'><tbody><tr><th>איזה כפתור?</th><th>מה הוא עושה?</th><th>מתי נשתמש?</th></tr><tr><td><img src='media/save.png'/></td><td>שומר את הפניה, ישאיר אותנו במסך הפניה.</td><td>○ כשהפניה ממתינה לטיפול על ידי גורם אחר (לדוגמה קב\"ן או רופא) <br /><br /> ○ כשקיימת בעיה שמונעת מאתנו לטפל בפניה כרגע.</td></tr><tr><td><img src='media/saveandclose.png'/></td><td>שמור וסוגר את הפניה על ידינו, יחזיר אותנו לתצוגה הראשית.</td><td>○ אם סיימנו לטפל בפניה, והיא לא דורשת טיפול על ידי גורם נוסף.</td></tr><tr><td><img src='media/saveandsend.png'/></td><td>שומר את הפניה, יאפשר לנו להקצות אותה לגורם אחר ביחידה.</td><td>○ אם הפניה דורשת טיפול של גורם אחר ביחידה, אליו נרצה להעביר אותה.&nbsp;</td></tr></tbody></table><p><a id='download-btn' class='download-btn info-btn' title='saveButtons' href='/media/saveButtons.png' download='saveButtons.png'> שמור טבלה <img src='media/download.png'/> </a></p>",
                 "instruction": "הפניה נפתרה! שמור וסגור אותה",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "8%",
+                "height": "3%",
+                "right": "27%",
+                "top": "12.2%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -508,30 +519,30 @@ var matContent = [
     [
         [
             {
-                "section": "<p>לעיתים קרובות נקבל פניות שהטיפול בהן הוא באחראיות גוף אחר ביחידה. במקרה כזה, יהיה עלינו להקצות את הפניה לאותו גוף. הקצאה נכונה של פניות חשובה מאוד, ומונעת עיכוב מיותר.</p><p>לשם ניתוב נכון של פניה, עלינו להבין לעומק את מהות הפניה.</p><img src='media/questionCard.png' id='question-card' class='card-img full-img' onclick='flipCard()'/>",
+                "section": "<p>לעיתים קרובות נקבל פניות שהטיפול בהן הוא באחראיות גוף אחר ביחידה. במקרה כזה, יהיה עלינו להקצות את הפניה לאותו גוף. הקצאה נכונה של פניות חשובה מאוד, ומונעת עיכוב מיותר.</p><p>לשם ניתוב נכון של פניה, עלינו להבין לעומק את מהות הפניה.</p><img src='media/questionCard.png' id='question-card' class='card-img question-card full-img' onclick='flipCard()'/>",
                 "instruction": ""
             }
         ],
         [
             {
-            "section": "<p>חזרנו לתצוגה הראשית של המשתמש שלנו, נבחר פניה לטיפול וניכנס לתוכה.</p>",
-            "instruction": "לחץ על הפניה המסומנת במסך התרגול",
-            "interactionType": "click",
-            "width": "2%",
-            "height": "2.4%",
-            "right": "46%",
-            "top": "4%",
-            "isChangeScreen": "true",
-            "isBreak": "true"
+                "section": "<p>חזרנו לתצוגה הראשית של המשתמש שלנו, נבחר פניה לטיפול וניכנס לתוכה.</p>",
+                "instruction": "לחץ על הפניה המסומנת במסך התרגול",
+                "interactionType": "click",
+                "width": "94%",
+                "height": "3.4%",
+                "right": "2%",
+                "top": "59.3%",
+                "isChangeScreen": "true",
+                "isBreak": "true"
             },
             {
                 "section": "<p>עם פתיחת הפניה ניתן לראות את פרטי הפונה (במקרה הזה הפניה הגיעה מפונה שכבר מזוהה בCRM ולכן נדרש רק לוודא שאכן מדובר במלש\"ב שזוהה אוטומטית ולסמן את הצ'קבוקס \"האם אומתו פרטים\")</p>",
                 "instruction": "סמן את הצ'קבוקס \"האם אומתו פרטים\"",
                 "interactionType": "click",
-                "width": "12%",
-                "height": "2.3%",
-                "right": "48%",
-                "top": "6.8%",
+                "width": "2%",
+                "height": "2.5%",
+                "right": "80.9%",
+                "top": "64.3%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -539,10 +550,10 @@ var matContent = [
                 "section": "<p>כדי לטפל בפניה ניגש למקטע ההתכתבות ומקטע הקבצים (על מנת להבין את מהות הפניה ומי המלש\"ב ששלח אותה).</p>",
                 "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למקטעים הרלוונטיים",
                 "interactionType": "click",
-                "width": "7%",
-                "height": "2.6%",
-                "right": "26%",
-                "top": "73.7%",
+                "width": "2%",
+                "height": "14.6%",
+                "right": "98%",
+                "top": "29.2%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -550,10 +561,10 @@ var matContent = [
                 "section": "<p><img class='text-img detail-img' src='media/puzzle3.png'/> לאחר שקראנו את ההתכתבות וצפינו בקבצים, הבנו מה מהות הפניה וכעת ניתן לסווג את אותה בשלשה.</p>",
                 "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול לסיווג הפניה",
                 "interactionType": "click",
-                "width": "10%",
-                "height": "2.2%",
-                "right": "6%",
-                "top": "4.05%",
+                "width": "2%",
+                "height": "12%",
+                "right": "98%",
+                "top": "67.4%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -561,10 +572,10 @@ var matContent = [
                 "section": "<p>נבחר את התחום. </p>",
                 "instruction": "לחץ על השדה \"תחום\" והקש Enter",
                 "interactionType": "click",
-                "width": "9%",
+                "width": "10%",
                 "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "right": "50.8%",
+                "top": "41%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -573,10 +584,10 @@ var matContent = [
                 "instruction": "בחר את התחום \"לחימה- נשים\"",
                 "interactionType": "click",
                 "correctInput": "",
-                "width": "1.55%",
-                "height": "2.15%",
-                "right": "93.25%",
-                "top": "4.1%",
+                "width": "44.2%",
+                "height": "4%",
+                "right": "52.2%",
+                "top": "46.6%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -584,10 +595,10 @@ var matContent = [
                 "section": "<p>נבחר את תת התחום.</p>",
                 "instruction": "לחץ על השדה \"תת תחום\" והקש Enter",
                 "interactionType": "click",
-                "width": "9%",
+                "width": "10%",
                 "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "right": "52.2%",
+                "top": "34%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -595,10 +606,10 @@ var matContent = [
                 "section": "",
                 "instruction": "בחר את תת התחום \"דין אישה כדין גבר\"",
                 "interactionType": "click",
-                "width": "9%",
-                "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "width": "44.2%",
+                "height": "4%",
+                "right": "52.2%",
+                "top": "59.7%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -606,10 +617,10 @@ var matContent = [
                 "section": "<p>נבחר את השאלה.</p>",
                 "instruction": "לחץ על השדה \"שאלה\" והקש Enter",
                 "interactionType": "click",
-                "width": "9%",
+                "width": "10%",
                 "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "right": "52.2%",
+                "top": "38.6%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -618,9 +629,10 @@ var matContent = [
                 "instruction": "בחר את השאלה \"דין אישה כדין גבר\"",
                 "interactionType": "click",
                 "width": "9%",
-                "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "width": "44.2%",
+                "height": "4%",
+                "right": "52.2%",
+                "top": "50%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -628,21 +640,22 @@ var matContent = [
                 "section": "<p>נדרש גם להזין את תיאור הטיפול בפניה.</p>",
                 "instruction": "לחץ על הגלגלת על מנת לגלול למקטע \"תיאור הטיפול בפניה\"",
                 "interactionType": "click",
-                "width": "9%",
-                "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "width": "2%",
+                "height": "12%",
+                "right": "98%",
+                "top": "32.4%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
             {
                 "section": "",
-                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <textarea title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy' readonly>התקבל טופס 16 מהמלש\"בית, העברתי את הפניה למדור נשים האחראי לטיפול בה</textarea>",
-                "interactionType": "click",
-                "width": "9%",
-                "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>התקבל טופס 16 מהמלש\"בית, העברתי את הפניה למדור נשים האחראי לטיפול בה</strong>",
+                "interactionType": "type",
+                "correctInput": "התקבל טופס 16 מהמלש\"בית, העברתי את הפניה למדור נשים האחראי לטיפול בה",
+                "width": "47%",
+                "height": "11%",
+                "right": "49%",
+                "top": "76.5%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -650,32 +663,36 @@ var matContent = [
                 "section": "<p>בפניה שלפנינו הטיפול הנדרש הוא העברת הפניה לגורם מטפל אחר במיטב.</p><hr /><p>בשדה \"הקצאה לצוות\" (תחת \"הקצאת הטיפול בפניה\") כבר מוצע לנו צוות מטפל אליו מומלץ להקצות את הפניה (במקרה שהפניה לא אמורה להיות מטופלת על-ידי הצוות שלנו).</p><p>כל פניה ניתן להקצות לרשימה מוגבלת של צוותים, שנקבעת בהתאם לשלשה של הפניה.</p><p>כדי לצפות ברשימת הצוותים אליהם ניתן להקצות את הפניה, נסמן את השדה \"הקצאה לצוות\" ונלחץ על Backspace. לאחר מכן נלחץ על Enter או על זכוכית המגדלת.</p>",
                 "instruction": "לחץ על השדה \"הקצאה לצוות\"",
                 "interactionType": "click",
-                "width": "9%",
+                "width": "24.8%",
                 "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "right": "13.8%",
+                "top": "58.5%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
             {
                 "section": "",
                 "instruction": "הקש Backspace (מקש מחק ←) במקלדת",
-                "interactionType": "click",
-                "width": "9%",
-                "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
-                "isChangeScreen": "true",
+                "interactionType": "key",
+                "correctInput": "Backspace",
+                "clickAlternate": "false",
+                "width": "0%",
+                "height": "0%",
+                "right": "0%",
+                "top": "0%",
+                "isChangeScreen": "false",
                 "isBreak": "false"
             },
             {
                 "section": "",
                 "instruction": "הקש Enter במקלדת",
-                "interactionType": "click",
-                "width": "9%",
-                "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "interactionType": "key",
+                "correctInput": "Enter",
+                "clickAlternate": "false",
+                "width": "0%",
+                "height": "0%",
+                "right": "0%",
+                "top": "0%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -683,10 +700,10 @@ var matContent = [
                 "section": "<p>נפתחה רשימה של צוותים להקצאה ממנה ניתן לבחור את הצוות הרלוונטי.</p>",
                 "instruction": "בחר בצוות \"מדור נשים\"",
                 "interactionType": "click",
-                "width": "9%",
+                "width": "24.8%",
                 "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "right": "13.8%",
+                "top": "60.5%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -694,17 +711,17 @@ var matContent = [
                 "section": "<p>כל הכבוד! סיימנו למלא את כל שדות החובה- השלשה של הפניה ותיאור הטיפול בפניה בצד שלנו. כעת נלחץ על כפתור \"שמור והקצה\", על מנת להעביר את הפניה לגורם שבחרנו.</p>",
                 "instruction": "שמור והקצה את הפניה",
                 "interactionType": "click",
-                "width": "9%",
-                "height": "2.2%",
-                "right": "10%",
-                "top": "8%",
+                "width": "8%",
+                "height": "3%",
+                "right": "51%",
+                "top": "12%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
             {
                 "section": "<p>עבודה טובה! הפניה הוקצתה לגורם שבחרנו, ונופנה בחזרה לתצוגה בה היינו.</p>",
-                "isBreak": "true",
-                "instruction": ""
+                "instruction": "",
+                "isBreak": "true"
             }
         ]
     ],
@@ -712,12 +729,12 @@ var matContent = [
         [
             {
                 "section": "<p>לאחר שנתנו תשובה סופית לפניה, והיא אינה דורשת טיפול נוסף מאף גורם, <strong>חשוב מאוד שנזכור לסגור את הפניה</strong>. במקרה בו <em>נשמור</em> ולא נדאג <em>לסגור</em> את הפניה, המלש\"ב לא יקבל מענה ולא ידע כי פנייתו טופלה.</p><p>נתחיל מהתצוגה הראשית של המשתמש שלנו.</p><hr><p>נבחר פניה לסגירה וניכנס לתוכה.</p>",
-                "instruction": "בחר את הפנייה המסומנת",
+                "instruction": "בחר את הפניה המסומנת",
                 "interactionType": "click",
-                "width": "11.3%",
-                "height": "2.15%",
-                "right": "20%",
-                "top": "14.5%",
+                "width": "94%",
+                "height": "3.4%",
+                "right": "2%",
+                "top": "65%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -725,23 +742,23 @@ var matContent = [
                 "section": "<p>נראה כי לפניה כבר יש נושא. מכיוון שהגיעה לצוות שלנו, ולא נוצרה על ידינו, נציג אחר כבר סיווג אותה מוקדם יותר.</p><hr><p>כדי להבין מה קרה עם הפניה לפני שהוקצתה לצוות שלנו נביט בהיסטוריית תיאור הטיפול בפניה.</p>",
                 "instruction": "לחץ על הגלגלת על מנת לגלול מטה ולצפות ב\"בהיסטוריית תיאור הטיפול בפניה\"",
                 "interactionType": "click",
-                "width": "11.3%",
-                "height": "2.15%",
-                "right": "20%",
-                "top": "14.5%",
-                "isChangeScreen": "false",
+                "width": "2%",
+                "height": "15%",
+                "right": "98%",
+                "top": "29.2%",
+                "isChangeScreen": "true",
                 "isBreak": "true"
             },
             {
                 "section": "<p>לאחר שהבנו את היסטורית הפניה, נטפל בה ונתעד את הטיפול ב<strong>תיאור הטיפול בפניה</strong>.</p><p>הדברים שנרשום ב<strong>תיאור הטיפול בפניה </strong>יעברו ל<strong>היסטוריית תיאור הטיפול</strong> <strong>בפניה</strong> לאחר סגירת הפניה או הקצאתה למדור אחר.</p><hr /><p>חשוב לשים לב שמלל התיאור מעביר את <strong>המשמעות</strong> של הפעולות שעשינו על הפניה, ואינן רק סיכום טכני שלהן. תיאור פניה צריך להעביר באופן ברור מה היה תהליך הטיפול לאדם שקורא אותו <strong>ללא הקשר קודם</strong>.</p>",
-                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <textarea title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy' readonly>תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה</textarea>",
+                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה.</strong>",
                 "interactionType": "type",
-                "correctInput": "תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה",
+                "correctInput": "תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה.",
                 "clickAlternate": "true",
-                "width": "1.85%",
-                "height": "2.15%",
-                "right": "31%",
-                "top": "14.5%",
+                "width": "44%",
+                "height": "10.8%",
+                "right": "49%",
+                "top": "56%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -749,10 +766,10 @@ var matContent = [
                 "section": "<p>נסגור את הפניה בלחיצה על כפתור \"שמור וסגור\".</p>",
                 "instruction": "לחץ על כפתור \"שמור וסגור\" על מנת לסגור את הפניה",
                 "interactionType": "click",
-                "width": "13%",
-                "height": "1.9%",
-                "right": "33%",
-                "top": "21.1%",
+                "width": "8.2%",
+                "height": "3%",
+                "right": "44%",
+                "top": "12%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -761,9 +778,9 @@ var matContent = [
                 "instruction": "לחץ על השדה \"תבנית הודעה\" על מנת לפתוח את רשימת תבניות התשובה האוטומטיות",
                 "interactionType": "click",
                 "width": "13%",
-                "height": "1.9%",
-                "right": "33%",
-                "top": "24%",
+                "height": "2.2%",
+                "right": "18.4%",
+                "top": "18.6%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -771,21 +788,21 @@ var matContent = [
                 "section": "",
                 "instruction": "בחר את תבנית התשובה הראשונה",
                 "interactionType": "click",
-                "width": "2.1%",
-                "height": "2.4%",
-                "right": "15.9%",
-                "top": "31.7%",
+                "width": "19.4%",
+                "height": "3%",
+                "right": "18.6%",
+                "top": "20.2%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
             {
-                "section": "<p>לאחר בחירת תבנית תשובה מהרשימה יתמלאו שאר השדות במסך באופן אוטומטי.</p><hr /><p>השדה \"האם לשלוח הודעה ללקוח\" (כן/לא) מסמן האם תישלח למועמד<strong> הודעת&nbsp;</strong><strong>SMS</strong><strong>&nbsp;</strong>בסגירת הפניה.</p><p>אם נשנה את השדה ל\"לא\", המלש\"ב לא יקבל הודעת SMS לטלפון.</p><p><strong>אבל</strong></p><p><strong><u>השדה מתייחס להודעות </u></strong><strong><u>SMS</u></strong><strong><u> בלבד, ולא לשיקוף הפניות באתר.</u></strong></p><p><img src='media/upsetGirl.png'/></p><p><strong>אם השלשה של הפניה מוגדרת לשיקוף, הטיפול בפניה יוצג למלש\"ב באתר \"מתגייסים ברשת\", <u>גם אם סומן לא לשלוח הודעה ללקוח.</u></strong></p><hr /><p>במקרה ולמשתמש שלנו יש את ההרשאות הנדרשות לכך, ניתן להזין ידנית את מלל ההודעה שתישלח או לערוך תשובה על בסיס תבנית הודעה קיימת (בשדה \"הודעה ללקוח\").</p>",
+                "section": "<p>השדה \"האם לשלוח הודעה ללקוח\" (כן/לא) מסמן האם תישלח <strong>הודעת</strong> <strong>SMS </strong> למועמד בסגירת הפניה.</p><img src='media/smsCard.png' class='full-img'/><p>במקרה ולמשתמש שלנו יש את ההרשאות הנדרשות לכך, ניתן להזין ידנית את מלל ההודעה שתישלח או לערוך תשובה על בסיס תבנית הודעה קיימת (בשדה \"הודעה ללקוח\").</p>",
                 "instruction": "לחץ על \"שמור\" במסך התרגול",
                 "interactionType": "click",
-                "width": "2.5%",
-                "height": "3.2%",
-                "right": "78.3%",
-                "top": "58.5%",
+                "width": "6.4%",
+                "height": "3%",
+                "right": "84.8%",
+                "top": "44.6%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
             },
@@ -827,16 +844,12 @@ function flipCard(event) {
         $("#question-card").css("transform", "rotateY(180deg)");
         setTimeout(function () {
             $("#question-card").attr("src", "media/answerCard.png");
-            $("#question-card").removeClass("question-card");
-            $("#question-card").addClass("answer-card");
         }, 300)
         isFlipped = true;
     } else {
         $("#question-card").css("transform", "rotateY(0deg)");
         setTimeout(function () {
             $("#question-card").attr("src", "media/questionCard.png");
-            $("#question-card").removeClass("answer-card");
-            $("#question-card").addClass("question-card");
         }, 300)
         isFlipped = false;
     }
@@ -848,10 +861,10 @@ function flipCard(event) {
 var matOpeningScreen = [
     [1],
     [1, 6],
-    [21, 30],
-    [15, 15, 24],
-    [1],
-    [2]
+    [21, 27],
+    [44, 44],
+    [61],
+    [68, 68]
 ];
 
 //current screenshot in practice screen
@@ -1415,7 +1428,7 @@ function interactionManager() {
                 $("#clickable").on("click", function (event) {
                     showNextSection();
                     if (isChangeScreen) {
-                        $("#screen-img").attr("src", "media/crmScreenshots/" + ++currScreen + ".png");
+                        $("#screen-img").attr("src", "media/crmScreenshots/s (" + ++currScreen + ").png");
                     }
                     interactionManager();
                 });
@@ -1431,7 +1444,7 @@ function interactionManager() {
                         $(this).val("");
                         showNextSection();
                         if (isChangeScreen) {
-                            $("#screen-img").attr("src", "media/crmScreenshots/" + ++currScreen + ".png");
+                            $("#screen-img").attr("src", "media/crmScreenshots/s (" + ++currScreen + ").png");
                         }
                         interactionManager();
                     } else {
@@ -1452,7 +1465,7 @@ function interactionManager() {
                     if (event.key === correctInput) {
                         showNextSection();
                         if (isChangeScreen) {
-                            $("#screen-img").attr("src", "media/crmScreenshots/" + ++currScreen + ".png");
+                            $("#screen-img").attr("src", "media/crmScreenshots/s (" + ++currScreen + ").png");
                         }
                         interactionManager();
                     }
@@ -1462,7 +1475,7 @@ function interactionManager() {
                     $("#clickable").on("click", function (event) {
                         showNextSection();
                         if (isChangeScreen) {
-                            $("#screen-img").attr("src", "media/crmScreenshots/" + ++currScreen + ".png");
+                            $("#screen-img").attr("src", "media/crmScreenshots/s (" + ++currScreen + ").png");
                         }
                         interactionManager();
                     });
