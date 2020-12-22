@@ -92,13 +92,13 @@
 
 @keyframes clickThis {
   0% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) rotateY(0deg);
   }
   50% {
-    transform: translate3d(5px, -10px, 0px);
+    transform: translate3d(5px, -10px, 0px) rotateY(0deg);
   }
   100% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0) rotateY(0deg);
   }
 }
 
@@ -829,7 +829,7 @@ tr:nth-child(even) {
   box-sizing: border-box;
   direction: rtl;
   position: absolute;
-  border: 3px red solid;
+  /* border: 3px red solid; */
 }
 
 #screen-img {
@@ -911,13 +911,28 @@ tr:nth-child(even) {
 .instructions-panel {
   position: absolute;
   z-index: 6;
-  height: 70vh;
-  width: calc(70vh * 1.35);
+  height: 65vh;
+  width: calc(65vh * 1.49);
+  border: 50px solid transparent;
+  border-image: url("media/chalkFrameBlack.png") 60 stretch;
   transform-origin: top right;
-  background-image: url("media/instructions.png");
-  background-size: cover;
   display: none;
   transition: 1s;
+}
+
+.video-insert {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .instructions-panel-big {
@@ -939,6 +954,7 @@ tr:nth-child(even) {
   top: 6%;
   left: 6%;
   transition: 0.2s;
+  z-index: 2;
 }
 
 .instructions-close:hover {

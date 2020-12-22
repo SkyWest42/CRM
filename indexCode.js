@@ -109,7 +109,7 @@ var matContent = [
             }
             ,
             {
-                "section": "<p><b class='section-name'>פרטי הפניה</b>- כאן נמצא פרטים על הפנייה עצמה, תחת תת-כותרות שונות:</p><p><strong>סיווג הפניה</strong><img class='text-img detail-img' src='media/puzzle3.png'/> כל הפניות במיטב מסווגות לפי \"שלשות\". ה\"שלשות\" הן נושאי הפניות, וכל אחת מהן מכילה: תחום, תת תחום, שאלה ותת שאלה (בדרך כלל התת שאלה שווה לשאלה).</p><p><strong>תשובת חוקה</strong><img class='text-img detail-img' src='media/lawlined.png'/> עוזרת לנציג לטפל בפניה בצורה יעילה יותר. מדובר בהנחיה של המדור המקצועי שמכווינה את הנציג לטפל בפניה לפי המלצת המדור. תשובת חוקה שתופיע תהיה מותאמת לנושא הפניה (\"השלשה\").</p>",
+                "section": "<p><b class='section-name'>פרטי הפניה</b>- כאן נמצא פרטים על הפנייה עצמה, תחת תת-כותרות שונות:</p><p><strong>סיווג הפניה</strong>-<img class='text-img detail-img' src='media/puzzle3.png'/> כל הפניות במיטב מסווגות לפי \"שלשות\". ה\"שלשות\" הן נושאי הפניות, וכל אחת מהן מכילה: תחום, תת תחום, שאלה ותת שאלה (בדרך כלל התת שאלה שווה לשאלה).</p><p><strong>תשובת חוקה</strong><img class='text-img detail-img' src='media/lawlined.png'/> עוזרת לנציג לטפל בפניה בצורה יעילה יותר. מדובר בהנחיה של המדור המקצועי שמכווינה את הנציג לטפל בפניה לפי המלצת המדור. תשובת חוקה שתופיע תהיה מותאמת לנושא הפניה (\"השלשה\").</p>",
                 "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למטה",
                 "interactionType": "click",
                 "width": "2%",
@@ -1046,7 +1046,7 @@ function zoomOutInstructions() {
         $("#instructions-panel").on("click", zoomInInstructions)
         $("#sidebar").append($("#instructions-panel"));
     }, 1000);
-
+    $("#instructions-video").trigger('pause');
 }
 
 /*
@@ -1065,6 +1065,7 @@ function zoomInInstructions() {
     $("#instructions-panel").removeClass("instructions-panel-small");
     $("#instructions-panel").addClass("instructions-panel-big");
     $("body").append($("#instructions-panel"));
+    $("#instructions-video").trigger('play');
 }
 
 /*
