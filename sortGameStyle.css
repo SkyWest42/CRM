@@ -1,0 +1,194 @@
+:root {
+    --wrong-indication-color: red;
+    --correct-indication-color: green;
+}
+
+@keyframes indicateWrong {
+    0% {
+        -webkit-filter: none;
+        filter: none;
+    }
+    20% {
+        -webkit-filter: drop-shadow(5px 5px 0 var(--wrong-indication-color)) drop-shadow(-5px 5px 0 var(--wrong-indication-color)) drop-shadow(5px -5px 0 var(--wrong-indication-color)) drop-shadow(-5px -5px 0 var(--wrong-indication-color));
+        filter: drop-shadow(5px 5px 0 var(--wrong-indication-color)) drop-shadow(-5px 5px 0 var(--wrong-indication-color)) drop-shadow(5px -5px 0 var(--wrong-indication-color)) drop-shadow(-5px -5px 0 var(--wrong-indication-color));
+    }
+    60% {
+        -webkit-filter: drop-shadow(5px 5px 0 var(--wrong-indication-color)) drop-shadow(-5px 5px 0 var(--wrong-indication-color)) drop-shadow(5px -5px 0 var(--wrong-indication-color)) drop-shadow(-5px -5px 0 var(--wrong-indication-color));
+        filter: drop-shadow(5px 5px 0 var(--wrong-indication-color)) drop-shadow(-5px 5px 0 var(--wrong-indication-color)) drop-shadow(5px -5px 0 var(--wrong-indication-color)) drop-shadow(-5px -5px 0 var(--wrong-indication-color));
+    }
+    100% {
+        -webkit-filter: none;
+        filter: none;
+    }
+}
+
+/* @keyframes shake {
+    33% {
+        transform: translateX(-25px);
+    }
+    66% {
+        transform: translateX(25px);
+    }
+} */
+
+@keyframes yay {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+    50% {
+        transform: scale(1.1);
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    12.5%, 37.5%, 62.5% {
+        transform: translateX(-25px);
+    }
+    25%, 50% {
+        transform: translateX(25px);
+    }
+    75% {
+        transform: translateX(20px);
+    }
+    87.5% {
+        transform: translateX(-20px);
+    }
+}
+
+@keyframes indicateCorrect {
+    0% {
+        -webkit-filter: none;
+        filter: none;
+    }
+    20% {
+        -webkit-filter: drop-shadow(5px 5px 0 var(--correct-indication-color)) drop-shadow(-5px 5px 0 var(--correct-indication-color)) drop-shadow(5px -5px 0 var(--correct-indication-color)) drop-shadow(-5px -5px 0 var(--correct-indication-color));
+        filter: drop-shadow(5px 5px 0 var(--correct-indication-color)) drop-shadow(-5px 5px 0 var(--correct-indication-color)) drop-shadow(5px -5px 0 var(--correct-indication-color)) drop-shadow(-5px -5px 0 var(--correct-indication-color));
+    }
+    60% {
+        -webkit-filter: drop-shadow(5px 5px 0 var(--correct-indication-color)) drop-shadow(-5px 5px 0 var(--correct-indication-color)) drop-shadow(5px -5px 0 var(--correct-indication-color)) drop-shadow(-5px -5px 0 var(--correct-indication-color));
+        filter: drop-shadow(5px 5px 0 var(--correct-indication-color)) drop-shadow(-5px 5px 0 var(--correct-indication-color)) drop-shadow(5px -5px 0 var(--correct-indication-color)) drop-shadow(-5px -5px 0 var(--correct-indication-color));
+    }
+    100% {
+        -webkit-filter: none;
+        filter: none;
+    }
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    background-image: url(gameMedia/backgroundGreen.png);
+    background-size: cover;
+    overflow: hidden;
+    direction: rtl;
+    font-family: Varela;
+}
+
+.opening-container {
+    height: 100%;
+    width: 100%;
+    background-color: #3dd6adb3;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container {
+    height: 100%;
+    width: 67%;
+    /* float: left; */
+    background-color: #ffffffcc;
+}
+
+.title-container {
+    height: 100%;
+    width: 33%;
+}
+
+.title {
+    background-image: url("gameMedia/brush.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    width: 100%;
+}
+
+.page-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* #2fa88033 */
+    /* background-image: linear-gradient(to bottom, #3ed6ad21, transparent 50%); */
+    /* background-image: linear-gradient(to bottom, #59a70021, transparent 50%); */
+    background-image: linear-gradient(to bottom, #eb82b633, transparent 50%);
+}
+
+.shooting-platform {
+    background-color: #3ed6ae;
+    border-style: solid;
+    border-width: 14px 14px 0px 14px;
+    width: 900px;
+    height: 350px;
+    border-radius: 50% / 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    align-self: flex-end;
+    z-index: 1;
+}
+
+.to-shoot {
+    background-color: white;
+    /* background-color: #ffebe3;
+    background-color: #c0d2f6;
+    background-color: #fad2da;
+    background-color: #c0c7fa; */
+    border: black solid 5px;
+    width: 600px;
+    height: 280px;
+    position: absolute;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    z-index: 3;
+    transition: 0.5s ease-out;
+}
+
+.to-shoot:hover {
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    transition: 0.5s ease-out;
+    height: 120px;
+    transform-origin: bottom;
+    z-index: 2;
+    display: none;
+}
+
+.destroyer {
+    position: absolute;
+    height: 350px;
+    top: 25px;
+    /* animation: indicate 1s linear 2.5s infinite; */
+    /* -webkit-filter: drop-shadow(5px 5px 0 var(--wrong-indication-color)) drop-shadow(-5px 5px 0 var(--wrong-indication-color)) drop-shadow(5px -5px 0 var(--wrong-indication-color)) drop-shadow(-5px -5px 0 var(--wrong-indication-color));
+    filter: drop-shadow(5px 5px 0 var(--wrong-indication-color)) drop-shadow(-5px 5px 0 var(--wrong-indication-color)) drop-shadow(5px -5px 0 var(--wrong-indication-color)) drop-shadow(-5px -5px 0 var(--wrong-indication-color))" "filter": "drop-shadow(5px 5px 0 var(--wrong-indication-color)) drop-shadow(-5px 5px 0 var(--wrong-indication-color)) drop-shadow(5px -5px 0 var(--wrong-indication-color)) drop-shadow(-5px -5px 0 var(--wrong-indication-color)); */
+}
+
+.trash {
+    left: 50px;
+    width: 230px;
+}
+
+.phone {
+    right: 50px;
+    width: 200px;
+}
