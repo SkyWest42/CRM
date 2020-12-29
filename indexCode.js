@@ -1524,7 +1524,7 @@ function showFooter() {
         $("#next-btn").show();
         isNextBtnEnd = ((currChapter + 1) === matContent.length && (currPage + 1) === matContent[currChapter].length);
         if (isNextBtnEnd) {
-            $("#next-btn").on("click", backToStart);
+            $("#next-btn").on("click", goToExercise);
             $("#next-btn").prepend("<span id='end-text'>לתרגול</span>");
             $("#next-btn").addClass("end-btn");
         } else {
@@ -1648,16 +1648,17 @@ function goodJob() {
 }
 
 /*
-            backToStart
-            ===========
+            goToExercise
+            ============
             description:
-            * update session storage to indicate lomda has been finished
-            * reload page
+            * 
+            * 
             ============================================================
             programmer: Shira Shmuely
             date: 25/10/2020
 */
-function backToStart(event) {
-    sessionStorage.setItem("wasFinished", "finished");
-    location.reload();
+function goToExercise(event) {
+    window.location.replace("sortGame.html");
+    // sessionStorage.setItem("wasFinished", "finished");
+    // location.reload();
 }

@@ -11,16 +11,29 @@
 </head>
 
 <body>
-    <div class="page-container">
+    <div id="page-container" class="page-container">
         <div id="opening-container" class="opening-container">
             <div id="title-container" class="title-container">
-                <div id="title" class="title">שיקוף פניות: איך נמנעים מפאדיחות?</div>
+                <div id="title" class="title">שיקוף פניות: </br> איך נמנעים מפאדיחות?</div>
+                <div><img src="gameMedia/callCenterGirl.png"/></div>
             </div>
-            <div id="text-container" class="text-container"></div>
+            <div id="text-container" class="text-container">
+            </div>
+        </div>
+        <div id="instructions" class="instructions">
+            <!-- <img src='gameMedia/close.png' id="close-instructions-btn" class='close-btn close-instructions-btn'/> -->
+            <p>לפניכם תשובות שונות שנשלחו למלש"בים.
+            </br>
+            קראו כל הודעה והחליטו- האם תקין לשגר אותה לטלפון, או צריך להשליך אותה לפח.</p>
+            <video autoplay muted loop id="instructions-video" class="video-insert">
+                <source src="gameMedia/gameInstructions.mp4" type="video/mp4">
+            </video>
+            <p class="instructions-paragraph">לחצו ומשכו אחורה על מנת לטעון, הזיזו את העכבר ימינה או שמאלה על מנת לכוון. שחררו כדי לשגר.</p>
+            <div id="close-instructions-btn" class="button got-it-btn">הבנתי!</div>
         </div>
         <img class="destroyer trash game-elements" id="trash" src="gameMedia/trash.png" />
         <img class="destroyer phone game-elements" id="phone" src="gameMedia/phone.png" />
-        <div class="shooting-platform game-elements">
+        <div id="shooting-platform" class="shooting-platform game-elements">
         </div>
         <div class="to-shoot game-elements" id="to-shoot"></div>
         <img src="gameMedia/arrow.png" class="arrow game-elements" id="arrow">
