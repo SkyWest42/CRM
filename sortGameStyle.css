@@ -157,7 +157,7 @@ body {
     margin: 0;
     overflow: hidden;
     background-color: #f3f3f3;
-    background-image: url(gameMedia/backgroundGreen.png);
+    background-image: url(media/backgroundGreen.png);
     background-size: cover;
     overflow: hidden;
     direction: rtl;
@@ -187,7 +187,7 @@ body {
 }
 
 .title {
-    background-image: url("gameMedia/brush.png");
+    background-image: url("media/sortGameMedia/brush.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     color: white;
@@ -215,7 +215,7 @@ body {
 
 .text-container ul {
     list-style-type: circle;
-    list-style-image: url('gameMedia/emptySq.png');
+    list-style-image: url('media/sortGameMedia/emptySq.png');
 }
 
 .footer {
@@ -271,7 +271,7 @@ body {
 
 .instructions {
     position: absolute;
-    background-image: url("gameMedia/instructionsBackground.png");
+    background-image: url("media/instructionsBackground.png");
     background-size: cover;
     width: 800px;
     max-width: 80vw;
@@ -452,19 +452,19 @@ body {
     padding: 3% 5%;
     font-size: 125%;
     line-height: 200%;
-    background-image: url("gameMedia/explanationBackground.png");
+    background-image: url("media/sortGameMedia/explanationBackground.png");
     background-size: contain;
     background-repeat: no-repeat;
     font-family: Heebo;
 }
 
 .trash-response-review .bad {
-    list-style-image: url("gameMedia/emptyX.png");
+    list-style-image: url("media/sortGameMedia/emptyX.png");
     color: darkred;
 }
 
 .trash-response-review .good {
-    list-style-image: url("gameMedia/emptyV.png");
+    list-style-image: url("media/sortGameMedia/emptyV.png");
     color: darkgreen;
 }
 

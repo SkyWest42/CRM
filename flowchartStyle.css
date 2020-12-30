@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    background-color: #f3f3f3;
+    background-image: url(media/instructionsBackground.png);
+    background-size: cover;
+    overflow: hidden;
+    direction: rtl;
+}
+
+#page-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.inventory {
+    height: 100%;
+    width: 32vw;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.flowchart-container {
+    flex-grow: 1;
+    height: 90%;
+    margin-top: -3%;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.flowchart-container img, .flowchart-container div {
+    position: absolute;
+}
+
+.flowchart-container .plate {
+    height: 10%;
+    z-index: 1;
+    background-color: hsl(230, 68%, 58%);
+    background-size: cover;
+    border: ridge hsl(230, 64%, 48%) 6px;
+    border-radius: 50%;
+}
+
+.flowchart-container .connection-plate {
+    height: 8%;
+    background-color: hsl(90, 62%, 54%);
+    border: ridge hsl(90, 58%, 44%) 6px;
+}
+
+.draggable {
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+}
+
+.lines {
+    z-index: -1;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.lines line {
+    stroke-width: 3px;
+    stroke: rgb(107, 145, 38);
+}
+
+/* flowchart items position */
+
+#customer {
+    top: 10%;
+}
+
+#meitav-call-center {
+    top: 45%;
+    left: 25%;
+}
+
+#departments-call-center {
+    top: 60%;
+    left: 65%;
+}
+
+#plate1 {
+    top: 27%;
+    left: calc(80% - 51px);
+}
+
+#plate2 {
+    top: 27%;
+    left: calc(60% - 51px);
+}
+
+#plate3 {
+    top: 27%;
+    left: calc(40% - 51px);
+}
+
+#plate4 {
+    top: 27%;
+    left: calc(20% - 51px);
+}
+
+#plate5 {
+    top: 80%;
+    left: calc(80% - 51px);
+}
+
+#plate6 {
+    top: 80%;
+    left: calc(60% - 51px);
+}
+
+#plate7 {
+    top: 80%;
+    left: calc(40% - 51px);
+}
+
+#plate8 {
+    top: 80%;
+    left: calc(20% - 51px);
+}
+
+#plate9 {
+    top: 63%;
+    left: 25%;
+}
+
+#plate10 {
+    top: 52%;
+    left: 50%;
+}

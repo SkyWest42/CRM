@@ -914,7 +914,7 @@ tr:nth-child(even) {
   height: 65vh;
   width: calc(65vh * 1.49);
   border: 50px solid transparent;
-  border-image: url("media/chalkFrameBlack.png") 60 stretch;
+  border-image: url("media/indexMedia/chalkFrameBlack.png") 60 stretch;
   transform-origin: top right;
   display: none;
   transition: 1s;

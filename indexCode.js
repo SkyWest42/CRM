@@ -15,7 +15,7 @@ var matContent = [
     [
         [
             {
-                "section": "<p>מערכת הCRM הינה <strong>מערכת לניהול קשרי לקוחות</strong>.</p><p><strong>CRM- Customer Relationship Management</strong></p><p>המערכת מאפשרת ליחידת מיטב <strong>לנהל פניות של מלש\"בים </strong>במגוון נושאים, <strong>לתעד</strong> אותן ו<strong>לעקוב</strong> אחר הטיפול בהן. &nbsp;</p><hr /><p>רוב הפניות מתקבלות ב<strong>מרכז המידע והשירות </strong>שמורכב מהמוקד הטלפוני של מיטב והמוקד הדיגיטלי. הפניות מטופלות ונסגרות במוקד או מועברות משם להמשך הטיפול במדורים המקצועיים ביחידה.</p><p>בנוסף, ישנן פניות אשר מגיעות דרך אתר \"מתגייסים ברשת\" חלקן מגיעות למוקד וחלקן מופנות ישירות למדור המקצועי.</p ><img class='full-img' src='media/flowchart.png'/>",
+                "section": "<p>מערכת הCRM הינה <strong>מערכת לניהול קשרי לקוחות</strong>.</p><p><strong>CRM- Customer Relationship Management</strong></p><p>המערכת מאפשרת ליחידת מיטב <strong>לנהל פניות של מלש\"בים </strong>במגוון נושאים, <strong>לתעד</strong> אותן ו<strong>לעקוב</strong> אחר הטיפול בהן. &nbsp;</p><hr /><p>רוב הפניות מתקבלות ב<strong>מרכז המידע והשירות </strong>שמורכב מהמוקד הטלפוני של מיטב והמוקד הדיגיטלי. הפניות מטופלות ונסגרות במוקד או מועברות משם להמשך הטיפול במדורים המקצועיים ביחידה.</p><p>בנוסף, ישנן פניות אשר מגיעות דרך אתר \"מתגייסים ברשת\" חלקן מגיעות למוקד וחלקן מופנות ישירות למדור המקצועי.</p ><img class='full-img' src='media/indexMedia/flowchart.png'/>",
                 "instruction": ""
             }
         ]
@@ -109,7 +109,7 @@ var matContent = [
             }
             ,
             {
-                "section": "<p><b class='section-name'>פרטי הפניה</b>- כאן נמצא פרטים על הפנייה עצמה, תחת תת-כותרות שונות:</p><p><strong>סיווג הפניה</strong>-<img class='text-img detail-img' src='media/puzzle3.png'/> כל הפניות במיטב מסווגות לפי \"שלשות\". ה\"שלשות\" הן נושאי הפניות, וכל אחת מהן מכילה: תחום, תת תחום, שאלה ותת שאלה (בדרך כלל התת שאלה שווה לשאלה).</p><p><strong>תשובת חוקה</strong><img class='text-img detail-img' src='media/lawlined.png'/> עוזרת לנציג לטפל בפניה בצורה יעילה יותר. מדובר בהנחיה של המדור המקצועי שמכווינה את הנציג לטפל בפניה לפי המלצת המדור. תשובת חוקה שתופיע תהיה מותאמת לנושא הפניה (\"השלשה\").</p>",
+                "section": "<p><b class='section-name'>פרטי הפניה</b>- כאן נמצא פרטים על הפנייה עצמה, תחת תת-כותרות שונות:</p><p><strong>סיווג הפניה</strong>-<img class='text-img detail-img' src='media/indexMedia/puzzle3.png'/> כל הפניות במיטב מסווגות לפי \"שלשות\". ה\"שלשות\" הן נושאי הפניות, וכל אחת מהן מכילה: תחום, תת תחום, שאלה ותת שאלה (בדרך כלל התת שאלה שווה לשאלה).</p><p><strong>תשובת חוקה</strong><img class='text-img detail-img' src='media/indexMedia/lawlined.png'/> עוזרת לנציג לטפל בפניה בצורה יעילה יותר. מדובר בהנחיה של המדור המקצועי שמכווינה את הנציג לטפל בפניה לפי המלצת המדור. תשובת חוקה שתופיע תהיה מותאמת לנושא הפניה (\"השלשה\").</p>",
                 "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול למטה",
                 "interactionType": "click",
                 "width": "2%",
@@ -121,7 +121,7 @@ var matContent = [
             }
             ,
             {
-                "section": "<p>ב<strong>SLA</strong><strong> ישים </strong><img class='text-img detail-img' src='media/hourglass.png'/>(SLA- Service-level agreement) ניתן לראות אם מיטב עומדת בקריטריונים שהיא הציבה לעצמה עבור זמן הטיפול בפניה.</p><p><strong>תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/contract.png'/> הוא המקום בו אנחנו אמורים לתעד מה עשינו עם הפניה לפני שהיא מועברת למקום אחר או נסגרת.</p><p><strong>היסטוריית תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/clock.png'/>הוא המקום אליו עובר המלל שהיה ב\"תיאור הטיפול בפניה\" לאחר סגירת הפניה או הקצאתה לגורם אחר.</p>",
+                "section": "<p>ב<strong>SLA</strong><strong> ישים </strong><img class='text-img detail-img' src='media/indexMedia/hourglass.png'/>(SLA- Service-level agreement) ניתן לראות אם מיטב עומדת בקריטריונים שהיא הציבה לעצמה עבור זמן הטיפול בפניה.</p><p><strong>תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/indexMedia/contract.png'/> הוא המקום בו אנחנו אמורים לתעד מה עשינו עם הפניה לפני שהיא מועברת למקום אחר או נסגרת.</p><p><strong>היסטוריית תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/indexMedia/clock.png'/>הוא המקום אליו עובר המלל שהיה ב\"תיאור הטיפול בפניה\" לאחר סגירת הפניה או הקצאתה לגורם אחר.</p>",
                 "instruction": "לחץ על שם המקטע \"פניות אחרונות\" על מנת לפתוח אותו",
                 "interactionType": "click",
                 "width": "13%",
@@ -323,7 +323,7 @@ var matContent = [
         ],
         [
             {
-                "section": "<p>כפי שניתן לראות, פניה חדשה נפתחת ללא נושא (שלשה) מסוים.</p><p>זוכרים ממה מורכבת שלשה? בואו נתחיל!</p><p><img class='text-img detail-img' src='media/puzzle1.png'/> לבחירת ה<strong>תחום</strong> הרלוונטי, נלחץ על השדה תחום. לאחר מכן נלחץ Enter או על זכוכית המגדלת ונבחר תחום מתוך הרשימה שתוצג.</p>",
+                "section": "<p>כפי שניתן לראות, פניה חדשה נפתחת ללא נושא (שלשה) מסוים.</p><p>זוכרים ממה מורכבת שלשה? בואו נתחיל!</p><p><img class='text-img detail-img' src='media/indexMedia/puzzle1.png'/> לבחירת ה<strong>תחום</strong> הרלוונטי, נלחץ על השדה תחום. לאחר מכן נלחץ Enter או על זכוכית המגדלת ונבחר תחום מתוך הרשימה שתוצג.</p>",
                 "instruction": "לחץ על השדה \"תחום\" והקש Enter",
                 "interactionType": "click",
                 "width": "10%",
@@ -345,7 +345,7 @@ var matContent = [
                 "isBreak": "false"
             },
             {
-                "section": "<p style='overflow: auto;'><img class='text-img detail-img' src='media/puzzle2.png'/>נבחר את <strong>תת התחום</strong> באופן  דומה.</p>",
+                "section": "<p style='overflow: auto;'><img class='text-img detail-img' src='media/indexMedia/puzzle2.png'/>נבחר את <strong>תת התחום</strong> באופן  דומה.</p>",
                 "instruction": "לחץ על השדה \"תת תחום\" והקש Enter",
                 "interactionType": "click",
                 "width": "10%",
@@ -367,7 +367,7 @@ var matContent = [
                 "isBreak": "false"
             },
             {
-                "section": "<p style='overflow: auto;'><img class='text-img detail-img' src='media/puzzle3.png'/>ולסיום את ה<strong>שאלה</strong>.</p>",
+                "section": "<p style='overflow: auto;'><img class='text-img detail-img' src='media/indexMedia/puzzle3.png'/>ולסיום את ה<strong>שאלה</strong>.</p>",
                 "instruction": "לחץ על השדה \"שאלה\" והקש Enter",
                 "interactionType": "click",
                 "width": "10%",
@@ -500,7 +500,7 @@ var matContent = [
                 "isBreak": "true"
             },
             {
-                "section": "<p>כעת מופיע הקובץ במקטע הקבצים המצורפים.</p><p>כל הכבוד! סיימנו לעדכן את הפרטים בפניה.</p><p>כעת יש לשמור אותה.</p><table class='save-btn-table'><tbody><tr><th>איזה כפתור?</th><th>מה הוא עושה?</th><th>מתי נשתמש?</th></tr><tr><td><img src='media/save.png'/></td><td>שומר את הפניה, ישאיר אותנו במסך הפניה.</td><td>○ כשהפניה ממתינה לטיפול על ידי גורם אחר (לדוגמה קב\"ן או רופא) <br /><br /> ○ כשקיימת בעיה שמונעת מאתנו לטפל בפניה כרגע.</td></tr><tr><td><img src='media/saveandclose.png'/></td><td>שמור וסוגר את הפניה על ידינו, יחזיר אותנו לתצוגה הראשית.</td><td>○ אם סיימנו לטפל בפניה, והיא לא דורשת טיפול על ידי גורם נוסף.</td></tr><tr><td><img src='media/saveandsend.png'/></td><td>שומר את הפניה, יאפשר לנו להקצות אותה לגורם אחר ביחידה.</td><td>○ אם הפניה דורשת טיפול של גורם אחר ביחידה, אליו נרצה להעביר אותה.&nbsp;</td></tr></tbody></table><p><a id='download-btn' class='download-btn info-btn' title='saveButtons' href='/media/saveButtons.png' download='saveButtons.png'> שמור טבלה <img src='media/download.png'/> </a></p>",
+                "section": "<p>כעת מופיע הקובץ במקטע הקבצים המצורפים.</p><p>כל הכבוד! סיימנו לעדכן את הפרטים בפניה.</p><p>כעת יש לשמור אותה.</p><table class='save-btn-table'><tbody><tr><th>איזה כפתור?</th><th>מה הוא עושה?</th><th>מתי נשתמש?</th></tr><tr><td><img src='media/indexMedia/save.png'/></td><td>שומר את הפניה, ישאיר אותנו במסך הפניה.</td><td>○ כשהפניה ממתינה לטיפול על ידי גורם אחר (לדוגמה קב\"ן או רופא) <br /><br /> ○ כשקיימת בעיה שמונעת מאתנו לטפל בפניה כרגע.</td></tr><tr><td><img src='media/indexMedia/saveandclose.png'/></td><td>שמור וסוגר את הפניה על ידינו, יחזיר אותנו לתצוגה הראשית.</td><td>○ אם סיימנו לטפל בפניה, והיא לא דורשת טיפול על ידי גורם נוסף.</td></tr><tr><td><img src='media/indexMedia/saveandsend.png'/></td><td>שומר את הפניה, יאפשר לנו להקצות אותה לגורם אחר ביחידה.</td><td>○ אם הפניה דורשת טיפול של גורם אחר ביחידה, אליו נרצה להעביר אותה.&nbsp;</td></tr></tbody></table><p><a id='download-btn' class='download-btn info-btn' title='saveButtons' href='/media/indexMedia/saveButtons.png' download='saveButtons.png'> שמור טבלה <img src='media/indexMedia/download.png'/> </a></p>",
                 "instruction": "הפניה נפתרה! שמור וסגור אותה",
                 "interactionType": "click",
                 "width": "8%",
@@ -519,7 +519,7 @@ var matContent = [
     [
         [
             {
-                "section": "<p>לעיתים קרובות נקבל פניות שהטיפול בהן הוא באחראיות גוף אחר ביחידה. במקרה כזה, יהיה עלינו להקצות את הפניה לאותו גוף. הקצאה נכונה של פניות חשובה מאוד, ומונעת עיכוב מיותר.</p><p>לשם ניתוב נכון של פניה, עלינו להבין לעומק את מהות הפניה.</p><img src='media/questionCard.png' id='question-card' class='card-img question-card full-img' onclick='flipCard()'/>",
+                "section": "<p>לעיתים קרובות נקבל פניות שהטיפול בהן הוא באחראיות גוף אחר ביחידה. במקרה כזה, יהיה עלינו להקצות את הפניה לאותו גוף. הקצאה נכונה של פניות חשובה מאוד, ומונעת עיכוב מיותר.</p><p>לשם ניתוב נכון של פניה, עלינו להבין לעומק את מהות הפניה.</p><img src='media/indexMedia/questionCard.png' id='question-card' class='card-img question-card full-img' onclick='flipCard()'/>",
                 "instruction": ""
             }
         ],
@@ -558,7 +558,7 @@ var matContent = [
                 "isBreak": "true"
             },
             {
-                "section": "<p><img class='text-img detail-img' src='media/puzzle3.png'/> לאחר שקראנו את ההתכתבות וצפינו בקבצים, הבנו מה מהות הפניה וכעת ניתן לסווג את אותה בשלשה.</p>",
+                "section": "<p><img class='text-img detail-img' src='media/indexMedia/puzzle3.png'/> לאחר שקראנו את ההתכתבות וצפינו בקבצים, הבנו מה מהות הפניה וכעת ניתן לסווג את אותה בשלשה.</p>",
                 "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול לסיווג הפניה",
                 "interactionType": "click",
                 "width": "2%",
@@ -796,7 +796,7 @@ var matContent = [
                 "isBreak": "true"
             },
             {
-                "section": "<p>השדה \"האם לשלוח הודעה ללקוח\" (כן/לא) מסמן האם תישלח <strong>הודעת</strong> <strong>SMS </strong> למועמד בסגירת הפניה.</p><img src='media/smsCard.png' class='full-img'/><p>במקרה ולמשתמש שלנו יש את ההרשאות הנדרשות לכך, ניתן להזין ידנית את מלל ההודעה שתישלח או לערוך תשובה על בסיס תבנית הודעה קיימת (בשדה \"הודעה ללקוח\").</p>",
+                "section": "<p>השדה \"האם לשלוח הודעה ללקוח\" (כן/לא) מסמן האם תישלח <strong>הודעת</strong> <strong>SMS </strong> למועמד בסגירת הפניה.</p><img src='media/indexMedia/smsCard.png' class='full-img'/><p>במקרה ולמשתמש שלנו יש את ההרשאות הנדרשות לכך, ניתן להזין ידנית את מלל ההודעה שתישלח או לערוך תשובה על בסיס תבנית הודעה קיימת (בשדה \"הודעה ללקוח\").</p>",
                 "instruction": "לחץ על \"שמור\" במסך התרגול",
                 "interactionType": "click",
                 "width": "6.4%",
@@ -815,13 +815,13 @@ var matContent = [
     [
         [
             {
-                "section": "<p>ה(Service Level Agreement)-SLA הינו הסכם לרמת שירות בין נותני השירות שבמיטב ללקוחות שלה (אוכלוסיית המלש\"בים בישראל).</p><img src='media/handshake.jpg' class='full-img'/><p>הSLA נועד לעזור ליחידת מיטב לממש את חזונה- יצירת תהליך גיוס אישי, חדשני ומדויק עבור כל מלש\"ב.</p><p>כחלק מהמדדים שמשקפים את איכות השירות שניתן ללקוח (וכחלק מהSLA) נמדד זמן התגובה ללקוח.</p><p>לפי החלטת היחידה, <strong>הזמן המקסימלי לטיפול ברוב הפניות שמתקבלות הינו שבוע.</strong> כלומר, תוך שבוע מרגע הפניה חייב המלש\"ב לקבל מענה.</p><p>ישנם תחומי פניות שבהם נדרש זמן נוסף לטיפול והSLA שהוגדר להם ארוך יותר (בעיקר פניות בתחום הרפואי/בריאות הנפש).</p><p>מה שמגדיר את הSLA במערכת הCRM עבור כל פניה זאת השלשה של הפניה (נושא הפניה).</p>",
+                "section": "<p>ה(Service Level Agreement)-SLA הינו הסכם לרמת שירות בין נותני השירות שבמיטב ללקוחות שלה (אוכלוסיית המלש\"בים בישראל).</p><img src='media/indexMedia/handshake.jpg' class='full-img'/><p>הSLA נועד לעזור ליחידת מיטב לממש את חזונה- יצירת תהליך גיוס אישי, חדשני ומדויק עבור כל מלש\"ב.</p><p>כחלק מהמדדים שמשקפים את איכות השירות שניתן ללקוח (וכחלק מהSLA) נמדד זמן התגובה ללקוח.</p><p>לפי החלטת היחידה, <strong>הזמן המקסימלי לטיפול ברוב הפניות שמתקבלות הינו שבוע.</strong> כלומר, תוך שבוע מרגע הפניה חייב המלש\"ב לקבל מענה.</p><p>ישנם תחומי פניות שבהם נדרש זמן נוסף לטיפול והSLA שהוגדר להם ארוך יותר (בעיקר פניות בתחום הרפואי/בריאות הנפש).</p><p>מה שמגדיר את הSLA במערכת הCRM עבור כל פניה זאת השלשה של הפניה (נושא הפניה).</p>",
                 "instruction": ""
             }
         ],
         [
             {
-                "section": "<img src='media/runningClock.png' class='detail-img'/><p>השעון מתחיל לרוץ ברגע שסיווגנו את הפניה בנושא מסוים.</p><p>את הזמן שנשאר לטיפול בפניה ניתן לראות תחת \"SLA ישים\" בשדה \"פתור ב\":</p><p><img class='status-img' src='media/SLA.png'/></p><p>הזמן שנותר לטיפול מוצג בפורמט ימים/שעות/דקות/שניות.</p><p>בנוסף, קיים סטטוס שמראה עד כמה אנחנו עומדים במדדי הזמן לטיפול בפניה.</p><p>פניות שנסגרו בזמן שהוקצב לטיפול יופיעו עם סטטוס \"הצליח\".</p><p><img class='status-img' src='media/successful.png'/></p><p>פניות שנותרו פחות מ-24 שעות לטפל בהן יקבלו סטטוס \"התראה לפני חריגה\", והזמן הנותר לטיפול בהן יופיע בצהוב בשדה \"פתור ב\".</p><p><img class='status-img' src='media/urgent.png'/></p><p>פניות שחרגנו מזמן הטיפול בהן יסומנו בסטטוס \"פג תוקף\"</p><p><img class='status-img' src='media/expired.png'/></p>",
+                "section": "<img src='media/indexMedia/runningClock.png' class='detail-img'/><p>השעון מתחיל לרוץ ברגע שסיווגנו את הפניה בנושא מסוים.</p><p>את הזמן שנשאר לטיפול בפניה ניתן לראות תחת \"SLA ישים\" בשדה \"פתור ב\":</p><p><img class='status-img' src='media/indexMedia/SLA.png'/></p><p>הזמן שנותר לטיפול מוצג בפורמט ימים/שעות/דקות/שניות.</p><p>בנוסף, קיים סטטוס שמראה עד כמה אנחנו עומדים במדדי הזמן לטיפול בפניה.</p><p>פניות שנסגרו בזמן שהוקצב לטיפול יופיעו עם סטטוס \"הצליח\".</p><p><img class='status-img' src='media/indexMedia/successful.png'/></p><p>פניות שנותרו פחות מ-24 שעות לטפל בהן יקבלו סטטוס \"התראה לפני חריגה\", והזמן הנותר לטיפול בהן יופיע בצהוב בשדה \"פתור ב\".</p><p><img class='status-img' src='media/indexMedia/urgent.png'/></p><p>פניות שחרגנו מזמן הטיפול בהן יסומנו בסטטוס \"פג תוקף\"</p><p><img class='status-img' src='media/indexMedia/expired.png'/></p>",
                 "instruction": ""
             }
         ]
@@ -843,13 +843,13 @@ function flipCard(event) {
     if (!isFlipped) {
         $("#question-card").css("transform", "rotateY(180deg)");
         setTimeout(function () {
-            $("#question-card").attr("src", "media/answerCard.png");
+            $("#question-card").attr("src", "media/indexMedia/answerCard.png");
         }, 300)
         isFlipped = true;
     } else {
         $("#question-card").css("transform", "rotateY(0deg)");
         setTimeout(function () {
-            $("#question-card").attr("src", "media/questionCard.png");
+            $("#question-card").attr("src", "media/indexMedia/questionCard.png");
         }, 300)
         isFlipped = false;
     }
@@ -1380,7 +1380,7 @@ function showNextSection() {
 function chapterManager() {
     $("#practice-screen-content").html("");
     currScreen = matOpeningScreen[currChapter][currPage];
-    $("#practice-screen-content").append("<img src='media/crmScreenshots/s (" + currScreen + ").png' id='screen-img' class='fullscreen'/>");
+    $("#practice-screen-content").append("<img src='media/indexMedia/crmScreenshots/s (" + currScreen + ").png' id='screen-img' class='fullscreen'/>");
     $("#practice-screen-content").append("<input id='typeable' class='interactable'></div>");
     $("#practice-screen-content").append("<div id='clickable' class='interactable'></div>");
     interactionManager();
@@ -1429,7 +1429,7 @@ function interactionManager() {
                 $("#clickable").on("click", function (event) {
                     showNextSection();
                     if (isChangeScreen) {
-                        $("#screen-img").attr("src", "media/crmScreenshots/s (" + ++currScreen + ").png");
+                        $("#screen-img").attr("src", "media/indexMedia/crmScreenshots/s (" + ++currScreen + ").png");
                     }
                     interactionManager();
                 });
@@ -1445,7 +1445,7 @@ function interactionManager() {
                         $(this).val("");
                         showNextSection();
                         if (isChangeScreen) {
-                            $("#screen-img").attr("src", "media/crmScreenshots/s (" + ++currScreen + ").png");
+                            $("#screen-img").attr("src", "media/indexMedia/crmScreenshots/s (" + ++currScreen + ").png");
                         }
                         interactionManager();
                     } else {
@@ -1466,7 +1466,7 @@ function interactionManager() {
                     if (event.key === correctInput) {
                         showNextSection();
                         if (isChangeScreen) {
-                            $("#screen-img").attr("src", "media/crmScreenshots/s (" + ++currScreen + ").png");
+                            $("#screen-img").attr("src", "media/indexMedia/crmScreenshots/s (" + ++currScreen + ").png");
                         }
                         interactionManager();
                     }
@@ -1476,7 +1476,7 @@ function interactionManager() {
                     $("#clickable").on("click", function (event) {
                         showNextSection();
                         if (isChangeScreen) {
-                            $("#screen-img").attr("src", "media/crmScreenshots/s (" + ++currScreen + ").png");
+                            $("#screen-img").attr("src", "media/indexMedia/crmScreenshots/s (" + ++currScreen + ").png");
                         }
                         interactionManager();
                     });
@@ -1595,8 +1595,8 @@ function changeColor(event) {
         document.documentElement.style.setProperty('--menu-item-color5', '#830e27');
         document.documentElement.style.setProperty('--hover-color6', '#580020');
 
-        // $(".sap-icon").attr("src", "media/sapPink.png");
-        $("body").css("background-image", "url(media/backgroundPink.png)");
+        // $(".sap-icon").attr("src", "media/indexMedia/sapPink.png");
+        $("body").css("background-image", "url(media/indexMedia/backgroundPink.png)");
         $("#color-scheme").removeClass("change-to-pink");
         $("#color-scheme").addClass("change-to-green");
 
@@ -1607,8 +1607,8 @@ function changeColor(event) {
         document.documentElement.style.setProperty('--scrollbar-color4', '#3A641C');
         document.documentElement.style.setProperty('--menu-item-color5', '#294714');
         document.documentElement.style.setProperty('--hover-color6', '#172b0a');
-        // $(".sap-icon").attr("src", "media/sapGreen.png");
-        $("body").css("background-image", "url(media/backgroundGreen.png)");
+        // $(".sap-icon").attr("src", "media/indexMedia/sapGreen.png");
+        $("body").css("background-image", "url(media/indexMedia/backgroundGreen.png)");
         $("#color-scheme").removeClass("change-to-green");
         $("#color-scheme").addClass("change-to-pink");
     }
