@@ -14,20 +14,27 @@
 <body>
     <div id="page-container">
         <div id="inventory" class="inventory">
-            <img src="media/flowchartMedia/website.png" class="draggable" />
+            <img src="media/flowchartMedia/website.png" id="אתר מתגייסים" class="draggable channel" />
+            <img src="media/flowchartMedia/phone.png" id="טלפון" class="draggable channel" />
+            <img src="media/flowchartMedia/smartphone.png" id="סמס" class="draggable channel" />
+            <img src="media/flowchartMedia/email.png" id="מייל" class="draggable channel" />
+            <img src="media/flowchartMedia/facebook.png" id="פייסבוק" class="draggable channel" />
+            <img src="media/flowchartMedia/close.png" id="סגור פניה" class="draggable connector" />
+            <img src="media/flowchartMedia/transfer.png" id="הקצה פניה" class="draggable connector" />
+            <div class="draggable-name-container"><input id="draggable-name" class="draggable-name" readonly/></div>
         </div>
         <div id="flowchart-container" class="flowchart-container">
             <img src="media/flowchartMedia/customer.png" id="customer" />
             <img src="media/flowchartMedia/callCenter.png" id="meitav-call-center" />
             <img src="media/flowchartMedia/departments.png" id="departments-call-center" />
-            <div id="plate1" class="plate"></div>
-            <div id="plate2" class="plate"></div>
-            <div id="plate3" class="plate"></div>
-            <div id="plate4" class="plate"></div>
-            <div id="plate5" class="plate"></div>
-            <div id="plate6" class="plate"></div>
-            <div id="plate7" class="plate"></div>
-            <div id="plate8" class="plate"></div>
+            <div id="plate1" class="plate channel-plate"></div>
+            <div id="plate2" class="plate channel-plate"></div>
+            <div id="plate3" class="plate channel-plate"></div>
+            <div id="plate4" class="plate channel-plate"></div>
+            <div id="plate5" class="plate channel-plate"></div>
+            <div id="plate6" class="plate channel-plate"></div>
+            <div id="plate7" class="plate channel-plate"></div>
+            <div id="plate8" class="plate channel-plate"></div>
             <div id="plate9" class="plate connection-plate"></div>
             <div id="plate10" class="plate connection-plate"></div>
 
@@ -49,6 +56,7 @@
                 <line x1="70%" y1="68%" x2="62%" y2="81%"/>
                 <line x1="70%" y1="68%" x2="79%" y2="81%"/>
             </svg>
+            <div id="check-btn" class="check-btn">בדוק</div>
         </div>
     </div>
 </body>
