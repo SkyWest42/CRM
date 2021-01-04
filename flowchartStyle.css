@@ -35,7 +35,7 @@ body {
 
 .flowchart-container .plate {
     height: 10%;
-    z-index: 1;
+    /* z-index: 0; */
     background-color: hsl(230, 68%, 58%);
     background-size: cover;
     border: ridge hsl(230, 64%, 48%) 6px;
@@ -50,6 +50,7 @@ body {
 
 .inventory {
     height: 100%;
+    z-index: 2;
     width: 32vw;
     max-width: 500px;
     background-color: hsla(330, 60%, 46%, 0.6);
@@ -63,9 +64,14 @@ body {
 .draggable {
     width: 120px;
     height: 120px;
-    z-index: 2;
+    z-index: 1;
     margin: 10px 5px;
     cursor: pointer;
+}
+
+.ui-draggable-dragging {
+    cursor: grab;
+    z-index: 3;
 }
 
 .draggable-name-container {
@@ -119,6 +125,41 @@ body {
 .lines line {
     stroke-width: 3px;
     stroke: rgb(107, 145, 38);
+}
+
+.confirmation-box {
+    display: none;
+    z-index: 5;
+    background-color: #f3f3f3;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%);
+    box-sizing: border-box;
+    padding: 3%;
+    font-size: calc(1vw + 1vh);
+    box-shadow: 0px 3px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.confirmation-box button {
+    cursor: pointer;
+    border: black solid 1px;
+    padding: 1.5% 4%;
+    font-size: calc(1vw + 1vh);
+    width: 24%;
+    margin-right: 3%;
+}
+
+.confirmation-box .confirm {
+    color: white;
+    background-color: #2c7204;
+    float: left;
+}
+
+.confirmation-box .confirm:hover {
+    color: white;
+    background-color: #172b0a;
+    float: left;
 }
 
 /* flowchart items position */

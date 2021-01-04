@@ -1155,7 +1155,6 @@ function closeConfirmationBox() {
     $("#confirmation-box").hide();
     $("#confirm").off();
     $("#cancel").off();
-
 }
 
 /*

@@ -13,14 +13,18 @@
 
 <body>
     <div id="page-container">
+        <div id="confirmation-box" class="confirmation-box">
+            <p>לאן אתם ממהרים? קודם תסיימו למלא את התרשים</p>
+            <button id="confirm" class="confirm">אוקיי</button>
+        </div>
         <div id="inventory" class="inventory">
-            <img src="media/flowchartMedia/website.png" id="אתר מתגייסים" class="draggable channel" />
-            <img src="media/flowchartMedia/phone.png" id="טלפון" class="draggable channel" />
-            <img src="media/flowchartMedia/smartphone.png" id="סמס" class="draggable channel" />
-            <img src="media/flowchartMedia/email.png" id="מייל" class="draggable channel" />
-            <img src="media/flowchartMedia/facebook.png" id="פייסבוק" class="draggable channel" />
-            <img src="media/flowchartMedia/close.png" id="סגור פניה" class="draggable connector" />
-            <img src="media/flowchartMedia/transfer.png" id="הקצה פניה" class="draggable connector" />
+            <img src="media/flowchartMedia/website.png" class="draggable channel" data-channel-name="אתר מתגייסים" data-channel-id="website"/>
+            <img src="media/flowchartMedia/phone.png" class="draggable channel" data-channel-name="טלפון" data-channel-id="phone"/>
+            <img src="media/flowchartMedia/smartphone.png"class="draggable channel" data-channel-name="סמס" data-channel-id="smartphone"/>
+            <img src="media/flowchartMedia/email.png" class="draggable channel" data-channel-name="מייל" data-channel-id="email"/>
+            <img src="media/flowchartMedia/facebook.png" class="draggable channel" data-channel-name="פייסבוק" data-channel-id="facebook"/>
+            <img src="media/flowchartMedia/close.png" class="draggable connector" data-channel-name="סגור פניה" data-channel-id="close"/>
+            <img src="media/flowchartMedia/transfer.png" class="draggable connector" data-channel-name="הקצה פניה" data-channel-id="transfer"/>
             <div class="draggable-name-container"><input id="draggable-name" class="draggable-name" readonly/></div>
         </div>
         <div id="flowchart-container" class="flowchart-container">
@@ -60,5 +64,4 @@
         </div>
     </div>
 </body>
-
 </html>
