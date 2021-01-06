@@ -3,6 +3,19 @@
     font-family: Varela;
 }
 
+@keyframes pulse {
+    0% {
+        border: red solid 3px;
+    }
+    50% {
+        border: red solid 3px;
+        transform: scale(1.5) rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
 body {
     margin: 0;
     background-color: #f3f3f3;
@@ -67,6 +80,8 @@ body {
     z-index: 1;
     margin: 10px 5px;
     cursor: pointer;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
 
 .ui-draggable-dragging {

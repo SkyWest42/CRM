@@ -77,6 +77,8 @@ function accept($plate, $draggable) {
 
 function check() {
     if (isFilled()) {
+        $(".draggable").draggable("destroy");
+        $("#check-btn").html("סיים לומדה!");
         alert(checkUserAnswer(getUserAnswer()));
     } else {
         $("#confirmation-box").show();
@@ -137,40 +139,80 @@ function getUserAnswer() {
 
 function checkUserAnswer(matUserAnswer) {
     var mistakeCounter = 0;
-    var countBefore2 = 0;
-
     for (var groupIndex = 0; groupIndex < MAT_ANSWER.length; groupIndex++) {
-        mistakeCounter += removeDuplicates(matUserAnswer[groupIndex]);
-        // MAT_ANSWER[groupIndex].sort();
-        // matUserAnswer[groupIndex].sort();
-        if (groupIndex > 0) {
-            countBefore2 += MAT_ANSWER[groupIndex - 1].length;
-        }
-        for (var valueIndex = 0; valueIndex < matUserAnswer[groupIndex].length; valueIndex++) {
-            if (!MAT_ANSWER[groupIndex].includes(matUserAnswer[groupIndex][valueIndex])) {
-                $("#plate" + (countBefore2 + valueIndex + 1) + " img").css("border", "red 5px solid");
+        removeDuplicates(matUserAnswer[groupIndex]);
+        for (var valueUserIndex = 0; valueUserIndex < matUserAnswer[groupIndex].length; valueUserIndex++) {
+            var valueAnswerIndex = MAT_ANSWER[groupIndex].indexOf(matUserAnswer[groupIndex][valueUserIndex]);
+            if (valueAnswerIndex === -1) {
                 mistakeCounter++;
+            } else {
+                MAT_ANSWER[groupIndex].splice(valueUserIndex, 0, MAT_ANSWER[groupIndex].splice(valueAnswerIndex, 1)[0]);
             }
         }
     }
+    showCorrect(matUserAnswer, 0, 0, 0);
     return mistakeCounter;
 }
 
 function removeDuplicates(array) {
-    var mistakeCount = 0;
     var val;
     var arrayLength = array.length;
     for (var i = 0; i < arrayLength - 1; i++) {
         val = array.splice(i, 1).shift();
         if (!array.includes(val)) {
-            array.unshift(val);
+            array.splice(i, 0, val);
         } else {
-            mistakeCount++;
+            array.splice(i, 0, "duplicate");
         }
     }
-    return mistakeCount;
 }
 
-function showCorrect() {
-    
+// function showCorrect(matUserAnswer) {
+//     var countBefore = 0;
+//     var plateNumber;
+//     var answerValue;
+//     for (var groupIndex = 0; groupIndex < MAT_ANSWER.length; groupIndex++) {
+//         if (groupIndex > 0) {
+//             countBefore += MAT_ANSWER[groupIndex - 1].length;
+//         }
+//         for (var valIndex = 0; valIndex < MAT_ANSWER[groupIndex].length; valIndex++) {
+//             if (MAT_ANSWER[groupIndex][valIndex] !== matUserAnswer[groupIndex][valIndex]) {
+//                 plateNumber = countBefore + valIndex + 1;
+//                 answerValue = MAT_ANSWER[groupIndex][valIndex];
+//                 $("#plate" + plateNumber + " img").css("animation", "pulse 1s ease-out " + (plateNumber * 0.5) + "s")
+//                     .delay(600 + plateNumber * 500)
+//                     .queue(function (next) {
+//                         $(this).attr("src", "media/flowchartMedia/" + answerValue + ".png");
+//                         next();
+//                     })
+//                     // .attr("src", "media/flowchartMedia/" + MAT_ANSWER[groupIndex][valIndex] + ".png");
+//             }
+//         }
+//     }
+// }
+
+function showCorrect(matUserAnswer, countBefore, groupIndex, valIndex) {
+    var plateNumber;
+    var answerValue;
+    setTimeout(function () {
+        plateNumber = countBefore + valIndex + 1;
+        answerValue = MAT_ANSWER[groupIndex][valIndex];
+        if (matUserAnswer[groupIndex][valIndex] !== answerValue) {
+            $("#plate" + plateNumber + " img").css("animation", "pulse 1s ease-out")
+                .delay(600)
+                .queue(function (next) {
+                    $("#plate" + plateNumber + " img").attr("src", "media/flowchartMedia/" + answerValue + ".png");
+                    next();
+                });
+        }
+        if (valIndex < MAT_ANSWER[groupIndex].length - 1) {
+            valIndex++;
+            countBefore++;
+            showCorrect(matUserAnswer, countBefore, groupIndex, valIndex);
+        } else if (groupIndex < MAT_ANSWER.length - 1) {
+            valIndex = 0;
+            groupIndex++;
+            showCorrect(matUserAnswer, countBefore, groupIndex, valIndex);
+        }
+    }, 1100);
 }
