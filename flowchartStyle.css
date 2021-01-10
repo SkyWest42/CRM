@@ -3,16 +3,38 @@
     font-family: Varela;
 }
 
-@keyframes pulse {
+@keyframes pulseAndTurn {
     0% {
-        border: red solid 3px;
+        border: red solid 5px;
     }
     50% {
-        border: red solid 3px;
+        border: red solid 5px;
         transform: scale(1.5) rotateZ(180deg);
     }
     100% {
         transform: rotateZ(360deg);
+    }
+}
+
+@keyframes pulse {
+    15% {
+        background: radial-gradient(#63d11a, transparent 60%);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    85% {
+        background: radial-gradient(#63d11a, transparent 60%);
+    }
+}
+
+@keyframes fall {
+    20% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(80px);
+        opacity: 0;
     }
 }
 
@@ -175,6 +197,14 @@ body {
     color: white;
     background-color: #172b0a;
     float: left;
+}
+
+.mistake {
+    position: absolute;
+    z-index: 5;
+    top: 40%;
+    left: 60%;
+    animation: fall linear 1s forwards;
 }
 
 /* flowchart items position */

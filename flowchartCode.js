@@ -77,9 +77,14 @@ function accept($plate, $draggable) {
 
 function check() {
     if (isFilled()) {
+        $("#check-btn").off();
         $(".draggable").draggable("destroy");
+        $(".draggable").css("cursor", "auto");
         $("#check-btn").html("סיים לומדה!");
-        alert(checkUserAnswer(getUserAnswer()));
+        $("#check-btn").on("click", function () {
+            window.location.replace("form.html");
+        });
+        checkUserAnswer(getUserAnswer());
     } else {
         $("#confirmation-box").show();
         $("#confirm").on("click", function () {
@@ -150,7 +155,7 @@ function checkUserAnswer(matUserAnswer) {
             }
         }
     }
-    showCorrect(matUserAnswer, 0, 0, 0);
+    showCorrect(matUserAnswer, 1, 0, 0);
     return mistakeCounter;
 }
 
@@ -191,28 +196,36 @@ function removeDuplicates(array) {
 //     }
 // }
 
-function showCorrect(matUserAnswer, countBefore, groupIndex, valIndex) {
-    var plateNumber;
-    var answerValue;
+function showCorrect(matUserAnswer, plateNumber, groupIndex, valIndex) {
+    var answerValue = MAT_ANSWER[groupIndex][valIndex];
+    var timeout = 0;
+
+    if (matUserAnswer[groupIndex][valIndex] !== answerValue) {
+        timeout = 1200;
+        $("#flowchart-container").append("<img class='mistake' src='media/flowchartMedia/mistake5.png'/>")
+        $("#plate" + plateNumber + " img").css("animation", "pulseAndTurn 1.2s ease-out")
+            .delay(600)
+            .queue(function (next) {
+                $("#plate" + plateNumber + " img").attr("src", "media/flowchartMedia/" + answerValue + ".png");
+                $(this).dequeue();
+            });
+    }
     setTimeout(function () {
-        plateNumber = countBefore + valIndex + 1;
-        answerValue = MAT_ANSWER[groupIndex][valIndex];
-        if (matUserAnswer[groupIndex][valIndex] !== answerValue) {
-            $("#plate" + plateNumber + " img").css("animation", "pulse 1s ease-out")
-                .delay(600)
-                .queue(function (next) {
-                    $("#plate" + plateNumber + " img").attr("src", "media/flowchartMedia/" + answerValue + ".png");
-                    next();
-                });
-        }
+        plateNumber++;
         if (valIndex < MAT_ANSWER[groupIndex].length - 1) {
             valIndex++;
-            countBefore++;
-            showCorrect(matUserAnswer, countBefore, groupIndex, valIndex);
+            showCorrect(matUserAnswer, plateNumber, groupIndex, valIndex);
         } else if (groupIndex < MAT_ANSWER.length - 1) {
             valIndex = 0;
             groupIndex++;
-            showCorrect(matUserAnswer, countBefore, groupIndex, valIndex);
+            showCorrect(matUserAnswer, plateNumber, groupIndex, valIndex);
+        } else {
+            $("#flowchart-container").css("animation", "pulse 1.2s ease-out");
+            $("#check-btn").delay(1000)
+                .queue(function (next) {
+                    $(this).css("box-shadow", "0px 0px 40px 10px #ff0080")
+                    $(this).dequeue();
+                });
         }
-    }, 1100);
+    }, timeout);
 }

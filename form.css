@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    background-image: url(media/backgroundGreen.png);
+    background-size: cover;
+    overflow: hidden;
+    direction: rtl;
+    font-family: Varela;
+}
+
+@font-face {
+    src: url("media/fonts/VarelaRound-Regular.ttf");
+    font-family: Varela;
+}
+
+.form-container {
+    height: 62vh;
+    width: calc(60vh * 1.5);
+    margin: auto;
+    margin-top: 6%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0.1em solid black;
+    box-sizing: border-box;
+    padding: 1% 2%;
+    color: black;
+    direction: rtl;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-container h1 {
+    font-size: 3.5vh;
+}
+
+.form-container h2 {
+    font-size: 2.8vh;
+    font-weight: normal;
+    margin-top: -8%;
+}
+
+.form-container form {
+    margin-top: -8%;
+    width: 55%;
+    height: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.form-container form input, .form-container form select {
+    width: 62%;
+    height: 12%;
+}
+
+.form-container form * {
+    font-size: 2.5vh;
+}
+
+.form-container form .submit-btn {
+    position: absolute;
+    background: linear-gradient(-45deg, #23a2d5, #e2536b, #23a2d5, #79d523);
+    background-size: 400% 400%;
+    animation: color-change 15s infinite;
+    text-align: center;
+    border: 0.08em solid rgb(0, 0, 0);
+    height: 35%;
+    width: 70%;
+    border-radius: 6vw;
+    font-size: 3.8vh;
+    left: -82%;
+    bottom: -22%;
+}
+
+.form-container form .submit-btn:hover {
+    filter: brightness(90%) contrast(130%);
+    cursor: pointer;
+}
