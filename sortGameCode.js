@@ -1,6 +1,9 @@
 const BIG_WIDTH = 600,
     BIG_HEIGHT = 280;
 
+var grade = 100;
+var mistakePoints = 6.25;
+
 var elResponse;
 var ogOffset;
 var nCurrResponse = 0;
@@ -17,6 +20,7 @@ var arrStrResponses = [
     '.'
 ];
 var queueNResponses = [];
+var wasMistake = [];
 
 var arrStrReviews = [
     '<ul><li class="good">יש פניה אל הנמען</li><li class="bad">האזכור לפניה לא ברור</li><li class="bad">חסרה הצבה בתבנית</li><li class="bad">הניסוח לא ברור, אין תשובה סופית בנוגע לפניה, והמלש"ב לא יודע מה עליו לעשות לשם המשך הטיפול בסוגיה.</li><li class="good">פיסוק נכון</li><li class="good">יש סיום</li></ul>',
@@ -38,7 +42,7 @@ var color4 = "#c0c7fa";
 var currColor = 1;
 
 var arrOpeningContent = [
-    '<ul><li><strong> בודקים שסיווג השלשה נכון</strong>- אחרת נקבל תבניות תשובה שגויות.</li><li><strong> מוודאים</strong> <strong>שבחרנו תבנית תשובה מתאימה</strong>- או שהמלש"ב לא יבין מה אנחנו רוצים.</li><li><strong> ממלאים את החלקים החסרים בתבנית התשובה</strong>- נסתכל אם צריך להשלים או למחוק דברים מיותרים.</li><li><strong> מלל חופשי- רק אם חייבים</strong>- אין תבנית מתאימה? בקשו מהאחראי להזין מלל חופשי מתאים. קורה כמה פעמים עם אותה שאלה? בקשו תבנית חדשה מ"עולים לאוויר".</li><li><strong> מתנסחים בצורה ראויה</strong>- עם הסבר מדויק מה צריך לעשות, להביא, מה חסר.</li></ul><div class="footer"><p><strong>היו גאים בשירות שאתם נותנים</strong></p><div id="next" class="button next-btn"><img src="media/sortGameMedia/nextArrow.png"/></div></div>',
+    '<ul><li><strong> בודקים שסיווג השלשה נכון</strong>- אחרת נקבל תבניות תשובה שגויות.</li><li><strong> מוודאים</strong> <strong>שבחרנו תבנית תשובה מתאימה</strong>- או שהמלש"ב לא יבין מה אנחנו רוצים.</li><li><strong> ממלאים את החלקים החסרים בתבנית התשובה</strong>- נסתכל אם צריך להשלים או למחוק דברים מיותרים.</li><li><strong> מלל חופשי- רק אם חייבים</strong>- אין תבנית מתאימה? בקשו מהאחראי להזין מלל חופשי מתאים. קורה כמה פעמים עם אותה שאלה? בקשו תבנית חדשה מ"עולים לאוויר".</li><li><strong> מתנסחים בצורה ראויה</strong>- עם הסבר מדויק מה צריך לעשות, להביא, מה חסר.</li></ul><div class="footer"><p><strong>היו גאים בשירות שאתם נותנים!</strong></p><div id="next" class="button next-btn"><img src="media/sortGameMedia/nextArrow.png"/></div></div>',
     '<p class="footer"><strong>במלל חופשי נזכור:</strong></p><ul><li><strong>פניה אל הנמען-</strong> "מלש"ב/ית יקר/ה".</li><li><strong>התייחסות לפניה</strong>- "בהמשך לפנייתך בנושא [נושא הפניה]".</li><li><strong>תשובה סופית בנוגע לפניה, או הוראות ברורות כיצד עליו להמשיך</strong>- "הוחלט לדחות את בקשתך/הוחלט לאשר את בקשתך/עליך לשלוח מסמך [שם המסמך] וכו&apos;".</li><li><strong>סיום פניה-</strong> "&apos;המשך הליך גיוס נעים/בהצלחה וכו".</li></ul><div class="footer"><p><strong>תנו את התשובה שהייתם רוצים לקבל</strong></p><div id="prev" class="button prev-btn"><img src="media/sortGameMedia/prevArrow.png"/></div><div id="start" class="button start-btn">בואו נתרגל!<img src="media/sortGameMedia/prevArrow.png"/></div>'
 ];
 
@@ -93,6 +97,7 @@ function startGame() {
 function initQueue() {
     var randomIndex;
     for (var index = 0; index < arrStrResponses.length; index++){
+        wasMistake[index] = false;
         randomIndex = Math.floor(Math.random() * arrStrResponses.length);
         while (queueNResponses.includes(randomIndex)) {
             randomIndex = Math.floor(Math.random() * arrStrResponses.length);
@@ -264,6 +269,11 @@ function recieve(isCorrect) {
         elReceiver.css({
             "animation": "indicateWrong 2s linear 1.5s 1, shake 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1.5s 1 both"
         });
+        if (!wasMistake[nCurrResponse]) {
+            $("#page-container").append("<img class='mistake' src='media/sortGameMedia/mistake6.25.png'/>");
+            grade -= mistakePoints;
+            wasMistake[nCurrResponse] = true;
+        }
         queueNResponses.push(nCurrResponse);
     }
     setTimeout(loadResponse, 2500);
@@ -296,7 +306,7 @@ function pickTrash(event) {
     $("#overlay").show();
     $("#overlay").append($(this));
     $(this).css({
-        "top": "10vw",
+        "top": "10%",
         "right": "10%",
         "animation": "none",
         "cursor": "unset"
@@ -317,6 +327,7 @@ function pickTrash(event) {
 
 function endGame() {
     $("#trash").fadeOut('slow', function () {
+        sessionStorage.setItem("grade", grade);
         window.location.replace("flowchart.html");
     });
 }

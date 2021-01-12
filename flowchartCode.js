@@ -1,6 +1,16 @@
-$(document).ready(function () {
-    sizePlates();
+var grade;
+var mistakePoints = 5;
 
+$(document).ready(function () {
+    grade = Number(sessionStorage.getItem("grade"));
+    sizePlates();
+    $("#close-instructions-btn").on("click", function () {
+        initGame();
+    });
+});
+
+function initGame() {
+    $("#instructions-container").remove();
     $(".draggable").on("mouseover", function () {
         $("#draggable-name").val($(this).attr("data-channel-name"));
     });
@@ -8,7 +18,7 @@ $(document).ready(function () {
     $(".draggable").on("mouseout", function () {
         $("#draggable-name").val("");
     });
-    
+
     $(".draggable").draggable({
         revert: "invalid",
         containment: "document",
@@ -32,7 +42,7 @@ $(document).ready(function () {
     });
 
     $("#check-btn").on("click", check);
-});
+}
 
 function sizePlates() {
     $(".flowchart-container .plate").each(function () {
@@ -81,10 +91,11 @@ function check() {
         $(".draggable").draggable("destroy");
         $(".draggable").css("cursor", "auto");
         $("#check-btn").html("סיים לומדה!");
+        grade -= checkUserAnswer(getUserAnswer()) * mistakePoints;
         $("#check-btn").on("click", function () {
+            sessionStorage.setItem("grade", grade);
             window.location.replace("form.html");
         });
-        checkUserAnswer(getUserAnswer());
     } else {
         $("#confirmation-box").show();
         $("#confirm").on("click", function () {

@@ -13,19 +13,38 @@
 
 <body>
     <div id="page-container">
+        <div id="instructions-container" class="overlay">
+            <div id="instructions" class="instructions">
+                <p>
+                    עוד דבר אחרון!
+                    <br />
+                    לפניכם תרשים המתאר את גלגולה של פניה, מפניית המלש"ב עד שליחת התשובה.
+                    <br />
+                    גררו את האייקונים על מנת להשלים את התרשים.
+                </p>
+                <div id="close-instructions-btn" class="check-btn got-it-btn">הבנתי!</div>
+            </div>
+        </div>
         <div id="confirmation-box" class="confirmation-box">
             <p>לאן אתם ממהרים? קודם תסיימו למלא את התרשים</p>
             <button id="confirm" class="confirm">אוקיי</button>
         </div>
         <div id="inventory" class="inventory">
-            <img src="media/flowchartMedia/website.png" class="draggable channel" data-channel-name="אתר מתגייסים" data-channel-id="website"/>
-            <img src="media/flowchartMedia/phone.png" class="draggable channel" data-channel-name="טלפון" data-channel-id="phone"/>
-            <img src="media/flowchartMedia/smartphone.png"class="draggable channel" data-channel-name="סמס" data-channel-id="smartphone"/>
-            <img src="media/flowchartMedia/email.png" class="draggable channel" data-channel-name="מייל" data-channel-id="email"/>
-            <img src="media/flowchartMedia/facebook.png" class="draggable channel" data-channel-name="פייסבוק" data-channel-id="facebook"/>
-            <img src="media/flowchartMedia/close.png" class="draggable connector" data-channel-name="סגור פניה" data-channel-id="close"/>
-            <img src="media/flowchartMedia/transfer.png" class="draggable connector" data-channel-name="הקצה פניה" data-channel-id="transfer"/>
-            <div class="draggable-name-container"><input id="draggable-name" class="draggable-name" readonly/></div>
+            <img src="media/flowchartMedia/website.png" class="draggable channel" data-channel-name="אתר מתגייסים"
+                data-channel-id="website" />
+            <img src="media/flowchartMedia/phone.png" class="draggable channel" data-channel-name="טלפון"
+                data-channel-id="phone" />
+            <img src="media/flowchartMedia/smartphone.png" class="draggable channel" data-channel-name="סמס"
+                data-channel-id="smartphone" />
+            <img src="media/flowchartMedia/email.png" class="draggable channel" data-channel-name="מייל"
+                data-channel-id="email" />
+            <img src="media/flowchartMedia/facebook.png" class="draggable channel" data-channel-name="פייסבוק"
+                data-channel-id="facebook" />
+            <img src="media/flowchartMedia/close.png" class="draggable connector" data-channel-name="סגור פניה"
+                data-channel-id="close" />
+            <img src="media/flowchartMedia/transfer.png" class="draggable connector" data-channel-name="הקצה פניה"
+                data-channel-id="transfer" />
+            <div class="draggable-name-container"><input id="draggable-name" class="draggable-name" readonly /></div>
         </div>
         <div id="flowchart-container" class="flowchart-container">
             <img src="media/flowchartMedia/customer.png" id="customer" />
@@ -43,25 +62,26 @@
             <div id="plate10" class="plate connection-plate"></div>
 
             <svg class="lines" version="1.1" preserveAspectRatio="xMinYMin meet">
-                <line x1="50%" y1="20%" x2="60%" y2="28%"/>
-                <line x1="50%" y1="20%" x2="40%" y2="28%"/>
-                <line x1="50%" y1="20%" x2="80%" y2="28%"/>
-                <line x1="50%" y1="20%" x2="20%" y2="28%"/>
+                <line x1="50%" y1="20%" x2="60%" y2="28%" />
+                <line x1="50%" y1="20%" x2="40%" y2="28%" />
+                <line x1="50%" y1="20%" x2="80%" y2="28%" />
+                <line x1="50%" y1="20%" x2="20%" y2="28%" />
 
-                <line x1="58%" y1="36%" x2="38%" y2="46%"/>
-                <line x1="40%" y1="38%" x2="36%" y2="46%"/>
-                <line x1="20%" y1="38%" x2="30%" y2="46%"/>
-                <line x1="80%" y1="38%" x2="38%" y2="46%"/>
-                <line x1="80%" y1="38%" x2="72%" y2="62%"/>
+                <line x1="58%" y1="36%" x2="38%" y2="46%" />
+                <line x1="40%" y1="38%" x2="36%" y2="46%" />
+                <line x1="20%" y1="38%" x2="30%" y2="46%" />
+                <line x1="80%" y1="38%" x2="38%" y2="46%" />
+                <line x1="80%" y1="38%" x2="72%" y2="62%" />
 
-                <line x1="36%" y1="53%" x2="22%" y2="82%"/>
-                <line x1="30%" y1="70%" x2="38%" y2="82%"/>
-                <line x1="38%" y1="50%" x2="68%" y2="64%"/>
-                <line x1="70%" y1="68%" x2="62%" y2="81%"/>
-                <line x1="70%" y1="68%" x2="79%" y2="81%"/>
+                <line x1="36%" y1="53%" x2="22%" y2="82%" />
+                <line x1="30%" y1="70%" x2="38%" y2="82%" />
+                <line x1="38%" y1="50%" x2="68%" y2="64%" />
+                <line x1="70%" y1="68%" x2="62%" y2="81%" />
+                <line x1="70%" y1="68%" x2="79%" y2="81%" />
             </svg>
             <div id="check-btn" class="check-btn">בדוק</div>
         </div>
     </div>
 </body>
+
 </html>

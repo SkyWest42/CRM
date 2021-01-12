@@ -4,7 +4,7 @@ var grade;
 var isPassing;
 
 $(document).ready(function () {
-    grade = Math.round(Number(sessionStorage.getItem(grade)));
+    grade = Math.round(Number(sessionStorage.getItem("grade")));
     isPassing = grade > failGrade;
     loadHeader();
     $("#submit-btn").on("click", submitForm);
@@ -43,6 +43,7 @@ function submitForm() {
         // sessionStorage.setItem("pnumber", $("#pnumber").val());
         $("#form-container").css({
             "font-size": "3vh",
+            "line-height": "5vh",
             "padding": "10% 10%",
             "text-align": "center",
             "font-weight": "bold"
@@ -50,10 +51,10 @@ function submitForm() {
 
         if (isPassing) {
             $("#form-container").css("color", "green");
-            $("#form-container").html($("#fname").val() + ", " + $("#pnumber").val() + " עברת את לומדת CRM בהצלחה! </br> היה כיף להכיר! <img src='media/success.png'/>");
+            $("#form-container").html($("#fname").val() + ", " + $("#pnumber").val() + " עברת את לומדת CRM בציון " + grade + " </br> היה כיף להכיר! <img src='media/success.png'/>");
         } else {
             $("#form-container").css("color", "red");
-            $("#form-container").html($("#fname").val() + ", " + $("#pnumber").val() + " לא קיבלת ציון עובר בלומדת CRM <img src='media/fail.png'/>");
+            $("#form-container").html($("#fname").val() + ", " + $("#pnumber").val() + " ציונך בלומדת CRM הינו " + grade + ", </br> זהו ציון נכשל :( <img src='media/fail.png'/>");
         }
 
         $("#form-container img").css({

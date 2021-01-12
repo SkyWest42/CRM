@@ -35,7 +35,7 @@ var matContent = [
             },
             {
                 "section": "<p>כעת, עלינו להתחבר לכתובת https://crm.medone.idf.il.</p>",
-                "instruction": "הזן את הכתובת <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>https://crm.medone.idf.il</strong> במסך התרגול",
+                "instruction": "העתק את הכתובת <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>https://crm.medone.idf.il</strong> לשורת החיפוש במסך התרגול",
                 "interactionType": "type",
                 "correctInput": "https://crm.medone.idf.il",
                 "width": "50%",
@@ -97,7 +97,7 @@ var matContent = [
             }
             ,
             {
-                "section": "המקטע <b class='section-name'>פרטי הפונה</b>  נפתח וכעת ניתן לראות את שם הפונה, סוג הפונה וערוץ הפניה.",
+                "section": "<p>המקטע <b class='section-name'>פרטי הפונה</b>  נפתח וכעת ניתן לראות את שם הפונה, סוג הפונה וערוץ הפניה.</p>",
                 "instruction": "לחץ על שם המקטע \"פרטי הפניה\" על מנת לפתוח אותו",
                 "interactionType": "click",
                 "width": "12%",
@@ -121,7 +121,7 @@ var matContent = [
             }
             ,
             {
-                "section": "<p>ב<strong>SLA</strong><strong> ישים </strong><img class='text-img detail-img' src='media/indexMedia/hourglass.png'/>(SLA- Service-level agreement) ניתן לראות אם מיטב עומדת בקריטריונים שהיא הציבה לעצמה עבור זמן הטיפול בפניה.</p><p><strong>תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/indexMedia/contract.png'/> הוא המקום בו אנחנו אמורים לתעד מה עשינו עם הפניה לפני שהיא מועברת למקום אחר או נסגרת.</p><p><strong>היסטוריית תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/indexMedia/clock.png'/>הוא המקום אליו עובר המלל שהיה ב\"תיאור הטיפול בפניה\" לאחר סגירת הפניה או הקצאתה לגורם אחר.</p>",
+                "section": "<p>ב<strong>SLA</strong><strong> ישים </strong><img class='text-img detail-img' src='media/indexMedia/hourglass.png'/>(SLA- Service-level agreement) ניתן לראות אם מיטב עומדת בקריטריונים שהיא הציבה לעצמה עבור זמן הטיפול בפניה.</p><p><strong>תיאור הטיפול בפניה</strong><img class='text-img detail-img' src='media/indexMedia/contract.png'/> הוא המקום בו אנחנו אמורים לתעד מה עשינו עם הפניה לפני שהיא מועברת למקום אחר או נסגרת.</p><p><strong>היסטוריית תיאור הטיפול בפניה </strong><img class='text-img detail-img' src='media/indexMedia/clock.png'/>הוא המקום אליו עובר המלל שהיה ב\"תיאור הטיפול בפניה\" לאחר סגירת הפניה או הקצאתה לגורם אחר.</p>",
                 "instruction": "לחץ על שם המקטע \"פניות אחרונות\" על מנת לפתוח אותו",
                 "interactionType": "click",
                 "width": "13%",
@@ -193,7 +193,7 @@ var matContent = [
             }
             ,
             {
-                "section": "<p><strong class='section-name'>פעילויות SMS</strong> הSMS אשר נשלחה בסגירת הפניה, ומה סטטוס ההודעה- כלומר האם הגיעה ללקוח בהצלחה, או שנתקלה במכשול כלשהו.</p>",
+                "section": "<p><strong class='section-name'>פעילויות SMS</strong> הSMS אשר נשלחה בסגירת הפניה, ומה סטטוס ההודעה- כלומר האם הגיעה ללקוח בהצלחה.</p>",
                 "instruction": "לחץ על שם המקטע \"היסטוריית מטפלים\" על מנת לפתוח אותו",
                 "interactionType": "click",
                 "width": "16%",
@@ -272,20 +272,33 @@ var matContent = [
                 "isBreak": "true"
             },
             {
-                "section": "<p>מסך הפניה החדשה נפתח.</p><p>תחילה יש למלא את פרטי המועמד שאליו תהיה מקושרת הפניה.</p><p>את המועמד ניתן לחפש לפי שם או לפי תעודת זהות.</p><p style='text-align: center;'><span style='color: #00AA00;'><strong>תעודת זהות </strong></span><strong>&gt; <span style='color: #B22222;'>שם פרטי ושם משפחה</span></strong></p><p style='text-align: center;'><em>החיפוש ע\"פ ת.ז יותר וודאי</em></p><p>כדי לקשר את הפניה למועמד הרלוונטי נבצע חיפוש בשדה \"מועמד\", ולאחר מכן נלחץ על Enter או זכוכית המגדלת &ndash; תיפתח רשימה של מועמדים אפשריים שממנה ניתן לבחור את המועמד הרלוונטי.</p>",
-                "instruction": "הקלד את תעודת הזהות \"234567899\" והקש Enter",
+                "section": "<p>מסך הפניה החדשה נפתח.</p><p>תחילה יש למלא את פרטי המועמד שאליו תהיה מקושרת הפניה.</p><p>את המועמד ניתן לחפש לפי שם או לפי תעודת זהות.</p><p><strong><span style='color: #00aa00;'><span style='color: #000000;'>נעדיף לחפש על פי</span> תעודת זהות <span style='color: #000000;'>ולא</span></span>&nbsp;<span style='color: #b22222;'>שם פרטי ושם משפחה</span><span style='color: #000000;'>-&nbsp;החיפוש ע\"פ ת.ז יותר וודאי</span></strong></p><p>כדי לקשר את הפניה למועמד הרלוונטי נבצע חיפוש בשדה \"מועמד\", ולאחר מכן נלחץ על Enter או זכוכית המגדלת &ndash; תיפתח רשימה של מועמדים אפשריים שממנה ניתן לבחור את המועמד הרלוונטי.</p>",
+                "instruction": "הקלד את תעודת הזהות \"234567899\"",
                 "interactionType": "type",
                 "correctInput": "234567899",
                 "width": "35%",
                 "height": "2.2%",
                 "right": "14%",
                 "top": "34.2%",
-                "isChangeScreen": "true",
-                "isBreak": "true"
+                "isChangeScreen": "false",
+                "isBreak": "false"
             },
             {
                 "section": "",
-                "instruction": "בחר את המלש\"בית ישראלה ישראלי.",
+                "instruction": "הקש Enter",
+                "interactionType": "key",
+                "correctInput": "Enter",
+                "clickAlternate": "false",
+                "width": "0%",
+                "height": "0%",
+                "right": "0%",
+                "top": "0%",
+                "isChangeScreen": "true",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "בחר את המלש\"בית ישראלה ישראלית.",
                 "interactionType": "click",
                 "width": "37%",
                 "height": "4%",
@@ -324,14 +337,27 @@ var matContent = [
         [
             {
                 "section": "<p>כפי שניתן לראות, פניה חדשה נפתחת ללא נושא (שלשה) מסוים.</p><p>זוכרים ממה מורכבת שלשה? בואו נתחיל!</p><p><img class='text-img detail-img' src='media/indexMedia/puzzle1.png'/> לבחירת ה<strong>תחום</strong> הרלוונטי, נלחץ על השדה תחום. לאחר מכן נלחץ Enter או על זכוכית המגדלת ונבחר תחום מתוך הרשימה שתוצג.</p>",
-                "instruction": "לחץ על השדה \"תחום\" והקש Enter",
+                "instruction": "לחץ על השדה \"תחום\"",
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
                 "right": "50.8%",
                 "top": "41%",
+                "isChangeScreen": "false",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "הקש Enter",
+                "interactionType": "key",
+                "correctInput": "Enter",
+                "clickAlternate": "false",
+                "width": "0%",
+                "height": "0%",
+                "right": "0%",
+                "top": "0%",
                 "isChangeScreen": "true",
-                "isBreak": "true"
+                "isBreak": "false"
             },
             {
                 "section": "",
@@ -346,12 +372,25 @@ var matContent = [
             },
             {
                 "section": "<p style='overflow: auto;'><img class='text-img detail-img' src='media/indexMedia/puzzle2.png'/>נבחר את <strong>תת התחום</strong> באופן  דומה.</p>",
-                "instruction": "לחץ על השדה \"תת תחום\" והקש Enter",
+                "instruction": "לחץ על השדה \"תת תחום\"",
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
                 "right": "50.8%",
                 "top": "43.4%",
+                "isChangeScreen": "false",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "הקש Enter",
+                "interactionType": "key",
+                "correctInput": "Enter",
+                "clickAlternate": "false",
+                "width": "0%",
+                "height": "0%",
+                "right": "0%",
+                "top": "0%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -368,12 +407,25 @@ var matContent = [
             },
             {
                 "section": "<p style='overflow: auto;'><img class='text-img detail-img' src='media/indexMedia/puzzle3.png'/>ולסיום את ה<strong>שאלה</strong>.</p>",
-                "instruction": "לחץ על השדה \"שאלה\" והקש Enter",
+                "instruction": "לחץ על השדה \"שאלה\"",
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
                 "right": "50.8%",
                 "top": "45.8%",
+                "isChangeScreen": "false",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "הקש Enter",
+                "interactionType": "key",
+                "correctInput": "Enter",
+                "clickAlternate": "false",
+                "width": "0%",
+                "height": "0%",
+                "right": "0%",
+                "top": "0%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -400,10 +452,10 @@ var matContent = [
                 "isBreak": "false"
             },
             {
-                "section": "<p>כעת עלינו לתעד כיצד טיפלנו בפניה – לשם כך קיים שדה \"תיאור הטיפול בפניה\".</p>",
-                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>המלש\"ב התייצב בלשכה וביקש לברר היכן הוא מתגייס. בדקתי את פרטיו ועניתי על שאלתו.</strong>",
+                "section": "<p>כעת עלינו לתעד כיצד טיפלנו בפניה – לשם כך קיים שדה \"תיאור הטיפול בפניה\".</p><img class='full-img' src='media/indexMedia/descriptionInstruct.png'/><p><a id='download-btn' class='download-btn info-btn' title='saveButtons' href='/media/indexMedia/descriptionInstruct.png' download='descriptionInstruct.png'> שמור כרטיסיה <img src='media/indexMedia/download.png'/> </a></p>",
+                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>050-1234567 (מספר טלפון) הנל התייצב בלשכה וביקש לברר היכן הוא מתגייס? בדקתי את פרטיו ועניתי על שאלתו. </strong>",
                 "interactionType": "type",
-                "correctInput": "המלש\"ב התייצב בלשכה וביקש לברר היכן הוא מתגייס. בדקתי את פרטיו ועניתי על שאלתו.",
+                "correctInput": "050-1234567 (מספר טלפון) הנל התייצב בלשכה וביקש לברר היכן הוא מתגייס? בדקתי את פרטיו ועניתי על שאלתו.",
                 "width": "45%",
                 "height": "10%",
                 "right": "49%",
@@ -500,7 +552,7 @@ var matContent = [
                 "isBreak": "true"
             },
             {
-                "section": "<p>כעת מופיע הקובץ במקטע הקבצים המצורפים.</p><p>כל הכבוד! סיימנו לעדכן את הפרטים בפניה.</p><p>כעת יש לשמור אותה.</p><table class='save-btn-table'><tbody><tr><th>איזה כפתור?</th><th>מה הוא עושה?</th><th>מתי נשתמש?</th></tr><tr><td><img src='media/indexMedia/save.png'/></td><td>שומר את הפניה, ישאיר אותנו במסך הפניה.</td><td>○ כשהפניה ממתינה לטיפול על ידי גורם אחר (לדוגמה קב\"ן או רופא) <br /><br /> ○ כשקיימת בעיה שמונעת מאתנו לטפל בפניה כרגע.</td></tr><tr><td><img src='media/indexMedia/saveandclose.png'/></td><td>שמור וסוגר את הפניה על ידינו, יחזיר אותנו לתצוגה הראשית.</td><td>○ אם סיימנו לטפל בפניה, והיא לא דורשת טיפול על ידי גורם נוסף.</td></tr><tr><td><img src='media/indexMedia/saveandsend.png'/></td><td>שומר את הפניה, יאפשר לנו להקצות אותה לגורם אחר ביחידה.</td><td>○ אם הפניה דורשת טיפול של גורם אחר ביחידה, אליו נרצה להעביר אותה.&nbsp;</td></tr></tbody></table><p><a id='download-btn' class='download-btn info-btn' title='saveButtons' href='/media/indexMedia/saveButtons.png' download='saveButtons.png'> שמור טבלה <img src='media/indexMedia/download.png'/> </a></p>",
+                "section": "<p>כעת מופיע הקובץ במקטע הקבצים המצורפים.</p><p>כל הכבוד! סיימנו לעדכן את הפרטים בפניה.</p><p>כעת יש לשמור אותה.</p><table class='save-btn-table'><tbody><tr><th>איזה כפתור?</th><th>מה הוא עושה?</th><th>מתי נשתמש?</th></tr><tr><td><img src='media/indexMedia/save.png'/></td><td>שומר את הפניה, ישאיר אותנו במסך הפניה.</td><td>○ כשהפניה ממתינה לטיפול על ידי גורם אחר (לדוגמה קב\"ן או רופא) <br /><br /> ○ כשקיימת בעיה שמונעת מאתנו לטפל בפניה כרגע.</td></tr><tr><td><img src='media/indexMedia/saveandclose.png'/></td><td>שומר וסוגר את הפניה על ידינו, יחזיר אותנו לתצוגה הראשית.</td><td>○ אם סיימנו לטפל בפניה, והיא לא דורשת טיפול על ידי גורם נוסף.</td></tr><tr><td><img src='media/indexMedia/saveandsend.png'/></td><td>שומר את הפניה, יאפשר לנו להקצות אותה לגורם אחר ביחידה.</td><td>○ אם הפניה דורשת טיפול של גורם אחר ביחידה, אליו נרצה להעביר אותה.&nbsp;</td></tr></tbody></table><p><a id='download-btn' class='download-btn info-btn' title='saveButtons' href='/media/indexMedia/saveButtons.png' download='saveButtons.png'> שמור טבלה <img src='media/indexMedia/download.png'/> </a></p>",
                 "instruction": "הפניה נפתרה! שמור וסגור אותה",
                 "interactionType": "click",
                 "width": "8%",
@@ -519,7 +571,7 @@ var matContent = [
     [
         [
             {
-                "section": "<p>לעיתים קרובות נקבל פניות שהטיפול בהן הוא באחראיות גוף אחר ביחידה. במקרה כזה, יהיה עלינו להקצות את הפניה לאותו גוף. הקצאה נכונה של פניות חשובה מאוד, ומונעת עיכוב מיותר.</p><p>לשם ניתוב נכון של פניה, עלינו להבין לעומק את מהות הפניה.</p><img src='media/indexMedia/questionCard.png' id='question-card' class='card-img question-card full-img' onclick='flipCard()'/>",
+                "section": "<p>לעיתים קרובות נקבל פניות שהטיפול בהן הוא באחריות גוף אחר ביחידה. במקרה כזה, יהיה עלינו להקצות את הפניה לאותו גוף. הקצאה נכונה של פניות חשובה מאוד, ומונעת עיכוב מיותר.</p><p>לשם ניתוב נכון של פניה, עלינו להבין לעומק את מהות הפניה.</p><img src='media/indexMedia/questionCard.png' id='question-card' class='card-img question-card full-img' onclick='flipCard()'/>",
                 "instruction": ""
             }
         ],
@@ -570,12 +622,25 @@ var matContent = [
             },
             {
                 "section": "<p>נבחר את התחום. </p>",
-                "instruction": "לחץ על השדה \"תחום\" והקש Enter",
+                "instruction": "לחץ על השדה \"תחום\"",
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
                 "right": "50.8%",
                 "top": "41%",
+                "isChangeScreen": "false",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "והקש Enter",
+                "interactionType": "key",
+                "correctInput": "Enter",
+                "clickAlternate": "false",
+                "width": "0%",
+                "height": "0%",
+                "right": "0%",
+                "top": "0%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -593,12 +658,25 @@ var matContent = [
             },
             {
                 "section": "<p>נבחר את תת התחום.</p>",
-                "instruction": "לחץ על השדה \"תת תחום\" והקש Enter",
+                "instruction": "לחץ על השדה \"תת תחום\"",
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
                 "right": "52.2%",
                 "top": "34%",
+                "isChangeScreen": "false",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "הקש Enter",
+                "interactionType": "key",
+                "correctInput": "Enter",
+                "clickAlternate": "false",
+                "width": "0%",
+                "height": "0%",
+                "right": "0%",
+                "top": "0%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -615,12 +693,25 @@ var matContent = [
             },
             {
                 "section": "<p>נבחר את השאלה.</p>",
-                "instruction": "לחץ על השדה \"שאלה\" והקש Enter",
+                "instruction": "לחץ על השדה \"שאלה\"",
                 "interactionType": "click",
                 "width": "10%",
                 "height": "2.2%",
                 "right": "52.2%",
                 "top": "38.6%",
+                "isChangeScreen": "false",
+                "isBreak": "false"
+            },
+            {
+                "section": "",
+                "instruction": "הקש Enter",
+                "interactionType": "key",
+                "correctInput": "Enter",
+                "clickAlternate": "false",
+                "width": "0%",
+                "height": "0%",
+                "right": "0%",
+                "top": "0%",
                 "isChangeScreen": "true",
                 "isBreak": "false"
             },
@@ -649,9 +740,9 @@ var matContent = [
             },
             {
                 "section": "",
-                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>התקבל טופס 16 מהמלש\"בית, העברתי את הפניה למדור נשים האחראי לטיפול בה</strong>",
+                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>050-1234567 (מספר טלפון) היי, הנ\"ל שלחה טופס 16, מעבירה לכם להמשך טיפול. תודה</strong>",
                 "interactionType": "type",
-                "correctInput": "התקבל טופס 16 מהמלש\"בית, העברתי את הפניה למדור נשים האחראי לטיפול בה",
+                "correctInput": "050-1234567 (מספר טלפון) היי, הנ\"ל שלחה טופס 16, מעבירה לכם להמשך טיפול. תודה",
                 "width": "47%",
                 "height": "11%",
                 "right": "49%",
@@ -751,7 +842,7 @@ var matContent = [
             },
             {
                 "section": "<p>לאחר שהבנו את היסטורית הפניה, נטפל בה ונתעד את הטיפול ב<strong>תיאור הטיפול בפניה</strong>.</p><p>הדברים שנרשום ב<strong>תיאור הטיפול בפניה </strong>יעברו ל<strong>היסטוריית תיאור הטיפול</strong> <strong>בפניה</strong> לאחר סגירת הפניה או הקצאתה למדור אחר.</p><hr /><p>חשוב לשים לב שמלל התיאור מעביר את <strong>המשמעות</strong> של הפעולות שעשינו על הפניה, ואינן רק סיכום טכני שלהן. תיאור פניה צריך להעביר באופן ברור מה היה תהליך הטיפול לאדם שקורא אותו <strong>ללא הקשר קודם</strong>.</p>",
-                "instruction": "הקלד את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה.</strong>",
+                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה.</strong>",
                 "interactionType": "type",
                 "correctInput": "תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה.",
                 "clickAlternate": "true",
@@ -768,7 +859,7 @@ var matContent = [
                 "interactionType": "click",
                 "width": "8.2%",
                 "height": "3%",
-                "right": "44%",
+                "right": "36%",
                 "top": "12%",
                 "isChangeScreen": "true",
                 "isBreak": "true"
@@ -1355,6 +1446,7 @@ function showNextSection() {
         if (matContent[currChapter][currPage][currSection]["isBreak"] === "true" && matContent[currChapter][currPage][currSection]["section"] !== "") {
             hr = "<hr>";
         }
+        $("#info-content p").css("color", "#5a5a5a");
         $("#info-content").append(hr + matContent[currChapter][currPage][currSection]["section"]);
         $("#info-content").append("<p id='instructions' class='instruction'>" + matContent[currChapter][currPage][currSection]["instruction"] + "</p>");
     }
