@@ -288,6 +288,7 @@ body {
 }
 
 .instructions {
+    transition: 1s;
     position: absolute;
     background-image: url("media/instructionsBackground.png");
     background-size: cover;
@@ -304,7 +305,7 @@ body {
 }
 
 .instructions video {
-    width: 60%;
+    width: 70%;
     margin-top: 5%;
 }
 

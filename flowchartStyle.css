@@ -45,9 +45,9 @@
 
 body {
     margin: 0;
-    background-color: #f3f3f3;
     background-image: url(media/instructionsBackground.png);
     background-size: contain;
+    /* background-repeat: round; */
     overflow: hidden;
     direction: rtl;
     font-family: Varela;
@@ -62,7 +62,7 @@ body {
 .flowchart-container {
     flex-grow: 1;
     height: 90%;
-    margin-top: -3%;
+    margin-top: -2%;
     position: relative;
     text-align: center;
     display: flex;
@@ -258,12 +258,12 @@ body {
 }
 
 #meitav-call-center {
-    top: 45%;
-    left: 25%;
+    top: 47%;
+    left: calc(35% - 200px);
 }
 
 #departments-call-center {
-    top: 60%;
+    top: 46%;
     left: 65%;
 }
 
@@ -289,7 +289,7 @@ body {
 
 #plate5 {
     top: 80%;
-    left: calc(80% - 51px);
+    left: calc(40% - 51px);
 }
 
 #plate6 {
@@ -298,16 +298,16 @@ body {
 }
 
 #plate7 {
-    top: 80%;
-    left: calc(40% - 51px);
+    top: 47%;
+    left: calc(50% - 51px);
 }
 
 #plate8 {
-    top: 80%;
-    left: calc(20% - 51px);
+    top: 65%;
+    left: calc(50% - 51px);
 }
 
-#plate9 {
+/* #plate9 {
     top: 63%;
     left: 25%;
 }
@@ -315,4 +315,4 @@ body {
 #plate10 {
     top: 52%;
     left: 50%;
-}
+} */

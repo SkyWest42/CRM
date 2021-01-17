@@ -1,5 +1,5 @@
 var grade;
-var mistakePoints = 5;
+var mistakePoints = 6.25;
 
 $(document).ready(function () {
     grade = Number(sessionStorage.getItem("grade"));
@@ -118,9 +118,8 @@ var MAT_ANSWER = [
     ["website"],
     ["facebook", "phone", "email"],
     ["smartphone", "website"],
-    ["smartphone", "website"],
-    ["close"],
-    ["transfer"]
+    ["transfer"],
+    ["close"]
 ];
 
 function getUserAnswer() {
@@ -213,7 +212,7 @@ function showCorrect(matUserAnswer, plateNumber, groupIndex, valIndex) {
 
     if (matUserAnswer[groupIndex][valIndex] !== answerValue) {
         timeout = 1200;
-        $("#flowchart-container").append("<img class='mistake' src='media/flowchartMedia/mistake5.png'/>")
+        $("#flowchart-container").append("<img class='mistake' src='media/mistake6.25.png'/>")
         $("#plate" + plateNumber + " img").css("animation", "pulseAndTurn 1.2s ease-out")
             .delay(600)
             .queue(function (next) {

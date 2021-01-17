@@ -77,12 +77,35 @@ function initGame() {
     $(".game-elements").fadeIn();
     $("#instructions").show();
     $("#close-instructions-btn").on("click", function () {
+        instructionsToTip();
         startGame();
     });
 }
-function startGame() {
-    $("#instructions").hide();
 
+function instructionsToTip() {
+    $("#instructions").html('<p>?<video id="instructions-video" class="video-insert" autoplay="autoplay" loop="loop" muted="" width="300" height="150">                <source src="media/sortGameMedia/gameInstructions.mp4" type="video/mp4" />            </video></p><p class="instructions-paragraph">לחצו ומשכו אחורה על מנת לטעון, הזיזו את העכבר ימינה או שמאלה על מנת לכוון. שחררו כדי לשגר.</p>');
+    $("#instructions").css({
+        "width": "fit-content",
+        "height": "fit-content",
+        "padding": "0",
+        "right": "0",
+        "cursor": "pointer",
+        "bottom": "-29%"
+    });
+
+    $("#instructions").mouseover(function () {
+        $(this).css("bottom", "0%");
+    }).mouseout(function () {
+        $(this).css("bottom", "-29%");
+    });
+
+    $("#instructions *").css({
+        "width": "200px"
+    });
+
+}
+
+function startGame() {
     elResponse = $("#to-shoot");
     ogOffset = elResponse.offset();
     elResponse.css({
@@ -183,7 +206,7 @@ function stopPull(event) {
 }
 
 function showTip() {
-    
+    // $("#tip").show();
 }
 
 //if response wasn't shot
@@ -270,7 +293,7 @@ function recieve(isCorrect) {
             "animation": "indicateWrong 2s linear 1.5s 1, shake 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) 1.5s 1 both"
         });
         if (!wasMistake[nCurrResponse]) {
-            $("#page-container").append("<img class='mistake' src='media/sortGameMedia/mistake6.25.png'/>");
+            $("#page-container").append("<img class='mistake' src='media/mistake6.25.png'/>");
             grade -= mistakePoints;
             wasMistake[nCurrResponse] = true;
         }
@@ -281,6 +304,7 @@ function recieve(isCorrect) {
 
 function pourTrash() {
     elResponse.off().hide();
+    $("#instructions").off().hide();
     $("#arrow").hide();
     $("#shooting-platform").css({
         "transition": "2s ease-in",

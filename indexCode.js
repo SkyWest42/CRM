@@ -1699,7 +1699,7 @@ function changeColor(event) {
         document.documentElement.style.setProperty('--menu-item-color5', '#294714');
         document.documentElement.style.setProperty('--hover-color6', '#172b0a');
         // $(".sap-icon").attr("src", "media/indexMedia/sapGreen.png");
-        $("body").css("background-image", "url(media/indexMedia/backgroundGreen.png)");
+        $("body").css("background-image", "url(media/backgroundGreen.png)");
         $("#color-scheme").removeClass("change-to-green");
         $("#color-scheme").addClass("change-to-pink");
     }
