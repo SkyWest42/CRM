@@ -166,8 +166,19 @@ body {
 }
 
 .lines line {
-    stroke-width: 3px;
-    stroke: rgb(107, 145, 38);
+    stroke-width: 4px;
+}
+
+.lines .green {
+    stroke: rgb(127, 189, 25);
+}
+
+.lines .blue {
+    stroke: rgb(0, 33, 104);
+}
+
+.lines .pink {
+    stroke: rgb(255, 117, 160);
 }
 
 .confirmation-box {
