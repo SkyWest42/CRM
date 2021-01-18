@@ -1531,7 +1531,7 @@ function interactionManager() {
                 $("#typeable").focus();
                 $("#typeable").on("change", function (event) {
                     correctInput = matContent[currChapter][currPage][currSection]["correctInput"];
-                    if ($(this).val() === correctInput || (correctInput === "any" && $(this).val())) {
+                    if ($(this).val().includes(correctInput) || (correctInput === "any" && $(this).val())) {
                         $(this).css("border", "");
                         $(this).val("");
                         showNextSection();
@@ -1715,8 +1715,15 @@ function changeColor(event) {
             programmer: Shira Shmuely
             date: 25/10/2020
 */
+var isCursorFlipped = false;
 function setFalseCursorLocation(interactionTop, interactionRight, interactionWidth, interactionHeight) {
     $("#false-cursor").show();
+    if (Number(interactionRight.slice(0, -1)) > 97) {
+        isCursorFlipped = true;
+        $("#false-cursor").css("animation", "clickThisFlipped 2s infinite");
+    } else if (isCursorFlipped) {
+        $("#false-cursor").css("animation", "clickThis 2s infinite");
+    }
     $("#false-cursor").css({
         "right": "calc(" + interactionRight + " + " + interactionWidth + ")",
         "top": "calc(" + interactionTop + " + " + interactionHeight + ")"
