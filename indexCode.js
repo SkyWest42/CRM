@@ -610,7 +610,7 @@ var matContent = [
                 "isBreak": "true"
             },
             {
-                "section": "<p><img class='text-img detail-img' src='media/indexMedia/puzzle3.png'/> לאחר שקראנו את ההתכתבות וצפינו בקבצים, הבנו מה מהות הפניה וכעת ניתן לסווג את אותה בשלשה.</p>",
+                "section": "<p><img class='text-img detail-img' src='media/indexMedia/puzzle3.png'/> לאחר שקראנו את ההתכתבות וצפינו בקבצים, הבנו מה מהות הפניה וכעת ניתן לסווג אותה בשלשה.</p>",
                 "instruction": "לחץ על הגלגלת במסך התרגול על מנת לגלול לסיווג הפניה",
                 "interactionType": "click",
                 "width": "2%",
