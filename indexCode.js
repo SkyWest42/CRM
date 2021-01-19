@@ -38,7 +38,7 @@ var matContent = [
             },
             {
                 "section": "<p>כעת, עלינו להתחבר לכתובת https://crm.medone.idf.il.</p>",
-                "instruction": "העתק את הכתובת <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>https://crm.medone.idf.il</strong> לשורת החיפוש במסך התרגול",
+                "instruction": "העתק את הכתובת <strong title='לחץ כדי להעתיק' onmouseover=\"selectText()\" onclick='copyText()' id='to-copy' class='to-copy'>https://crm.medone.idf.il</strong> לשורת החיפוש במסך התרגול",
                 "interactionType": "type",
                 "correctInput": "https://crm.medone.idf.il",
                 "width": "50%",
@@ -456,7 +456,7 @@ var matContent = [
             },
             {
                 "section": "<p>כעת עלינו לתעד כיצד טיפלנו בפניה – לשם כך קיים שדה \"תיאור הטיפול בפניה\".</p><img class='full-img' src='media/indexMedia/descriptionInstruct.png'/><p><a id='download-btn' class='download-btn info-btn' title='saveButtons' href='/media/indexMedia/descriptionInstruct.png' download='descriptionInstruct.png'> שמור כרטיסיה <img src='media/indexMedia/download.png'/> </a></p>",
-                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>050-1234567 הנל התייצב בלשכה וביקש לברר היכן הוא מתגייס? בדקתי את פרטיו ועניתי על שאלתו. </strong>",
+                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onmouseover=\"selectText()\" onclick='copyText()' id='to-copy' class='to-copy'>050-1234567 הנל התייצב בלשכה וביקש לברר היכן הוא מתגייס? בדקתי את פרטיו ועניתי על שאלתו. </strong>",
                 "interactionType": "type",
                 "correctInput": "050-1234567 הנל התייצב בלשכה וביקש לברר היכן הוא מתגייס? בדקתי את פרטיו ועניתי על שאלתו.",
                 "width": "45%",
@@ -743,7 +743,7 @@ var matContent = [
             },
             {
                 "section": "",
-                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>050-1234567 היי, הנ\"ל שלחה טופס 16, מעבירה לכם להמשך טיפול. תודה</strong>",
+                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onmouseover=\"selectText()\" onclick='copyText()' id='to-copy' class='to-copy'>050-1234567 היי, הנ\"ל שלחה טופס 16, מעבירה לכם להמשך טיפול. תודה</strong>",
                 "interactionType": "type",
                 "correctInput": "050-1234567 היי, הנ\"ל שלחה טופס 16, מעבירה לכם להמשך טיפול. תודה",
                 "width": "47%",
@@ -845,7 +845,7 @@ var matContent = [
             },
             {
                 "section": "<p>לאחר שהבנו את היסטורית הפניה, נטפל בה ונתעד את הטיפול ב<strong>תיאור הטיפול בפניה</strong>.</p><p>הדברים שנרשום ב<strong>תיאור הטיפול בפניה </strong>יעברו ל<strong>היסטוריית תיאור הטיפול</strong> <strong>בפניה</strong> לאחר סגירת הפניה או הקצאתה למדור אחר.</p><hr /><p>חשוב לשים לב שמלל התיאור מעביר את <strong>המשמעות</strong> של הפעולות שעשינו על הפניה, ואינן רק סיכום טכני שלהן. תיאור פניה צריך להעביר באופן ברור מה היה תהליך הטיפול לאדם שקורא אותו <strong>ללא הקשר קודם</strong>.</p>",
-                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה.</strong>",
+                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onmouseover=\"selectText()\" onclick='copyText()' id='to-copy' class='to-copy'>תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה.</strong>",
                 "interactionType": "type",
                 "correctInput": "תקלה באתר מנעה את העלאת הקובץ, התקלה טופלה.",
                 "clickAlternate": "true",
@@ -930,6 +930,13 @@ function copyText(event) {
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
     alert("העתקת את הטסקט: " + range);
+}
+
+function selectText() {
+    var range = document.createRange();
+    range.selectNode(document.getElementById("to-copy"));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
 }
 
 var isFlipped = false;

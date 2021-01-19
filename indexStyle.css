@@ -410,7 +410,6 @@ body {
 
 .instruction .to-copy:hover {
   cursor: pointer;
-  background-color: lightblue;
 }
 
 .overlay {
