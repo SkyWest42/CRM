@@ -3,6 +3,9 @@ var currChapter;
 var currPage;
 var currSection;
 
+var contentCount;
+var progress;
+
 //array of chapter titles
 var arrChapterName = ["א'- פתיח", "ב'- סיור בפניה", "ג'- פתיחת פניה", "ד'- הקצאת פניה", "ה'- סגירת פניה", "ו'- SLA"];
 
@@ -978,19 +981,34 @@ var isNextBtnEnd = false;
 */
 $(document).ready(function () {
     $("#dragbar").hide();
-    if (!(sessionStorage.getItem("wasFinished") === null)) {
-        $("#start-btn").css("pointer-events", "none");
-        $("#back-to-mtv").hide();
-        $("#finished-box").show();
-        $("#play-again").on("click", allowToPlayAgain);
-        //$("#box-back-to-mtv").on("click" function(){
-        //redirect
-        //});
-    } else {
+    // if (!(sessionStorage.getItem("wasFinished") === null)) {
+    //     $("#start-btn").css("pointer-events", "none");
+    //     $("#back-to-mtv").hide();
+    //     $("#finished-box").show();
+    //     $("#play-again").on("click", allowToPlayAgain);
+    //     //$("#box-back-to-mtv").on("click" function(){
+    //     //redirect
+    //     //});
+    // } else {
         $("#color-scheme").on("click", changeColor);
-        $("#start-btn").on("click", hideStartScreen);
-    }
+    $("#start-btn").on("click", hideStartScreen);
+    countContent();
+    // }
 });
+
+function countContent() {
+    progress = 0;
+    contentCount = 0;
+    for (var chapterIndex = 0; chapterIndex < matContent.length; chapterIndex++) {
+        for (var pageIndex = 0; pageIndex < matContent[chapterIndex].length; pageIndex++) {
+            for (var sectionIndex = 0; sectionIndex < matContent[chapterIndex][pageIndex].length; sectionIndex++) {
+                matContent[currChapter][currPage][sectionIndex]["progress"] = contentCount;
+                contentCount += matContent[currChapter][currPage][sectionIndex]["section"].length;
+            }
+        }
+    }
+
+}
 
 /*
             allowToPlayAgain
@@ -1303,6 +1321,7 @@ function loadChapter(chapter) {
     $("#menu-item" + (currChapter + 1)).off("click");
     $("#menu-item" + (currChapter + 1)).addClass("current-menu-item");
     $("#info-header h1").html(arrChapterName[currChapter]);
+    updateProgressbar();
     $("#info-content").html(matContent[currChapter][currPage][currSection]["section"]);
     $("#info-content").append("<p id='instructions' class='instruction'>" + matContent[currChapter][currPage][currSection]["instruction"] + "</p>");
     $('#info-container').animate({
@@ -1342,6 +1361,7 @@ function swipeToNext(event) {
                 "transition": "none",
                 "transform": "translate3d(0, 0, 0)"
             });
+            updateProgressbar();
             $("#info-content").html(matContent[currChapter][currPage][currSection]["section"]);
             $("#info-content").append("<p id='instructions' class='instruction'>" + matContent[currChapter][currPage][currSection]["instruction"] + "</p>");
             chapterManager();
@@ -1414,6 +1434,7 @@ function swipeToPrev() {
             "transition": "none",
             "transform": "translate3d(0, 0, 0)"
         });
+        updateProgressbar();
         $("#info-content").html(matContent[currChapter][currPage][currSection]["section"]);
         chapterManager();
         $("#info-content").append("<p id='instructions' class='instruction'>" + matContent[currChapter][currPage][currSection]["instruction"] + "</p>");
@@ -1447,6 +1468,7 @@ function showNextSection() {
             hr = "<hr>";
         }
         $("#info-content p").css("color", "#5a5a5a");
+        updateProgressbar();
         $("#info-content").append(hr + matContent[currChapter][currPage][currSection]["section"]);
         $("#info-content").append("<p id='instructions' class='instruction'>" + matContent[currChapter][currPage][currSection]["instruction"] + "</p>");
     }
@@ -1454,6 +1476,12 @@ function showNextSection() {
     $("#info-container").animate({
         scrollTop: prevScrollHeight
     }, 500);
+}
+
+function updateProgressbar() {
+    $("#progressbar").progress({
+
+    });
 }
 
 /*
