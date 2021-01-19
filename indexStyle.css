@@ -946,7 +946,7 @@ tr:nth-child(even) {
 }
 
 .instructions-panel-small {
-  top: 0.5%;
+  top: 0.2%;
   right: 7%;
   transform: scale(0.06);
   cursor: zoom-in;
@@ -964,4 +964,17 @@ tr:nth-child(even) {
 .instructions-close:hover {
   cursor: pointer;
   transform: scale(0.9);
+}
+
+.progressbar {
+  direction: ltr;
+  position: absolute;
+  top: 0.9%;
+  right: 25%;
+  width: 50%;
+  height: 3%;
+}
+
+.ui-progressbar-value {
+  background-color: var(--menu-item-color5);
 }
