@@ -1002,8 +1002,8 @@ function countContent() {
     for (var chapterIndex = 0; chapterIndex < matContent.length; chapterIndex++) {
         for (var pageIndex = 0; pageIndex < matContent[chapterIndex].length; pageIndex++) {
             for (var sectionIndex = 0; sectionIndex < matContent[chapterIndex][pageIndex].length; sectionIndex++) {
-                matContent[currChapter][currPage][sectionIndex]["progress"] = contentCount;
-                contentCount += matContent[currChapter][currPage][sectionIndex]["section"].length;
+                contentCount += matContent[chapterIndex][pageIndex][sectionIndex]["section"].length;
+                matContent[chapterIndex][pageIndex][sectionIndex]["progress"] = contentCount;
             }
         }
     }
@@ -1321,7 +1321,7 @@ function loadChapter(chapter) {
     $("#menu-item" + (currChapter + 1)).off("click");
     $("#menu-item" + (currChapter + 1)).addClass("current-menu-item");
     $("#info-header h1").html(arrChapterName[currChapter]);
-    updateProgressbar();
+    updateProgressbar(Number(matContent[currChapter][currPage][currSection]["progress"]));
     $("#info-content").html(matContent[currChapter][currPage][currSection]["section"]);
     $("#info-content").append("<p id='instructions' class='instruction'>" + matContent[currChapter][currPage][currSection]["instruction"] + "</p>");
     $('#info-container').animate({
@@ -1361,7 +1361,7 @@ function swipeToNext(event) {
                 "transition": "none",
                 "transform": "translate3d(0, 0, 0)"
             });
-            updateProgressbar();
+            updateProgressbar(Number(matContent[currChapter][currPage][currSection]["progress"]));
             $("#info-content").html(matContent[currChapter][currPage][currSection]["section"]);
             $("#info-content").append("<p id='instructions' class='instruction'>" + matContent[currChapter][currPage][currSection]["instruction"] + "</p>");
             chapterManager();
@@ -1434,7 +1434,7 @@ function swipeToPrev() {
             "transition": "none",
             "transform": "translate3d(0, 0, 0)"
         });
-        updateProgressbar();
+        updateProgressbar(Number(matContent[currChapter][currPage][currSection]["progress"]));
         $("#info-content").html(matContent[currChapter][currPage][currSection]["section"]);
         chapterManager();
         $("#info-content").append("<p id='instructions' class='instruction'>" + matContent[currChapter][currPage][currSection]["instruction"] + "</p>");
@@ -1480,7 +1480,7 @@ function showNextSection() {
 
 function updateProgressbar(progress) {
     $("#progressbar").progressbar({
-        value: progress / contentCount
+        value: progress / contentCount * 100
     });
 }
 
