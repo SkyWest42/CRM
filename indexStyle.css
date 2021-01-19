@@ -954,9 +954,9 @@ tr:nth-child(even) {
 
 .instructions-close {
   position: absolute;
-  height: 18%;
-  top: 6%;
-  left: 6%;
+  height: 22%;
+  top: 3%;
+  left: 3%;
   transition: 0.2s;
   z-index: 2;
 }

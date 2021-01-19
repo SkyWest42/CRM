@@ -199,15 +199,15 @@ function stopPull(event) {
 
     if (pullBackLength < 90) {
         revert();
-        showTip();
+        // showTip();
     } else {
         shoot();
     }
 }
 
-function showTip() {
-    // $("#tip").show();
-}
+// function showTip() {
+//     // $("#tip").show();
+// }
 
 //if response wasn't shot
 function revert() {

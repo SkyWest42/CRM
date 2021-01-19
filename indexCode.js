@@ -456,9 +456,9 @@ var matContent = [
             },
             {
                 "section": "<p>כעת עלינו לתעד כיצד טיפלנו בפניה – לשם כך קיים שדה \"תיאור הטיפול בפניה\".</p><img class='full-img' src='media/indexMedia/descriptionInstruct.png'/><p><a id='download-btn' class='download-btn info-btn' title='saveButtons' href='/media/indexMedia/descriptionInstruct.png' download='descriptionInstruct.png'> שמור כרטיסיה <img src='media/indexMedia/download.png'/> </a></p>",
-                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>050-1234567 (מספר טלפון) הנל התייצב בלשכה וביקש לברר היכן הוא מתגייס? בדקתי את פרטיו ועניתי על שאלתו. </strong>",
+                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>050-1234567 הנל התייצב בלשכה וביקש לברר היכן הוא מתגייס? בדקתי את פרטיו ועניתי על שאלתו. </strong>",
                 "interactionType": "type",
-                "correctInput": "050-1234567 (מספר טלפון) הנל התייצב בלשכה וביקש לברר היכן הוא מתגייס? בדקתי את פרטיו ועניתי על שאלתו.",
+                "correctInput": "050-1234567 הנל התייצב בלשכה וביקש לברר היכן הוא מתגייס? בדקתי את פרטיו ועניתי על שאלתו.",
                 "width": "45%",
                 "height": "10%",
                 "right": "49%",
@@ -743,9 +743,9 @@ var matContent = [
             },
             {
                 "section": "",
-                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>050-1234567 (מספר טלפון) היי, הנ\"ל שלחה טופס 16, מעבירה לכם להמשך טיפול. תודה</strong>",
+                "instruction": "העתק את הטקסט הבא לתוך תיאור הטיפול בפניה: <strong title='לחץ כדי להעתיק' onclick='copyText()' id='to-copy' class='to-copy'>050-1234567 היי, הנ\"ל שלחה טופס 16, מעבירה לכם להמשך טיפול. תודה</strong>",
                 "interactionType": "type",
-                "correctInput": "050-1234567 (מספר טלפון) היי, הנ\"ל שלחה טופס 16, מעבירה לכם להמשך טיפול. תודה",
+                "correctInput": "050-1234567 היי, הנ\"ל שלחה טופס 16, מעבירה לכם להמשך טיפול. תודה",
                 "width": "47%",
                 "height": "11%",
                 "right": "49%",
@@ -929,7 +929,7 @@ function copyText(event) {
     window.getSelection().addRange(range); // to select text
     document.execCommand("copy");
     window.getSelection().removeAllRanges();// to deselect
-    alert("Copied the text: " + range);
+    alert("העתקת את הטסקט: " + range);
 }
 
 var isFlipped = false;
