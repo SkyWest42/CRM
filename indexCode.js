@@ -1468,7 +1468,7 @@ function showNextSection() {
             hr = "<hr>";
         }
         $("#info-content p").css("color", "#5a5a5a");
-        updateProgressbar();
+        updateProgressbar(Number(matContent[currChapter][currPage][currSection]["progress"]));
         $("#info-content").append(hr + matContent[currChapter][currPage][currSection]["section"]);
         $("#info-content").append("<p id='instructions' class='instruction'>" + matContent[currChapter][currPage][currSection]["instruction"] + "</p>");
     }
@@ -1478,9 +1478,9 @@ function showNextSection() {
     }, 500);
 }
 
-function updateProgressbar() {
-    $("#progressbar").progress({
-
+function updateProgressbar(progress) {
+    $("#progressbar").progressbar({
+        value: progress / contentCount
     });
 }
 
