@@ -230,6 +230,7 @@ function showCorrect(matUserAnswer, plateNumber, groupIndex, valIndex) {
             groupIndex++;
             showCorrect(matUserAnswer, plateNumber, groupIndex, valIndex);
         } else {
+            $("#answer-explanation").show();
             $("#flowchart-container").css("animation", "pulse 1.2s ease-out");
             $("#check-btn").delay(1000)
                 .queue(function (next) {

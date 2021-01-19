@@ -133,6 +133,17 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+.answer-explanation {
+    display: none;
+    text-align: right;
+    padding: 0% 5%;
+    line-height: 150%;
+}
+
+.answer-explanation ul li {
+    margin: 3% 0%;
+}
+
 .check-btn {
     background-color: #9fe04f;
     border: black 5px solid;
