@@ -104,13 +104,13 @@
 
 @keyframes clickThisFlipped {
   0% {
-    transform: translate3d(60px, -10px, 0) rotateY(180deg);
+    transform: translate3d(5vw, -10px, 0) rotateY(180deg);
   }
   50% {
-    transform: translate3d(70px, -5px, 0px) rotateY(180deg);
+    transform: translate3d(calc(5vw + 10px), -5px, 0px) rotateY(180deg);
   }
   100% {
-    transform: translate3d(60px, -10px, 0) rotateY(180deg);
+    transform: translate3d(5vw, -10px, 0) rotateY(180deg);
   }
 }
 
