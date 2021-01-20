@@ -196,7 +196,7 @@ var matContent = [
             }
             ,
             {
-                "section": "<p><strong class='section-name'>פעילויות SMS</strong> הSMS אשר נשלחה בסגירת הפניה, ומה סטטוס ההודעה- כלומר האם הגיעה ללקוח בהצלחה.</p>",
+                "section": "<p><strong class='section-name'>פעילויות SMS</strong> הSMS אשר נשלח בסגירת הפניה, ומה סטטוס ההודעה- כלומר האם הגיעה ללקוח בהצלחה.</p>",
                 "instruction": "לחץ על שם המקטע \"היסטוריית מטפלים\" על מנת לפתוח אותו",
                 "interactionType": "click",
                 "width": "16%",

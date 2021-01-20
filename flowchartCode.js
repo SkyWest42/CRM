@@ -161,7 +161,8 @@ function checkUserAnswer(matUserAnswer) {
             if (valueAnswerIndex === -1) {
                 mistakeCounter++;
             } else {
-                MAT_ANSWER[groupIndex].splice(valueUserIndex, 0, MAT_ANSWER[groupIndex].splice(valueAnswerIndex, 1)[0]);
+                MAT_ANSWER[groupIndex][valueAnswerIndex] = MAT_ANSWER[groupIndex].splice(valueUserIndex, 1, MAT_ANSWER[groupIndex][valueAnswerIndex])[0];
+                // MAT_ANSWER[groupIndex].splice(valueUserIndex, 0, MAT_ANSWER[groupIndex].splice(valueAnswerIndex, 1)[0]);
             }
         }
     }

@@ -197,7 +197,7 @@ function stopPull(event) {
 
     $("#arrow").hide();
 
-    if (pullBackLength < 90) {
+    if (pullBackLength < 60) {
         revert();
         // showTip();
     } else {

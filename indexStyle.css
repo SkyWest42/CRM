@@ -149,6 +149,12 @@ body {
   font-family: Varela;
 }
 
+body img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .background {
   z-index: 0;
   width: 0px;
@@ -761,6 +767,7 @@ tr:nth-child(even) {
   text-decoration: none;
   width: 70%;
   margin-right: 15%;
+  margin: 0% 15%;
   font-size: 2vw;
   font-family: Varela;
   padding: 0.5vh 0vw 0vh 0vw;
