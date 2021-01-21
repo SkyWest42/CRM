@@ -774,7 +774,7 @@ var matContent = [
                 "height": "0%",
                 "right": "0%",
                 "top": "0%",
-                "isChangeScreen": "false",
+                "isChangeScreen": "true",
                 "isBreak": "false"
             },
             {
@@ -964,8 +964,8 @@ var matOpeningScreen = [
     [1, 6],
     [21, 27],
     [44, 44],
-    [61],
-    [68, 68]
+    [62],
+    [69, 69]
 ];
 
 //current screenshot in practice screen
