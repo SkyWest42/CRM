@@ -117,8 +117,10 @@ function isFilled() {
 var MAT_ANSWER = [
     ["website"],
     ["facebook", "phone", "email"],
+    ["facebook", "email"],
     ["smartphone", "website"],
     ["transfer"],
+    ["close"],
     ["close"]
 ];
 

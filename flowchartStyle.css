@@ -311,30 +311,35 @@ body {
 
 #plate5 {
     top: 80%;
-    left: calc(40% - 51px);
+    left: calc(20% - 51px);
 }
 
 #plate6 {
     top: 80%;
-    left: calc(60% - 51px);
+    left: calc(40% - 51px);
 }
 
 #plate7 {
+    top: 80%;
+    left: calc(60% - 51px);
+}
+
+#plate8 {
+    top: 80%;
+    left: calc(80% - 51px);
+}
+
+#plate9 {
     top: 47%;
     left: calc(50% - 51px);
 }
 
-#plate8 {
-    top: 65%;
-    left: calc(50% - 51px);
-}
-
-/* #plate9 {
-    top: 63%;
-    left: 25%;
-}
-
 #plate10 {
-    top: 52%;
-    left: 50%;
-} */
+    top: 62%;
+    left: calc(35% - 135px);
+}
+
+#plate11 {
+    top: 62%;
+    left: 70%;
+}

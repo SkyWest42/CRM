@@ -18,11 +18,10 @@ var matContent = [
     [
         [
             {
-                "section": "<p>מערכת הCRM הינה <strong>מערכת לניהול קשרי לקוחות</strong>.</p><p><strong>CRM- Customer Relationship Management</strong></p><p>המערכת מאפשרת ליחידת מיטב <strong>לנהל פניות של מלש\"בים </strong>במגוון נושאים, <strong>לתעד</strong> אותן ו<strong>לעקוב</strong> אחר הטיפול בהן. &nbsp;</p><hr /><p>רוב הפניות מתקבלות ב<strong>מרכז המידע והשירות </strong>שמורכב ממרכז השירות הטלפוני ומרכז השירות הדיגיטלי. הפניות מטופלות ונסגרות במרכז השירות או מועברות משם להמשך הטיפול במדורים המקצועיים ביחידה.</p><p>בנוסף, ישנן פניות אשר מגיעות דרך אתר \"מתגייסים ברשת\" חלקן מגיעות למרכז השירות וחלקן מופנות ישירות למדור המקצועי.</p ><img class='full-img' src='media/indexMedia/flowchart.png'/>",
+                "section": "<p>מערכת הCRM הינה <strong>מערכת לניהול קשרי לקוחות</strong>.</p><p><strong>CRM- Customer Relationship Management</strong></p><p>המערכת מאפשרת ליחידת מיטב <strong>לנהל פניות של מלש\"בים </strong>במגוון נושאים, <strong>לתעד</strong> אותן ו<strong>לעקוב</strong> אחר הטיפול בהן. &nbsp;</p><hr /><p>רוב הפניות מתקבלות ב<strong>מרכז המידע והשירות </strong>שמורכב ממרכז השירות הטלפוני ומרכז השירות הדיגיטלי. הפניות מטופלות ונסגרות במרכז השירות או מועברות משם להמשך הטיפול במדורים המקצועיים ביחידה ובלשכות השונות.</p><p>בנוסף, ישנן פניות אשר מגיעות דרך אתר \"מתגייסים ברשת\" חלקן מגיעות למרכז השירות וחלקן מופנות ישירות למדור המקצועי.</p ><img class='full-img' src='media/indexMedia/flowchart.png'/>",
                 "instruction": ""
             }
         ]
-
     ],
     [
         [
@@ -415,7 +414,7 @@ var matContent = [
                 "width": "10%",
                 "height": "2.2%",
                 "right": "50.8%",
-                "top": "45.8%",
+                "top": "48%",
                 "isChangeScreen": "false",
                 "isBreak": "false"
             },
