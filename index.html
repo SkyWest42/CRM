@@ -51,10 +51,26 @@
     </div>
 
     <div id="instructions-panel" class="instructions-panel instructions-panel-big">
-       <video autoplay muted loop id="instructions-video" class="video-insert">
-            <source src="media/indexMedia/instructions.mp4" type="video/mp4">
-       </video>
+        <h1>מה עושים פה?</h1>
+        <div class="video-container" data-content="1) קוראים את החומר">
+            <video id="instructions-video" autoplay muted loop class="video-insert">
+                <source src="media/indexMedia/InstructionVideos/readInstruct.webm" type="video/mp4">
+            </video>
+        </div>
+        <!-- <video autoplay muted loop class="video-insert">
+                <source src="media/indexMedia/InstructionVideos/doInstruct.webm" type="video/mp4">
+            </video>
+            <video autoplay muted loop class="video-insert">
+                <source src="media/indexMedia/InstructionVideos/navigateInstruct.webm" type="video/mp4">
+            </video>
+            <video autoplay muted loop class="video-insert">
+                <source src="media/indexMedia/InstructionVideos/adjustInstruct.webm" type="video/mp4">
+            </video> -->
         <img src="media/indexMedia/instructionsClose.png" id="instructions-close" class="instructions-close" />
+        <div id="next-instruction-btn" class=" next-instruction-btn next-btn info-btn">
+            מה עוד?
+            <img src="media/indexMedia/arrow.png" />
+        </div>
     </div>
 
     <div id="sidebar" class="sidebar">

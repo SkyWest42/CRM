@@ -6,6 +6,9 @@ var currSection;
 var contentCount;
 var progress;
 
+//matrix of using instructions
+var matinstructionsVideos = [["read", "1) קוראים את החומר"], ["do", "2) מבצעים את ההוראות"], ["navigate", "3) אפשר לנווט"], ["adjust", "4) ניתן להנגיש"]];
+
 //array of chapter titles
 var arrChapterName = ["א'- פתיח", "ב'- סיור בפניה", "ג'- פתיחת פניה", "ד'- הקצאת פניה", "ה'- סגירת פניה", "ו'- SLA"];
 
@@ -274,7 +277,7 @@ var matContent = [
                 "isBreak": "true"
             },
             {
-                "section": "<p>מסך הפניה החדשה נפתח.</p><p>תחילה יש למלא את פרטי המועמד שאליו תהיה מקושרת הפניה.</p><p>את המועמד ניתן לחפש לפי שם או לפי תעודת זהות.</p><p><strong><span style='color: #00aa00;'><span style='color: #000000;'>נעדיף לחפש על פי</span> תעודת זהות <span style='color: #000000;'>ולא</span></span>&nbsp;<span style='color: #b22222;'>שם פרטי ושם משפחה</span><span style='color: #000000;'>-&nbsp;החיפוש ע\"פ ת.ז יותר וודאי</span></strong></p><p>כדי לקשר את הפניה למועמד הרלוונטי נבצע חיפוש בשדה \"מועמד\", ולאחר מכן נלחץ על Enter או זכוכית המגדלת &ndash; תיפתח רשימה של מועמדים אפשריים שממנה ניתן לבחור את המועמד הרלוונטי.</p>",
+                "section": "<p>מסך הפניה החדשה נפתח.</p><p>תחילה יש למלא את פרטי המועמד שאליו תהיה מקושרת הפניה.</p><p>את המועמד ניתן לחפש לפי שם או לפי תעודת זהות. שימו לב כי בניגוד לSAP, בCRM איננו נדרשים להוסיף את סימן \"=\".</p><p><strong><span style='color: #00aa00;'><span style='color: #000000;'>נעדיף לחפש על פי</span> תעודת זהות <span style='color: #000000;'>ולא</span></span>&nbsp;<span style='color: #b22222;'>שם פרטי ושם משפחה</span><span style='color: #000000;'>-&nbsp;החיפוש ע\"פ ת.ז יותר וודאי</span></strong></p><p>כדי לקשר את הפניה למועמד הרלוונטי נבצע חיפוש בשדה \"מועמד\", ולאחר מכן נלחץ על Enter או זכוכית המגדלת &ndash; תיפתח רשימה של מועמדים אפשריים שממנה ניתן לבחור את המועמד הרלוונטי.</p>",
                 "instruction": "הקלד את תעודת הזהות \"234567899\"",
                 "interactionType": "type",
                 "correctInput": "234567899",
@@ -1089,6 +1092,7 @@ function hideStartScreen(event) {
 
     $("#instructions-panel").fadeIn();
     $("#instructions-close").on("click", zoomOutInstructions);
+    $("#next-instruction-btn").on("click", nextInstructionVideo);
     setTimeout(loadMain, 1500);
 }
 
@@ -1141,6 +1145,19 @@ function drag(e) {
 function stopDrag(e) {
     $(document).off('mousemove', drag);
     $(document).off('mouseup', stopDrag);
+}
+
+var instructionVideoCounter = 0;
+function nextInstructionVideo() {
+    if (instructionVideoCounter < matinstructionsVideos.length-1) {
+        instructionVideoCounter++;
+    } else {
+        instructionVideoCounter = 0;
+    }
+    var video = $("#instructions-video");
+    $("#instructions-video source").attr("src", "media/indexMedia/InstructionVideos/" + matinstructionsVideos[instructionVideoCounter][0] + "Instruct.webm");
+    video.trigger('load');
+    $(".video-container").attr('data-content', matinstructionsVideos[instructionVideoCounter][1]);
 }
 
 /*
