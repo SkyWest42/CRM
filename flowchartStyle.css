@@ -62,11 +62,16 @@ body {
 .flowchart-container {
     flex-grow: 1;
     height: 90%;
-    margin-top: -2%;
+    /* margin-top: -2%; */
     position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
+}
+
+.flowchart-container h2 {
+    background-color: white;
+    height: fit-content;
 }
 
 .flowchart-container img, .flowchart-container div {
@@ -125,9 +130,11 @@ body {
 .draggable-name {
     text-align: center;
     font-family: Varela;
-    font-size: 120%;
-    padding: 2%;
-    border: none;
+    font-size: 150%;
+    padding: 0.5%;
+    border-style: solid;
+    border-color: transparent #9fe04f;
+    border-width: 10px;
     color: white;
     pointer-events: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -136,6 +143,8 @@ body {
 .answer-explanation {
     display: none;
     text-align: right;
+    border: none;
+    font-size: 120%;
     padding: 0% 5%;
     line-height: 150%;
 }
@@ -154,7 +163,7 @@ body {
     box-sizing: border-box;
     display: inline-block;
     font-weight: bold;
-    top: 100%;
+    top: 96%;
     font-size: 130%;
     height: fit-content;
     padding: 1% 5%;
